@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      lato: ['Lato', 'sans-serif']
+    },
+    colors: {
+      'navy': '#05396b',
+      'teal': '#5cdb94',
+      'mint': '#8ee4af',
+      'white': '#ffffff'
+    }
   },
   plugins: [],
 }
