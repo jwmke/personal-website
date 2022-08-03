@@ -6,9 +6,32 @@ import Hamburger from 'hamburger-react';
 import { useSpring, animated } from 'react-spring';
 
 import logo from '../public/img/logo.png';
+import hover_logo from '../public/img/logo_white.png';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-export const Navbar = () => {
+const Logo = () => {
+    const [isHovering, setIsHovered] = useState(false);
+    const onMouseEnter = () => setIsHovered(true);
+    const onMouseLeave = () => setIsHovered(false);
+    return (
+        <div
+        className="flex items-center flex-shrink-0 mr-6 cursor-pointer"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        >
+        <Link href="/">
+            {isHovering ? (
+            <Image src={hover_logo} width={40} height={40} alt="logo" />
+            ) : (
+            <Image src={logo} width={40} height={40} alt="logo" />
+            )}
+        </Link>
+        </div>
+    );
+};
+
+
+const Navbar = () => {
   const [active, setActive] = useState(false);
   const { height, width } = useWindowDimensions();
 
@@ -19,11 +42,11 @@ export const Navbar = () => {
   });
 
   return (
-    <>
-      <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
+    <div className='absolute z-20 w-full'>
+      <nav className='flex items-center flex-wrap p-3 mr-6'>
         <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 '>
-            <Image src={logo} width={40} height={40}/>
+          <a className='inline-flex items-center p-6 '>
+            <Logo/>
           </a>
         </Link>
         <div className='inline-flex p-3 pt-2 rounded lg:hidden text-navy ml-auto outline-none'>
@@ -32,25 +55,30 @@ export const Navbar = () => {
         <div className={` w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
         <animated.div style={{ ...animatedProps }} className="lg:ml-auto">
           <div className='lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-half px-3 py-2 rounded text-navy font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Portfolio
+            <Link href='/bucketlist'>
+              <a className='lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'>
+                _bucketList();
               </a>
             </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-half px-3 py-2 rounded text-navy font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Bucket List
+            <Link href='/dojoe'>
+              <a className='lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'>
+                _theDojoe();
               </a>
             </Link>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-half px-3 py-2 rounded text-navy font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                LinkedIn
-              </a>
-            </Link>
+            <a className='lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'
+            href='https://www.linkedin.com/in/joseph-weller/' target="_blank">
+                _linkedin();
+            </a>
+            <a className='lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'
+            href='https://github.com/Joseph5062A' target="_blank">
+                _github();
+            </a>
           </div>
           </animated.div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
+
+export default Navbar;
