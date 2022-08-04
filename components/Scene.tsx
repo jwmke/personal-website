@@ -8,9 +8,9 @@ const CameraController = () => {
     useEffect(
        () => {
           const controls = new OrbitControls(camera, gl.domElement);
-          controls.minDistance = 3;
-          controls.maxDistance = 26;
-          controls.target.set(-10,2,0);
+          controls.enableZoom = false;
+          controls.maxDistance = 29;
+          controls.target.set(-14,1,0);
           controls.update();
           return () => {
             controls.dispose();
@@ -33,7 +33,7 @@ const Torus = () => {
     });
 
     useThree(({camera}) => {
-        camera.position.setZ(25);
+        camera.position.setZ(29);
     });
     
     return (
@@ -47,7 +47,7 @@ const Torus = () => {
 }
 
 const Scene = () => (
-    <Canvas className="absolute top-0 left-0 w-full h-full z-10">
+    <Canvas className="absolute top-0 left-0 h-full w-full z-10">
         <CameraController />
         <Torus />
     </Canvas>

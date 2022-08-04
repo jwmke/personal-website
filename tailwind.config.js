@@ -13,7 +13,8 @@ module.exports = {
       'navy': '#05396b',
       'teal': '#5cdb94',
       'mint': '#8ee4af',
-      'white': '#ffffff'
+      'white': '#edf5e1',
+      'pine': '#379683'
     }
   },
   plugins: [],

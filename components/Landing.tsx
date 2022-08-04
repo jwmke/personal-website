@@ -7,7 +7,7 @@ const Landing = () => {
     const textSize = width&&width<700 ? "text-5xl" : "text-8xl";
 
     return (
-        <div className="absolute h-1/2 w-1/2">
+        <div className="absolute h-1/2">
             <h1 className={`${textSize} text-white top-1/3 left-1/4 relative font-bold z-30 `}>
                 <TypeAnimation
                     sequence={['Weller@MKE', 10000000, '']}
@@ -15,16 +15,16 @@ const Landing = () => {
             </h1>
             <div className="top-1/2 left-1/4 relative z-30 ">
                 <h1 className='text-4xl text-white font-bold'>
-                    Howdy! I'm Joe, a software
+                    Hi! I'm Joe, a software engineer based
                 </h1>
                 <h1 className='text-4xl text-white font-bold pt-14'>
-                    engineer who's interested in
+                    out of Milwaukee, WI who's interested
                 </h1>
                 <h1 className='text-4xl text-white font-bold pt-14'>
-                    robotics, computer vision,
+                    in robotics, computer vision, and full
                 </h1>
                 <h1 className='text-4xl text-white font-bold pt-14'>
-                    and full stack development.
+                    stack web development.
                 </h1>
             </div>
         </div>
