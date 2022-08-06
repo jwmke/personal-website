@@ -9,7 +9,7 @@ const CameraController = () => {
        () => {
           const controls = new OrbitControls(camera, gl.domElement);
           controls.enableZoom = false;
-          controls.maxDistance = 29;
+          controls.maxDistance = 32;
           controls.target.set(-14,1,0);
           controls.update();
           return () => {

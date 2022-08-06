@@ -1,11 +1,9 @@
 import { useState } from 'react';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import Hamburger from 'hamburger-react';
 import { useSpring, animated } from 'react-spring';
 
-import logo from '../public/img/logo.svg';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
 const Navbar = () => {
@@ -32,7 +30,7 @@ const Navbar = () => {
             </svg>
           </a>
         </Link>
-        <div className='z-40 inline-flex p-3 pt-2 rounded lg:hidden text-navy ml-auto outline-none'>
+        <div className='z-40 inline-flex p-2 pt-1 rounded lg:hidden text-navy ml-auto outline-none'>
             <Hamburger toggled={active} toggle={setActive} color='#05396b' distance="sm"/>
         </div>
         <div className={` w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
@@ -40,21 +38,21 @@ const Navbar = () => {
           <div className='lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
             <Link href='/bucketlist'>
               <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'>
-                _bucketList();
+                .bucketList()
               </a>
             </Link>
             <Link href='/dojoe'>
               <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'>
-                _theDojoe();
+                .theDojoe()
               </a>
             </Link>
             <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'
             href='https://www.linkedin.com/in/joseph-weller/' target="_blank">
-                _linkedin();
+                .linkedin()
             </a>
             <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'
             href='https://github.com/Joseph5062A' target="_blank">
-                _github();
+                .github()
             </a>
           </div>
           </animated.div>
