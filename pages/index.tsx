@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Scene from '../components/Scene';
 import Landing from '../components/Landing';
 import Portfolio from '../components/Portfolio';
+import Projects from '../components/Projects';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <Scene/>
       </div>
       <Portfolio/>
+      <Projects/>
     </div>
   )
 };
