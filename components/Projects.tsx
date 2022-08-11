@@ -22,7 +22,7 @@ const projectsList = [
     },
     {
         name: "MSOE Robotics Websites",
-        tags: ["React", "Typescript", "Express"],
+        tags: ["React", "Typescript", "NodeJS"],
         description: "Developed and contributed to the Raider Robotics organization's public-facing website and their internal odometry path planning dashboard.",
         media: "splines"
     },
