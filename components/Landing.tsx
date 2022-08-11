@@ -27,17 +27,17 @@ const Landing = () => {
                         sequence={['Weller@MKE', 10000000, '']}
                     />
                 </h1>
-                <div className="top-1/2 left-1/4 relative z-30 ">
+                <div className="top-1/2 mt-10 left-1/4 relative z-30 ">
                     <h1 className='text-4xl text-white'>
                         Hi! I'm Joe, a software engineer based
                     </h1>
-                    <h1 className='text-4xl text-white pt-14'>
+                    <h1 className='text-4xl text-white pt-12'>
                         out of Milwaukee, WI who's interested
                     </h1>
-                    <h1 className='text-4xl text-white pt-14'>
+                    <h1 className='text-4xl text-white pt-12'>
                         in robotics, machine learning, full stack
                     </h1>
-                    <h1 className='text-4xl text-white pt-14'>
+                    <h1 className='text-4xl text-white pt-12'>
                         development, and many other things.
                     </h1>
                 </div>

@@ -10,7 +10,7 @@ import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
   return (
-    <div className='h-screen bg-teal'>
+    <div className='h-screen bg-teal font-lato'>
       <Head>
         <title>Joe Weller</title>
         <meta name="description" content="Portfolio website of Joe Weller." />

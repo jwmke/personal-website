@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 
 const BucketList: NextPage = () => {
   return (
-    <div className='h-screen bg-gradient-to-b from-teal to-mint'>
+    <div className='h-screen bg-gradient-to-b from-teal to-navy'>
       <Head>
         <title>Joe Weller</title>
         <meta name="description" content="Joe Weller's bucket list." />

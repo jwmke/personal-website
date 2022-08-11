@@ -11,8 +11,8 @@ const Project = (props: { details: {
         <div className="max-w-sm mr-3 rounded overflow-hidden shadow-2xl bg-mint mb-24 transition duration-150 hover:scale-105 hover:cursor-pointer hover:bg-white">
             <Image className="w-full" width={550} height={280} src={"/img/" + props.details.media + ".png"} alt="project_img"/>
             <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 text-navy">{props.details.name}</div>
-                <p className="text-base text-navy">
+                <div className="font-bold text-xl mb-2 text-dark-navy">{props.details.name}</div>
+                <p className="text-base text-dark-navy">
                     {props.details.description}
                 </p>
             </div>

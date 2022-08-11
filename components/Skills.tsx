@@ -3,7 +3,7 @@ import PortfolioHeader from './PortfolioHeader';
 const SkillGrid = (props: {children: JSX.Element[], medRightMargin: boolean, tagText: string}) => (
     <div>
         <p className='text-mint text-2xl mt-12 mb-6'>&lt;{props.tagText}&gt;</p>
-        <div className={`grid grid-cols-3 gap-1 lg:mr-12 ${props.medRightMargin ? "md:mr-12 sm:mr-0" : ""}`}>
+        <div className={`grid grid-cols-3 gap-1 lg:mr-12 ml-1 ${props.medRightMargin ? "md:mr-12 sm:mr-0" : ""}`}>
             {props.children}
         </div>
         <p className='text-mint text-2xl mt-6'>&lt;/{props.tagText}&gt;</p>
@@ -12,7 +12,7 @@ const SkillGrid = (props: {children: JSX.Element[], medRightMargin: boolean, tag
 
 const Skills = () => {
     return (
-        <div className='bg-navy flex w-full'>
+        <div className='bg-gradient-to-b from-dark-navy to-black flex w-full'>
             <div className='mx-auto w-3/4 mt-24 mb-12'>
                 <PortfolioHeader text={"// Technical skills"} />
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>

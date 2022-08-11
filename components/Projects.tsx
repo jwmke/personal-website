@@ -42,7 +42,7 @@ const projectsList = [
 
 const Projects = () => {
     return (
-        <div className='bg-navy flex w-full'>
+        <div className='flex bg-gradient-to-b from-navy to-dark-navy w-full'>
             <div className='mx-auto w-3/4'>
                 <div className='mt-44 mb-12'>
                     <PortfolioHeader text={"// Previous contributions"} />
