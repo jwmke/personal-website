@@ -200,7 +200,7 @@ const Skills = () => {
                             <p className='text-white mt-1'>K6</p>
                         </div>
                     </SkillGrid>
-                    <SkillGrid medRightMargin={true} tagText={"DataScience"}>
+                    <SkillGrid medRightMargin={true} tagText={"MachineLearning"}>
                         <div className='text-center mx-auto'>
                             <svg xmlns="http://www.w3.org/2000/svg"//python
                                 width={70}
