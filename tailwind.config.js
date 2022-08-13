@@ -19,5 +19,10 @@ module.exports = {
       'black': '#000f21'
     }
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    }
+  ],
 }
