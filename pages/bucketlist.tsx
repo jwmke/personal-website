@@ -24,7 +24,7 @@ const BucketList: NextPage = () => {
             <p>Pass the TOPIK-I (Test of Proficiency in Korean)</p>
             <p>Walk 4,000,000 steps in a year</p>
             <p>Earn a purple belt in Brazilian Jiu-Jitsu</p>
-            <p>Ski a black diamond in Colarado</p>
+            <p>Ski a black diamond in Colorado</p>
             <p>Live in NYC for at least one year</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
             <p>Work as a digital nomad in South East Asia</p>
