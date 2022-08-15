@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import MediaCarousel from './MediaCarousel';
+import Carousel from './Carousel';
 
 const Project = (props: {
     details: {
-        name: String,
-        tags: String[],
-        description: String,
-        media: String,
-        buttonNames: String[]
-        buttonLinks: String[],
-        modalDescription: String,
+        name: string,
+        tags: string[],
+        description: string,
+        media: string,
+        buttonNames: string[]
+        buttonLinks: string[],
+        modalDescription: string[],
         modalMediaDetails: {
-            media: String,
-            description: String
+            media: string,
+            description: string
         }[]
     }
 }) => {
@@ -26,9 +26,7 @@ const Project = (props: {
                 <Image className="w-full" width={550} height={280} src={"/img/" + props.details.media + ".png"} alt="project_img" />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 text-dark-navy">{props.details.name}</div>
-                    <p className="text-base text-dark-navy">
-                        {props.details.description}
-                    </p>
+                    {props.details.description}
                 </div>
                 <div className="px-6 pt-4 pb-2">
                     <span className="inline-block bg-pine rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{props.details.tags[0]}</span>
@@ -38,47 +36,50 @@ const Project = (props: {
             </div>
             {showModal ? (
                 <>
-                    <div className="font-lato justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none mx-8" onClick={() => setShowModal(false)}>
-                        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                    <div className="font-lato justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none mx-10">
+                        <div className="relative w-auto my-6 mx-auto md:max-w-5xl max-w-small">
                             {/*content*/}
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 {/*header*/}
-                                <div className="flex items-start justify-between p-5 rounded-t">
-                                    <h3 className="text-3xl font-semibold">
+                                <div className="flex w-full items-start justify-between p-5 rounded-t">
+                                    <h3 className="text-3xl font-semibold text-navy">
                                         {props.details.name}
                                     </h3>
                                     <button
-                                        className="p-1 ml-auto bg-transparent border-0 text-navy opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                        className="ml-auto bg-transparent border-0 text-navy float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                                         onClick={() => setShowModal(false)}
                                     >
-                                        <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                        <span className="text-navy opacity-20 duration-150 transition hover:opacity-70 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                             x
                                         </span>
                                     </button>
                                 </div>
-                                <MediaCarousel details={props.details.modalMediaDetails}/>
+                                <div className='md:container mx-auto py-3 px-10 max-w-small'>
+                                    <Carousel details={props.details.modalMediaDetails}/>
+                                </div>
                                 {/*body*/}
-                                <div className="relative p-6 flex-auto">
-                                    <p className="my-4 text-navy text-lg leading-relaxed">
-                                        {props.details.modalDescription}
-                                    </p>
+                                <div className="relative py-2 px-6 flex-auto">
+                                {props.details.modalDescription.map((text) => (<p className="my-4 text-navy text-lg leading-relaxed">{text}</p>))}
                                 </div>
                                 {/*footer*/}
-                                <div className="flex items-center justify-end p-6 border-t border-solid border-navy rounded-b">
+                                <div className="flex items-center justify-end py-6 px-4 border-t border-solid border-navy rounded-b mx-5">
                                     <button
-                                        className="text-navy background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                        className="text-navy background-transparent font-bold uppercase px-5 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                         type="button"
                                         onClick={() => setShowModal(false)}
                                     >
                                         Close
                                     </button>
-                                    <button
-                                        className="bg-teal text-navy active:bg-mint font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                                        type="button"
-                                        onClick={() => setShowModal(false)}
-                                    >
-                                        Project Repository
-                                    </button>
+                                    {props.details.buttonNames.map((name, index) => (
+                                        <a href={props.details.buttonLinks[index]} target="_blank">
+                                            <button
+                                                className="bg-teal text-navy active:bg-mint font-bold uppercase text-sm px-5 py-3 mx-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                type="button"
+                                            >
+                                            {name}
+                                        </button>
+                                    </a>
+                                    ))}
                                 </div>
                             </div>
                         </div>

@@ -15,3 +15,7 @@ body {
 .tall-lines {
   line-height: 3.5rem;
 }
+
+.max-w-small {
+  max-width: 90%;
+}
