@@ -56,7 +56,7 @@ const Dojoe: NextPage = () => {
           <Image width={720} height={200} src={"/logo/dojoe_tran.png"} alt="the_dojoe_logo"/>
           <div className='text-xl text-left mb-24 mx-5'>
             <div className='text-left text-2xl text-mint mb-4'>
-              // The ordering of names is random
+              {"// The ordering of names is random"}
             </div>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
               {shuffle(goats).map((name) => <p suppressHydrationWarning key={name} className='text-white mt-3'>{name}</p>)}
