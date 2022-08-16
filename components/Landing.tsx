@@ -14,8 +14,8 @@ const Landing = () => {
                 </h1>
                 <div className="top-36 left-10 relative z-30 w-80 text">
                     <h1 className='text-2xl text-white tall-lines'>
-                        Hi! I'm Joe, a software engineer based
-                        out of Milwaukee, WI who's interested
+                        Hi! I&apos;m Joe, a software engineer based
+                        out of Milwaukee, WI who&apos;s interested
                         in robotics, computer vision, full
                         stack development, and many other things.
                     </h1>
@@ -29,10 +29,10 @@ const Landing = () => {
                 </h1>
                 <div className="top-1/2 mt-10 left-1/4 relative z-30 ">
                     <h1 className='text-4xl text-white'>
-                        Hi! I'm Joe, a software engineer based
+                        Hi! I&apos;m Joe, a software engineer based
                     </h1>
                     <h1 className='text-4xl text-white pt-12'>
-                        out of Milwaukee, WI who's interested
+                        out of Milwaukee, WI who&apos;s interested
                     </h1>
                     <h1 className='text-4xl text-white pt-12'>
                         in robotics, machine learning, full stack

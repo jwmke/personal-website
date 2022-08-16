@@ -47,11 +47,11 @@ const Navbar = () => {
               </a>
             </Link>
             <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'
-            href='https://www.linkedin.com/in/joseph-weller/' target="_blank">
+            href='https://www.linkedin.com/in/joseph-weller/' target="_blank" rel="noreferrer">
                 .linkedIn()
             </a>
             <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'
-            href='https://github.com/Joseph5062A' target="_blank">
+            href='https://github.com/Joseph5062A' target="_blank" rel="noreferrer">
                 .github()
             </a>
           </div>

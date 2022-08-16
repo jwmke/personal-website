@@ -13,7 +13,7 @@ const Portfolio = () => {
                             &lt;present&gt;
                         </p>
                         <p className='text-white text-2xl mt-5 ml-6'>
-                            👕 Software Engineer at Kohl's
+                            👕 Software Engineer at Kohl&apos;s
                         </p>
                         <p className='text-white text-2xl mt-8 ml-6'>
                             🌏 Learning Korean, 안녕하세요!

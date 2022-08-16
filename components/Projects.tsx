@@ -43,13 +43,33 @@ const projectsList = [
         tags: ["TensorFlow", "SKLearn", "NumPy"],
         description: "Contributed to the effort of detecting early stages of ovarian cancer by using DL models to identify lymphocytes in FTIR biopsy images.",
         media: "lymph",
-        buttonNames: ["Project Repository"],
-        buttonLinks: ["/"],
-        modalDescription: [""],
+        buttonNames: ["Research Paper"],
+        buttonLinks: ["https://docs.google.com/document/d/1YkO8mkcz19KvroQULFOB0WEohKV8DlU96FI562UqiI0/edit?usp=sharing"],
+        modalDescription: ["🚧"],
         modalMediaDetails: [
             { 
-                media: 'x/y',
-                description: ""
+                media: 'lymphocytes/macro.png',
+                description: "Macro locations of annotated lymphocytes in biopsy data set plotted on image of single FTIR band"
+            },
+            { 
+                media: 'lymphocytes/labels.png',
+                description: "H&E stained, pathologist labeled biopsy (left), versus FTIR biopsy with individually labeled lymphocytes (right)"
+            },
+            { 
+                media: 'lymphocytes/cnn.png',
+                description: "Initial CNN architecture which resulted in a 92.5% validation accuracy"
+            },
+            { 
+                media: 'lymphocytes/ml.png',
+                description: "Validation accuracy of various tuned classical machine learning models"
+            },
+            { 
+                media: 'lymphocytes/results.png',
+                description: "Result of performing inference on single unseen biopsy using tuned CNN"
+            },
+            { 
+                media: 'lymphocytes/pca_lymph.png',
+                description: "Experimental results of training PCA on 394 FTIR bands and using top 3 components as RGB"
             },
         ]
     },
@@ -58,13 +78,13 @@ const projectsList = [
         tags: ["CUDA", "C", "C++"],
         description: "Reverse-engineered the RSA and AES encryption algorithms and used CUDA to enable them to take advantage of parallel processing on GPUs.",
         media: "cuda",
-        buttonNames: ["Project Repository"],
+        buttonNames: ["🚧"],
         buttonLinks: ["/"],
-        modalDescription: [""],
+        modalDescription: ["🚧"],
         modalMediaDetails: [
             { 
-                media: 'x/y',
-                description: ""
+                media: '🚧',
+                description: "🚧"
             },
         ]
     },
@@ -75,11 +95,11 @@ const projectsList = [
         media: "splines",
         buttonNames: ["Project Repository"],
         buttonLinks: ["/"],
-        modalDescription: [""],
+        modalDescription: ["🚧"],
         modalMediaDetails: [
             { 
-                media: 'x/y',
-                description: ""
+                media: '🚧',
+                description: "🚧"
             },
         ]
     },
@@ -88,13 +108,37 @@ const projectsList = [
         tags: ["Pytorch", "NumPy", "Pandas"],
         description: "Collaborated on the development of a medical imaging pipeline that used DL models to assist renal pathologists in detecting glomeruli damage in kidneys.",
         media: "glom",
-        buttonNames: ["Project Repository"],
-        buttonLinks: ["/"],
-        modalDescription: [""],
+        buttonNames: ["Research Paper"],
+        buttonLinks: ["https://docs.google.com/document/d/16fRJc6sCx7VOCY9jI98N0LgK6DeT7-75AQhBO7UmZqs/edit?usp=sharing"],
+        modalDescription: ["For this project, I had the opportunity to work on a team with 4 other students while collaborating with the Medical College of Wisconsin to perform medical imaging research. The project had two primary goals. The first goal was to investigate how the severity of lesions to glomeruli can be objectively assessed given kidney cross-sections, and the second goal was to create a pipeline that would assist renal pathologists in their work of detecting glomeruli damage in kidneys. To achieve both of these objectives, we implemented and experimented with multiple approaches including but not limited to Convolution Neural Networks, Clustering, and Principal Component Analysis."],
         modalMediaDetails: [
             { 
-                media: 'x/y',
-                description: ""
+                media: 'glomeruli/hist.png',
+                description: "Histogram displaying the uneven image category distribution of injury scores in labled data"
+            },
+            { 
+                media: 'glomeruli/kidney.png',
+                description: "Visualization of the location of glomeruli (orange) plotted relative to the surface of the kidney (blue)"
+            },
+            { 
+                media: 'glomeruli/var.png',
+                description: "Example of interobserver variance in pathologists scorings of randomly sampled glomeruli images"
+            },
+            { 
+                media: 'glomeruli/pipeline.png',
+                description: "High-level architecture of the developed glomerular scoring pipeline"
+            },
+            { 
+                media: 'glomeruli/aug.png',
+                description: "A subset of image augmentation techniques that were used to mitigate the uneven data distribution"
+            },
+            { 
+                media: 'glomeruli/conf.png',
+                description: "Confusion matrix of the results of the MVP CNN trained on an evenly distributed augmented version of the dataset"
+            },
+            { 
+                media: 'glomeruli/res.png',
+                description: "Ranomly sampled pipeline predictions of True Positive and False Positive results along with their labels"
             },
         ]
     },
@@ -103,13 +147,13 @@ const projectsList = [
         tags: ["Solidity", "Flask", "LaTeX"],
         description: "Constructed an upper-level technical elective course on blockchain and smart contract development for my university.",
         media: "mics",
-        buttonNames: ["Project Repository"],
+        buttonNames: ["🚧"],
         buttonLinks: ["/"],
-        modalDescription: [""],
+        modalDescription: ["🚧"],
         modalMediaDetails: [
             { 
-                media: 'x/y',
-                description: ""
+                media: '🚧',
+                description: "🚧"
             },
         ]
     },
