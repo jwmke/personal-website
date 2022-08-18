@@ -17,7 +17,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className='absolute z-20 w-full'>
+    <div className='absolute z-50 w-full'>
       <nav className='flex items-center flex-wrap p-3 mr-6'>
         <Link href='/'>
           <a className='inline-flex items-center p-5 '>
@@ -33,9 +33,9 @@ const Navbar = () => {
         <div className='z-40 inline-flex p-2 pt-1 rounded lg:hidden text-navy ml-auto outline-none'>
             <Hamburger toggled={active} toggle={setActive} color='#05396b' distance="sm"/>
         </div>
-        <div className={` w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
-        <animated.div style={{ ...animatedProps }} className="lg:ml-auto">
-          <div className='lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
+        <div className={` absolute lg:top-0 lg:relative top-20 w-34 lg:inline-flex lg:flex-grow lg:w-auto`}>
+        <animated.div style={{ ...animatedProps }} className="lg:ml-auto bg-teal bg-opacity-20 backdrop-blur-sm rounded-xl">
+          <div className='lg:inline-flex lg:flex-row lg:w-auto lg:items-center flex flex-col items-start lg:h-auto'>
             <Link href='/dojoe'>
               <a className='text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded text-navy font-bold items-center justify-center hover:text-white'>
                 .theDojoe()

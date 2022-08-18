@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-[https://weller.ml](https://weller.ml)(Not Live Yet)  
+[https://weller.ml](https://weller.ml)
 
 Technologies:  
 - React

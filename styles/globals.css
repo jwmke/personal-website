@@ -19,3 +19,7 @@ body {
 .max-w-small {
   max-width: 90%;
 }
+
+.w-34 {
+  width: 8.5rem;
+}

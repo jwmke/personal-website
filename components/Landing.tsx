@@ -7,9 +7,9 @@ const Landing = () => {
     return (
         <div>
             {width&&width<700 ? <div className="absolute h-1/2">
-                <h1 className={`text-5xl text-white top-24 left-44 relative font-bold z-30 w-32`}>
+                <h1 className={`text-5xl text-white top-24 mt-12 mx-10 relative font-bold z-30`}>
                     <TypeAnimation className='tall-lines'
-                        sequence={['Weller @ MKE', 10000000, '']}
+                        sequence={[500, 'Weller@MKE', 10000000, '']}
                     />
                 </h1>
                 <div className="top-36 left-10 relative z-30 w-80 text">
@@ -24,7 +24,7 @@ const Landing = () => {
             <div className="absolute h-1/2">
                 <h1 className={`text-8xl text-white top-1/3 left-1/4 relative font-bold z-30 `}>
                     <TypeAnimation
-                        sequence={['Weller@MKE', 10000000, '']}
+                        sequence={[500, 'Weller@MKE', 10000000, '']}
                     />
                 </h1>
                 <div className="top-1/2 mt-10 left-1/4 relative z-30 ">
