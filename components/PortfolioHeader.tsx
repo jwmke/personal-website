@@ -4,7 +4,7 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const PortfolioHeader = (props : {text: String}) => {
     const triggerRef = useRef(null);
-    const dataRef = useIntersectionObserver(triggerRef, { freezeOnceVisible: true });
+    const dataRef = useIntersectionObserver(triggerRef, { freezeOnceVisible: false });
 
     const animatedProps = useSpring({
         from: { opacity: 0, marginLeft: -1000 },

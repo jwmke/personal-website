@@ -23,3 +23,8 @@ body {
 .w-34 {
   width: 8.5rem;
 }
+
+.max-top {
+  top: 190vh;
+  height: 7000px;
+}
