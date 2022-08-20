@@ -23,7 +23,7 @@ const Project = (props: {
     return (
         <>
             <div onClick={() => setShowModal(!showModal)} className="max-w-sm mr-3 rounded-lg overflow-hidden shadow-2xl bg-mint mb-24 transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-white">
-                <Image className="w-full" width={550} height={280} src={"/img/" + props.details.media + ".png"} alt="project_img" />
+                <Image className="w-full" width={550} height={280} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 text-dark-navy">{props.details.name}</div>
                     {props.details.description}
@@ -36,8 +36,8 @@ const Project = (props: {
             </div>
             {showModal ? (
                 <>
-                    <div className="font-lato justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none mx-10">
-                        <div className="relative w-auto my-6 mx-auto md:max-w-4xl max-w-small">
+                    <div className="font-lato justify-center items-center flex overflow-x-hidden overflow-y-auto no-scrollbar fixed inset-0 z-50 outline-none focus:outline-none" onClick={()=> setShowModal(false)}>
+                        <div className="relative w-auto mx-auto md:max-w-4xl max-w-small" onClick={(e)=> e.stopPropagation()}>
                             {/*content*/}
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 {/*header*/}
