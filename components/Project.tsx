@@ -37,7 +37,7 @@ const Project = (props: {
             {showModal ? (
                 <>
                     <div className="font-lato justify-center items-center flex overflow-x-hidden overflow-y-auto no-scrollbar fixed inset-0 z-50 outline-none focus:outline-none" onClick={()=> setShowModal(false)}>
-                        <div className="relative w-auto mx-auto md:max-w-4xl max-w-small" onClick={(e)=> e.stopPropagation()}>
+                        <div className="relative w-auto mx-auto md:max-w-4xl max-w-small max-h-screen" onClick={(e)=> e.stopPropagation()}>
                             {/*content*/}
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 {/*header*/}
@@ -64,7 +64,7 @@ const Project = (props: {
                                 {/*footer*/}
                                 <div className="flex items-center justify-end py-6 px-4 border-t border-solid border-navy rounded-b mx-5">
                                     <button
-                                        className="text-navy background-transparent font-bold uppercase px-5 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                        className="text-navy background-transparent font-bold uppercase px-5 py-2 text-sm outline-none hidden sm:inline focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                         type="button"
                                         onClick={() => setShowModal(false)}
                                     >
