@@ -17,7 +17,7 @@ const Landing = () => {
                         Hi! I&apos;m Joe, an engineer based
                         out of Milwaukee, WI who&apos;s interested
                         in robotics, full stack development, machine learning
-                        and much more!
+                        and more.
                     </h1>
                 </div>
             </div> : 
@@ -38,7 +38,7 @@ const Landing = () => {
                         in robotics, machine learning, full stack
                     </h1>
                     <h1 className='text-4xl text-white pt-12'>
-                        development, and much more!
+                        development, and more.
                     </h1>
                 </div>
             </div>}

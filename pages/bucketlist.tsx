@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 const BucketList: NextPage = () => {
   return (
     
-    <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy'>
+    <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
     <Head>
         <title>Joe Weller</title>
         <meta name="description" content="Joe Weller's Bucket List." />
