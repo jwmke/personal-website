@@ -53,7 +53,7 @@ const Dojoe: NextPage = () => {
               To everyone here, thank you for everything and keep being amazing!
             </p>
           </div>
-          <Image width={720} height={200} src={"/logo/dojoe_tran2.png"} alt="the_dojoe_logo"/>
+          <Image width={720} height={200} src={"/logo/dojoe_tran2.png"} alt="the_dojoe_logo" priority/>
           <div className='text-xl text-left mb-24 mx-5'>
             <div className='text-left text-2xl text-mint mb-4'>
               {"// The ordering of names is random"}
