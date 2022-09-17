@@ -38,7 +38,7 @@ const Landing = () => {
                         in robotics, machine learning, full stack
                     </h1>
                     <h1 className='text-4xl text-white pt-12'>
-                        development, and more.
+                        development and more.
                     </h1>
                 </div>
             </div>}
