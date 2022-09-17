@@ -15,6 +15,7 @@ const Home: NextPage = () => {
         <title>Joe Weller</title>
         <meta name="description" content="Portfolio website of Joe Weller." />
         <link rel="icon" href="/favicon/favicon.ico" />
+        <meta name="google-site-verification" content="agRJm9VBzesdZT70vlgmKho0_6W-JC1TdrkD6LSjnw4" />
       </Head>
       <div className="relative w-full h-full bg-gradient-to-b from-teal to-pine">
         <Navbar/>
