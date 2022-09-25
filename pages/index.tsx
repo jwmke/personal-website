@@ -7,8 +7,10 @@ import Landing from '../components/Landing';
 import Portfolio from '../components/Portfolio';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 const Home: NextPage = () => {
+  const { height, width } = useWindowDimensions();
   return (
     <div className='h-screen bg-teal font-lato select-none'>
       <Head>
@@ -20,6 +22,7 @@ const Home: NextPage = () => {
       <div className="relative w-full h-full bg-gradient-to-b from-teal to-pine">
         <Navbar/>
         <Landing/>
+        <div className={width&&width<700 ? 'fixed h-full w-full opacity-0 z-40' : ''}/>
         <Scene/>
       </div>
       <Portfolio/>

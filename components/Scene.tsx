@@ -1,13 +1,17 @@
 import React, { useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 const CameraController = () => {
     let { camera, gl } = useThree();
     
+    const { height, width } = useWindowDimensions();
+    
     useEffect(
        () => {
           const controls = new OrbitControls(camera, gl.domElement);
+          controls.enabled = width&&width>700 ? true : false;
           controls.enableZoom = false;
           controls.maxDistance = 32;
           controls.target.set(-14,1,0);
@@ -46,11 +50,11 @@ const Torus = () => {
     )
 }
 
-const Scene = () => (
-    <Canvas className="absolute top-0 left-0 h-full w-full z-10">
-        <CameraController />
-        <Torus />
-    </Canvas>
-);
+const Scene = () => {
+    return <Canvas className="absolute top-0 left-0 h-full w-full z-10">
+            <CameraController />
+            <Torus />
+        </Canvas>
+};
 
 export default Scene;
