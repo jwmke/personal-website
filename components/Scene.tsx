@@ -20,7 +20,7 @@ const CameraController = () => {
             controls.dispose();
           };
        },
-       [camera, gl]
+       [camera, gl, width]
     );
     return null;
 };
