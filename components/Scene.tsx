@@ -3,6 +3,15 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
+const getRandomInt = (max: number) => {
+    return Math.floor(Math.random() * max);
+}
+
+const geometries = [
+    <torusKnotGeometry args={[9, 2, 130, 10]}/>,
+    <sphereGeometry args={[12, 20, 12]} />,
+];
+
 const CameraController = () => {
     let { camera, gl } = useThree();
     
@@ -43,8 +52,8 @@ const Torus = () => {
     return (
         <mesh
         ref={ref}>
-            <torusKnotGeometry args={[9, 2, 130, 10]}/>
-            {/* <sphereGeometry args={[10, 20, 10]} /> */}
+            {/* {geometries[getRandomInt(geometries.length)]} */}
+            {geometries[0]}
             <meshBasicMaterial color={'#05396b'} wireframe={true}/>
         </mesh>
     )
