@@ -8,8 +8,8 @@ const getRandomInt = (max: number) => {
 }
 
 const geometries = [
-    <torusKnotGeometry args={[9, 2, 130, 10]}/>,
-    <sphereGeometry args={[12, 20, 12]} />,
+    <torusKnotGeometry args={[9, 2, 130, 10]} key={"0"}/>,
+    <sphereGeometry args={[12, 20, 12]} key={"1"}/>,
 ];
 
 const CameraController = () => {
