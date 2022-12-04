@@ -4,7 +4,8 @@
 
 Technologies:  
 - React
-- NextJS
+- TypeScript
+- NextJS 12
 - Tailwind CSS
 - ThreeJS
 - React-Spring
