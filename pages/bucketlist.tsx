@@ -20,15 +20,16 @@ const BucketList: NextPage = () => {
             Bucket List
           </div>
           <div className='text-2xl child:mt-5'>
-            <p className='pt-5'>Read 1000 books</p>
+            <p className='pt-5'>Read 500 books</p>
             <p>Pass the TOPIK-I (Test of Proficiency in Korean)</p>
             <p>Walk 4,000,000 steps in a year</p>
             <p>Earn a purple belt in Brazilian Jiu-Jitsu</p>
             <p>Ski a black diamond in Colorado</p>
             <p>Live in NYC for one year</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
-            <p>Work as a digital nomad in South East Asia</p>
+            <p>Travel throughout South East Asia for 3 months</p>
             <p>Meditate for 30 days in a row</p>
+            <p>Eat wood fired pizza in Italy</p>
             <p>Be a guest lecturer at a university</p>
             <p>Reach 1600 elo in blitz chess</p>
             <p>Write and publish a book</p>
