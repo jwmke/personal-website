@@ -69,7 +69,7 @@ const Navbar = () => {
                     .linkedIn()
                 </a>
                 <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}
-                href='https://github.com/Joseph5062A' target="_blank" rel="noreferrer">
+                href='https://github.com/jwmke' target="_blank" rel="noreferrer">
                     .github()
                 </a>
               </div>
