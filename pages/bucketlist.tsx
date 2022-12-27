@@ -27,8 +27,8 @@ const BucketList: NextPage = () => {
             <p>Ski a black diamond in Colorado</p>
             <p>Live in NYC for one year</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
-            <p>Travel throughout South East Asia for 3 months</p>
-            <p>Meditate for 30 days in a row</p>
+            <p className='line-through'>Meditate for 30 days in a row (December, 2022)</p>
+            <p>Explore Eastern Asia for 3 months</p>
             <p>Eat wood fired pizza in Italy</p>
             <p>Be a guest lecturer at a university</p>
             <p>Reach 1600 elo in blitz chess</p>
