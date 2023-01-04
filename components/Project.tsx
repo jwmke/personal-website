@@ -23,16 +23,16 @@ const Project = (props: {
 
     return (
         <>
-            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mr-3 rounded-lg overflow-hidden shadow-2xl bg-white mb-24 transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint">
+            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mr-3 rounded-lg overflow-hidden shadow-2xl bg-white mb-24 transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint grid-span-2">
                 <Image placeholder="blur" blurDataURL={props.details.mediaBlur} className="w-full" width={550} height={280} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
                 <div className="px-6 py-3">
                     <div className="font-bold text-xl mb-2 text-dark-navy">{props.details.name}</div>
                     {props.details.description}
                 </div>
                 <div className="px-6 pt-3 pb-2">
-                    <span className="inline-block bg-pine rounded-full shadow-lg px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{props.details.tags[0]}</span>
-                    <span className="inline-block bg-pine rounded-full shadow-lg px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{props.details.tags[1]}</span>
-                    <span className="inline-block bg-pine rounded-full shadow-lg px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{props.details.tags[2]}</span>
+                    {props.details.tags.map(tag => (
+                        <span className="inline-block bg-pine rounded-full shadow-lg px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{tag}</span>
+                    ))}
                 </div>
             </div>
             {showModal ? (
