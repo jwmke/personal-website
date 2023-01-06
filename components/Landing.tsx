@@ -8,15 +8,28 @@ const Landing = () => {
     const { height, width } = useWindowDimensions();
 
     const [showText, setShowText] = useState(false);
+    const [showArrow, setShowArrow] = useState(false);
 
     const fadeStyles = useSpring({
         from: { opacity: 0 },
         to: { opacity: showText ? 1 : 0 },
-        config: { duration: 800 }
+        config: { duration: 1000 }
+    });
+
+    const arrowFadeStyles = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: showArrow ? 1 : 0 },
+        config: { duration: 500 }
     });
 
     useEffect(()=> {
-        setTimeout(()=>{setShowText(true)}, 1500);
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () =>
+                setShowArrow(window.pageYOffset < 20)
+            );
+        }
+        setTimeout(()=>{setShowText(true)}, 1600);
+        setTimeout(()=>{setShowArrow(true)}, 2800);
     }, []);
 
     return (
@@ -37,26 +50,22 @@ const Landing = () => {
                 </animated.div>
             </div> : 
             <div className="absolute h-1/2">
-                <h1 className={`text-8xl text-white top-1/3 left-1/4 relative font-bold z-30 `}>
+                <h1 className={`text-8xl text-white top-2/3 left-1/4 lg:left-64 w-96 relative font-bold z-30`}>
                     <TypeAnimation
                         sequence={[1000, 'Weller@MKE', 10000000, '']}
                     />
                 </h1>
-                <animated.div style={fadeStyles} className="top-1/2 mt-10 left-1/4 relative z-30 ">
-                    <h1 className='text-4xl text-white'>
-                        Hi! I&apos;m Joe, a software engineer based
-                    </h1>
-                    <h1 className='text-4xl text-white pt-12'>
-                        out of Milwaukee, WI who&apos;s interested
-                    </h1>
-                    <h1 className='text-4xl text-white pt-12'>
-                        in robotics, machine learning, full stack
-                    </h1>
-                    <h1 className='text-4xl text-white pt-12'>
-                        development and more.
+                <animated.div style={fadeStyles} className="top-2/3 left-1/4 lg:left-64 mt-16 ml-5 relative z-30 ">
+                    <h1 className='text-3xl text-white'>
+                        Full Stack • Machine Learning • Robotics
                     </h1>
                 </animated.div>
             </div>}
+            <animated.div style={arrowFadeStyles}>
+                <div className='fixed bottom-64 md:bottom-8 w-screen z-30'>
+                    <div className="scroll-down-dude w-4 mx-auto"/>
+                </div>
+            </animated.div>
         </div>
     );
 }
