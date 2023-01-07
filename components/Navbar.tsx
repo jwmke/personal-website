@@ -64,11 +64,11 @@ const Navbar = () => {
                     .bucketList()
                   </a>
                 </Link>
-                <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}
+                <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl hover:cursor-nesw-resize lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}
                 href='https://www.linkedin.com/in/joseph-weller/' target="_blank" rel="noreferrer">
                     .linkedIn()
                 </a>
-                <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}
+                <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl hover:cursor-nesw-resize lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}
                 href='https://github.com/jwmke' target="_blank" rel="noreferrer">
                     .github()
                 </a>
