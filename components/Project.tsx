@@ -33,7 +33,7 @@ const Project = (props: {
                 </div>
                 <div className="px-6 pt-3 pb-2">
                     {props.details.tags.map(tag => (
-                        <span className="inline-block bg-pine rounded-full shadow-sm shadow-dark-navy px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{tag}</span>
+                        <span key={tag} className="inline-block bg-pine rounded-full shadow-sm shadow-dark-navy px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{tag}</span>
                     ))}
                 </div>
             </div>
