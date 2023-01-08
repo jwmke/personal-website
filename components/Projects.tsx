@@ -43,28 +43,35 @@ const projectsList = [
     {
         name: "Collabify",
         tags: ["Go", "React", "TypeScript", "Tailwind"],
-        description: "Designed and developed a web application that allows Spotify users to discover and visualize all of the songs their favorite artists have collaborated on.",
+        description: "Designed and developed a web application that allows Spotify users to discover and visualize all of the songs that their favorite artists have collaborated on.",
         media: "collab",
         mediaBlur: "data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//2Q==",
         buttonNames: ["Repository"],
         buttonLinks: ["https://github.com/jwmke/Collabify"],
-        modalDescription: ["", "Live site coming soon."],
+        modalDescription: ["This open-source project was independently created with three primary purposes in mind. 1: To learn more about the Go programming language and its features, such as concurrency, through developing a backend with it. 2: Continue to enhance my knowledge of UX / frontend development. 3: Create an application that other people could use to gain further insights into their music taste and discover new songs",
+        "Collabify is an open-source web application that allows its users to easily discover all of the songs their favorite artists have collaborated on. To achieve this, a user will first authorize the app to access their user data through the Spotify Authentication page. Once authorized, Collabify will retrieve their followed artist information, present it to the user, and prompt them to select any combination of artists they would like to view all collaborations for. Once these artists have been selected, a WebSocket is opened with the backend API written in Go and the artist IDs are passed through it as a list. Next, for every artist, the API creates a Goroutine. In each of these Goroutines, the discography of the artist is retrieved through the Spotify API and the artists from every song with multiple artists are compared against a map that contains all of the artists that the user initially selected. Whenever a featured artist on a track is found within the map, that track is sent back to the frontend via the WebSocket.",
+        "In the frontend, a live interactive 3d graph is being created for the user as the tracks are found. This graph contains artists as its nodes and links between artists that have dynamic sizes which change based on how many tracks the artists have collaborated on together on. The user can then hover over the links between any artists to open a modal in the corner that shows all of the tracks between those two artists. Once all tracks have been discovered, the WebSocket closes and a final modal automatically opens that displays quick statistics, such as how many tracks were found between how many artists, and who the top five artist pairs were who had the most collabs. Lastly, the user can click a button to create a playlist in their Spotify account containing all the discovered tracks.",
+        "Live site coming soon."],
         modalMediaDetails: [
             { 
                 media: 'collabify/followingV2.png',
-                description: "Followed artist page which users use to select which of their favorite artists they want to discover collabs between"
+                description: "Followed artist page which prompts users to select which of their favorite artists they want to discover collabs between"
             },
             { 
                 media: 'collabify/statsV2.png',
-                description: "3d collab graph page which uses ThreeJS to make network of artists, linked by their collab tracks. General stats are also displayed"
+                description: "3d collab graph page which uses ThreeJS to make network of artists linked by their collab tracks. General stats are also displayed"
             },
             { 
                 media: 'collabify/collab.png',
                 description: "Mobile UI renderings for the artist selection page and the collabify 3d collab graph visualization page"
             },
             { 
+                media: 'collabify/chart.png',
+                description: "Flow chart containing high-level overview of Collabify architecture"
+            },
+            { 
                 media: 'collabify/auth.png',
-                description: "Authentication page that users are redirected to to authorize Collabify to use their Spotify account data"
+                description: "Authentication page that users are directed to to authorize Collabify to use their Spotify account data"
             },
             { 
                 media: 'collabify/landing.png',
@@ -110,7 +117,7 @@ const projectsList = [
         ]
     },
     {
-        name: "MSOE Robotics Websites",
+        name: "Raider Robotics Websites",
         tags: ["React", "Typescript", "SCSS", "Express"],
         description: "Developed and contributed to the Raider Robotics organization's public-facing website and their internal odometry path planning dashboard.",
         media: "splines",
@@ -208,7 +215,7 @@ const projectsList = [
         ]
     },
     {
-        name: "MSOE Blockchain Development Curriculum Design",
+        name: "Milwaukee School of Engineering Blockchain Curriculum Design",
         tags: ["Solidity", "Flask", "LaTeX"],
         description: "Constructed an upper-level technical elective course on blockchain and smart contract development for my university.",
         media: "mics",

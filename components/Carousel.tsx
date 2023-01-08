@@ -78,7 +78,7 @@ const Carousel = (props: {
                     </button>
                     <button
                         onClick={moveNext}
-                        className="bg-navy text-white rounded-r-lg w-10 h-full text-center opacity-25 hover:opacity-100 disabled:opacity-10 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+                        className="bg-navy text-white rounded-r-lg w-10 h-full text-center opacity-30 hover:opacity-100 disabled:opacity-10 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
                         disabled={isDisabled('next')}
                     >
                         <svg
