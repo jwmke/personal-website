@@ -16,7 +16,7 @@ const PortfolioHeader = (props : {text: String}) => {
 
     return (
         <div>
-            <animated.span style={animatedProps} className='text-mint text-5xl'>
+            <animated.span style={animatedProps} className='text-mint text-3xl md:text-5xl'>
                 {props.text}
             </animated.span>
             <div ref={triggerRef} />

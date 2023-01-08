@@ -57,6 +57,12 @@ body {
   grid-column-end: 5;
 } */
 
+@media only screen and (max-width: 325px)  {
+  .small-text {
+    font-size: 1.75rem !important;
+  }
+}
+
 .scroll-down-dude:before,
 .scroll-down-dude:after {
   content: '';

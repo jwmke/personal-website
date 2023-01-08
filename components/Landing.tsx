@@ -35,13 +35,13 @@ const Landing = () => {
     return (
         <div>
             {width&&width<700 ? <div className="absolute h-1/2">
-                <h1 className={`text-5xl text-white top-24 mt-12 mx-10 relative font-bold z-30`}>
+                <h1 className={`text-4xl small-text text-white top-24 mt-12 mx-10 relative font-bold z-30`}>
                     <TypeAnimation className='tall-lines'
                         sequence={[1000, 'Weller@MKE', 10000000, '']}
                     />
                 </h1>
-                <animated.div style={fadeStyles} className="top-36 left-10 relative z-30 w-80 text">
-                    <h1 className='text-2xl text-white tall-lines'>
+                <animated.div style={fadeStyles} className="top-28 left-10 relative z-30 w-3/4 text">
+                    <h1 className='text-xl text-white tall-lines'>
                         Hi! I&apos;m Joe, an engineer based
                         out of Milwaukee, WI who&apos;s interested
                         in robotics, full stack development, machine learning
@@ -62,7 +62,7 @@ const Landing = () => {
                 </animated.div>
             </div>}
             <animated.div style={arrowFadeStyles}>
-                <div className='fixed bottom-64 md:bottom-8 w-screen z-30'>
+                <div className='fixed bottom-8 w-screen z-30'>
                     <div className="scroll-down-dude w-4 mx-auto"/>
                 </div>
             </animated.div>

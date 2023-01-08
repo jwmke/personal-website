@@ -24,8 +24,8 @@ const Project = (props: {
     return (
         <>
             <div onClick={() => setShowModal(!showModal)} className="max-w-sm mr-3 rounded-xl overflow-hidden shadow-black shadow-2xl bg-white mb-24 transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint grid-span-2">
-                <div className='shadow-md shadow-dark-navy h-48 z-20'>
-                    <Image placeholder="blur" blurDataURL={props.details.mediaBlur} className="w-full" width={550} height={280} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
+                <div className='z-20'>
+                    <Image placeholder="blur" blurDataURL={props.details.mediaBlur} className="w-full" width={550} height={285} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
                 </div>
                 <div className="px-6 py-3">
                     <div className="font-bold text-xl mb-2 text-dark-navy">{props.details.name}</div>
