@@ -38,3 +38,63 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+/* TODO: Fix issue with last cards disappearing on modal open */
+
+/* .grid-span-2:last-child:nth-child(3n - 1) {
+  grid-column-end: -2;
+}
+
+.grid-span-2:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 4;
+}
+
+.grid-span-2:last-child:nth-child(3n - 2) {
+  grid-column-end: 5;
+} */
+
+.scroll-down-dude:before,
+.scroll-down-dude:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-bottom: 4px solid #edf5e1;
+  border-right: 4px solid #edf5e1;
+}
+
+.scroll-down-dude:before {
+  animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+.scroll-down-dude:after {
+  animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@keyframes down-arrow-before {
+  50% {
+    transform: rotate(45deg) translate(70%, 70%);
+  }
+  100% {
+    transform: rotate(45deg) translate(70%, 70%);
+  }
+}
+
+@keyframes down-arrow-after {
+  50% {
+    transform: rotate(45deg) translate(110%, 110%);
+    opacity: 0;
+  }
+  51% {
+    transform: rotate(45deg) translate(-130%, -130%);
+  }
+  100% {
+    transform: rotate(45deg) translate(-70%, -70%);
+    opacity: 1;
+  }
+}
