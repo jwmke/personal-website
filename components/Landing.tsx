@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import TypeAnimation from 'react-type-animation';
+import Typewriter from "typewriter-effect";
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import { useSpring, animated } from 'react-spring';
 
@@ -28,7 +28,7 @@ const Landing = () => {
                 setShowArrow(window.pageYOffset < 20)
             );
         }
-        setTimeout(()=>{setShowText(true)}, 1600);
+        setTimeout(()=>{setShowText(true)}, 1400);
         setTimeout(()=>{setShowArrow(true)}, 2800);
     }, []);
 
@@ -36,9 +36,16 @@ const Landing = () => {
         <div>
             {width&&width<700 ? <div className="absolute h-1/2">
                 <h1 className={`text-4xl small-text text-white top-24 mt-12 mx-10 relative font-bold z-30`}>
-                    <TypeAnimation className='tall-lines'
-                        sequence={[1000, 'Weller@MKE', 10000000, '']}
-                    />
+                    <div className="tall-lines">
+                        <Typewriter
+                        onInit={(typewriter)=> {
+                        typewriter
+                        .changeDelay(45)
+                        .typeString("Weller@MKE")
+                        .start();
+                        }}
+                        />
+                    </div>
                 </h1>
                 <animated.div style={fadeStyles} className="top-28 left-10 relative z-30 w-3/4 text">
                     <h1 className='text-xl text-white tall-lines'>
@@ -51,8 +58,13 @@ const Landing = () => {
             </div> : 
             <div className="absolute h-1/2">
                 <h1 className={`text-8xl text-white top-2/3 left-1/4 lg:left-64 w-96 relative font-bold z-30`}>
-                    <TypeAnimation
-                        sequence={[1000, 'Weller@MKE', 10000000, '']}
+                    <Typewriter
+                    onInit={(typewriter)=> {
+                    typewriter
+                    .changeDelay(45)
+                    .typeString("Weller@MKE")
+                    .start();
+                    }}
                     />
                 </h1>
                 <animated.div style={fadeStyles} className="top-2/3 left-1/4 lg:left-64 mt-16 ml-5 relative z-30 ">
