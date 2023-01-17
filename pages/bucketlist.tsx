@@ -12,14 +12,14 @@ const BucketList: NextPage = () => {
         <meta name="description" content="Joe Weller's Bucket List." />
         <link rel="icon" href="/favicon/favicon.ico" />
     </Head>
-    <Navbar/>
+    <Navbar isFixed={true}/>
     <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left">
       <div className='mx-auto pt-36'>
       <div className='text-white text-left mx-5 mb-24'>
           <div className='text-4xl font-bold'>
             Bucket List
           </div>
-          <div className='text-2xl child:mt-5'>
+          <div className='text-xl child:mt-5'>
             <p className='pt-5'>Read 500 books</p>
             <p>Pass the TOPIK-I (Test of Proficiency in Korean)</p>
             <p>Walk 4,000,000 steps in a year</p>

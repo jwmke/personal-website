@@ -2,11 +2,11 @@ import PortfolioHeader from './PortfolioHeader';
 
 const SkillGrid = (props: { children: JSX.Element[], medRightMargin: boolean, tagText: string }) => (
     <div>
-        <p className='text-mint text-2xl mt-12 mb-6'>&lt;{props.tagText}&gt;</p>
+        <p className='text-mint text-xl mt-12 mb-6'>&lt;{props.tagText}&gt;</p>
         <div className={`grid grid-cols-3 gap-1 lg:mr-12 ml-1 ${props.medRightMargin ? "md:mr-12 sm:mr-0" : ""}`}>
             {props.children}
         </div>
-        <p className='text-mint text-2xl mt-6'>&lt;/{props.tagText}&gt;</p>
+        <p className='text-mint text-xl mt-6'>&lt;/{props.tagText}&gt;</p>
     </div>
 );
 

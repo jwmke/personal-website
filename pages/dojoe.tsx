@@ -34,7 +34,7 @@ const Dojoe: NextPage = () => {
         <meta name="description" content="Joe Weller's Hall of Fame." />
         <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar isFixed={true}/>
       <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left">
         <div className='mx-auto pt-36'>
         <div className='text-white text-left mx-5'>
@@ -44,18 +44,18 @@ const Dojoe: NextPage = () => {
           <span className='text-4xl'>
             (My Hall of Fame)
           </span>
-            <p className='text-2xl leading-9 mt-8'>
+            <p className='text-xl leading-9 mt-8'>
               Throughout my life, I&apos;ve been fortunate enough to meet some amazing people. 
               These people have been the Mr. Miyagis and the Huckleberry Finns in my journeys who have all had a lasting impact on who I am today.
               They&apos;ve taught me technical skills and life lessons, given me opportunities, and have been there when I&apos;ve needed help.
             </p>
-            <p className='text-2xl my-8'>
-              To everyone here, thank you for everything and keep being amazing!
+            <p className='text-xl my-8'>
+              To everyone here, thank you for everything.
             </p>
           </div>
           <Image width={720} height={200} src={"/logo/dojoe_tran2.png"} alt="the_dojoe_logo" priority/>
           <div className='text-xl text-left mb-24 mx-5'>
-            <div className='text-left text-2xl text-mint mb-4'>
+            <div className='text-left text-xl text-mint mb-4'>
               {"// The ordering of names is random"}
             </div>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>

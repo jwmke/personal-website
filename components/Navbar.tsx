@@ -7,7 +7,7 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-const Navbar = () => {
+const Navbar = ({isFixed}:{isFixed?:boolean}) => {
   const [active, setActive] = useState(false);
   const { height, width } = useWindowDimensions();
   const triggerRef = useRef(null);
@@ -35,7 +35,7 @@ const Navbar = () => {
 
   const navbar = (position:string) => (
     <>
-      <animated.div style={position == 'absolute' ? defaultAnimatedProps : scrollAnimatedProps} className={position == 'absolute' ? 'absolute z-50 w-full top-0': 'z-50 w-full top-0 fixed'}>
+      <animated.div style={(position == 'absolute') ? defaultAnimatedProps : scrollAnimatedProps} className={(position == 'absolute') ? 'absolute z-50 w-full top-0': 'z-50 w-full top-0 fixed'}>
           <nav className='flex items-center flex-wrap p-3 mr-6'>
             <Link href='/'>
               <a className='inline-flex items-center m-5 p-1 bg-teal backdrop-blur-sm bg-opacity-20 rounded-xl'>

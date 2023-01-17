@@ -23,7 +23,7 @@ const Project = (props: {
 
     return (
         <>
-            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mr-3 rounded-xl overflow-hidden shadow-black shadow-2xl bg-white mb-24 transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint grid-span-2">
+            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mb-12 rounded-xl overflow-hidden shadow-black shadow-2xl bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint grid-span-2">
                 <div className='z-20'>
                     <Image placeholder="blur" blurDataURL={props.details.mediaBlur} className="w-full" width={550} height={285} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
                 </div>
@@ -31,7 +31,7 @@ const Project = (props: {
                     <div className="font-bold text-xl mb-2 text-dark-navy">{props.details.name}</div>
                     {props.details.description}
                 </div>
-                <div className="px-6 pt-3 pb-2">
+                <div className="px-6 pt-2 pb-2">
                     {props.details.tags.map(tag => (
                         <span key={tag} className="inline-block bg-pine rounded-full shadow-sm shadow-dark-navy px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{tag}</span>
                     ))}
