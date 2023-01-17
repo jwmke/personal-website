@@ -120,7 +120,7 @@ const Carousel = (props: {
                                     />
                                 </div>
                                 <a
-                                    href={'/img/' + resource.media} target="_blank"
+                                    href={'/img/' + resource.media} target="_blank" rel="noreferrer" 
                                     className="h-full w-full aspect-square block rounded-lg absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-90 bg-navy z-10 hover:cursor-nesw-resize"
                                 >
                                     <h3 className="text-white py-6 px-10 mx-auto text-xl">
