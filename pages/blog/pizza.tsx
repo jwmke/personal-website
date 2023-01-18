@@ -20,7 +20,7 @@ const BlogPost: NextPage = () => {
               The Perfect NYC Pizza
             </div>
             <div className='text-xl mt-7'>
-              Wisconsin man's experimental journey to make the perfect NYC pizza recipe.
+              Wisconsin man&apos;s experimental journey to make the perfect NYC pizza recipe.
             </div>
             <div className='text-xl child:mt-5'>
               <div className='align-text-bottom'>
@@ -28,7 +28,7 @@ const BlogPost: NextPage = () => {
                   <p className='pt-2 text-2xl font-bold'>Dough</p>
                 </span>
                 <span className='inline-block ml-3'>  
-                  <p className='text-left text-mint text-xl'>// four 14" pies, rise in fridge for 24 hours</p>
+                  <p className='text-left text-mint text-xl'>{"// four 14\" pies, rise in fridge for 24 hours"}</p>
                 </span>
               </div>
               <p>520g lukewarm water (~2.25 cups)</p>
@@ -42,7 +42,7 @@ const BlogPost: NextPage = () => {
                   <p className='pt-5 text-2xl font-bold'>Sauce</p>
                 </span>
                 <span className='inline-block ml-3'>  
-                  <p className='text-left text-mint text-xl'>// four pies worth</p>
+                  <p className='text-left text-mint text-xl'>{"// four pies worth"}</p>
                 </span>
               </div>
               <p>12oz roma tomato sauce</p>
@@ -56,7 +56,7 @@ const BlogPost: NextPage = () => {
                   <p className='pt-5 text-2xl font-bold'>Cheese</p>
                 </span>
                 <span className='inline-block ml-3'>  
-                  <p className='text-left text-mint text-xl'>// per pie</p>
+                  <p className='text-left text-mint text-xl'>{"// per pie"}</p>
                 </span>
               </div>
               <p>1oz shredded parmesan</p>
