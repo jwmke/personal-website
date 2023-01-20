@@ -28,6 +28,7 @@ const BucketList: NextPage = () => {
             <p>Ski a black diamond in Colorado</p>
             <p>Live in NYC for one year</p>
             <p>Cook 1000 <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>homemade pizzas</span></Link></p>
+            <p>Do 50 pushups every day for 3 months</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
             <p>Make every dish in a cookbook</p>
             <p>Explore Eastern Asia for 3 months</p>
