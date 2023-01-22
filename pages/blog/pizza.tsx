@@ -17,18 +17,18 @@ const BlogPost: NextPage = () => {
         <div className='mx-auto pt-36'>
         <div className='text-white text-left mx-5 mb-24'>
             <div className='text-4xl font-bold'>
-              The Perfect(ish) NYC Pizza
+              The Perfect(ish) NYC Pizza 🍕
             </div>
             <div className='text-xl mt-7'>
               Wisconsin man&apos;s experimental journey to make the ideal NYC pizza.<br/>
             </div>
             <div className='text-xl mt-5'>
-              Bucket List Progress as of 1/21/23: <span className='text-navy font-bold'>43/1000</span>
+              Bucket List Progress as of 1/22/23: <span className='text-navy font-bold'>44/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((43/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((44/1000.0)*100) + "%"}}></div>
             </div>
-            <div className='text-xl child:mt-5'>
+            <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
                   <p className='pt-2 text-2xl font-bold'>Dough</p>
@@ -67,6 +67,13 @@ const BlogPost: NextPage = () => {
               </div>
               <p>1oz shredded parmesan</p>
               <p>5oz-7oz low-moisture, whole milk mozzarella</p>
+              <p className='pt-5 text-2xl font-bold'>Cooking Tips</p>
+              <p>When making the dough, measure the ingredients by weight for best results</p>
+              <p>Put your pizza steel(recommended)/stone on the second highest oven rack before preheating</p>
+              <p>Preheat oven to its highest temperature for at least 25 minutes</p>
+              <p>Cook until crust is browned to your liking, this should take around 6-8 minutes</p>
+              <p>Drizzel a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
+              <p>Set the pizza on to a cooling rack when it's done baking for a crispier crust</p>
             </div>
           </div>
         </div>
