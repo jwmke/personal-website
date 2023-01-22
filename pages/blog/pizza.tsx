@@ -17,10 +17,16 @@ const BlogPost: NextPage = () => {
         <div className='mx-auto pt-36'>
         <div className='text-white text-left mx-5 mb-24'>
             <div className='text-4xl font-bold'>
-              The Perfect NYC Pizza
+              The Perfect(ish) NYC Pizza
             </div>
             <div className='text-xl mt-7'>
-              Wisconsin man&apos;s experimental journey to make the perfect NYC pizza recipe.
+              Wisconsin man&apos;s experimental journey to make the ideal NYC pizza.<br/>
+            </div>
+            <div className='text-xl mt-5'>
+              Bucket List Progress as of 1/21/23: <span className='text-navy font-bold'>43/1000</span>
+            </div>
+            <div className="w-full bg-mint rounded-full h-2 mt-2">
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((43/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5'>
               <div className='align-text-bottom'>
