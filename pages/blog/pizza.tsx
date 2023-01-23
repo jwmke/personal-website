@@ -9,7 +9,7 @@ const BlogPost: NextPage = () => {
       <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
       <Head>
           <title>Joe Weller</title>
-          <meta name="description" content="Joe Weller's Blog." />
+          <meta name="description" content="Pizza Time." />
           <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar/>
@@ -20,7 +20,7 @@ const BlogPost: NextPage = () => {
               The Perfect(ish) NYC Pizza 🍕
             </div>
             <div className='text-xl mt-7'>
-              Wisconsin man&apos;s experimental journey to make the ideal NYC pizza.<br/>
+              Wisconsin man&apos;s experimental journey to make the best NYC pizza.<br/>
             </div>
             <div className='text-xl mt-5'>
               Bucket List Progress as of 1/22/23: <span className='text-navy font-bold'>44/1000</span>
@@ -71,9 +71,9 @@ const BlogPost: NextPage = () => {
               <p>When making the dough, measure the ingredients by weight for best results</p>
               <p>Put your pizza steel(recommended)/stone on the second highest oven rack before preheating</p>
               <p>Preheat oven to its highest temperature for at least 25 minutes</p>
-              <p>Cook until crust is browned to your liking, this should take around 6-8 minutes</p>
+              <p>Cook until crust is browned to your liking, this should take around 5-7 minutes</p>
               <p>Drizzel a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
-              <p>Set the pizza on to a cooling rack when it's done baking for a crispier crust</p>
+              <p>Set the pizza on to a cooling rack when it&apos;s done baking for a crispier crust</p>
             </div>
           </div>
         </div>
