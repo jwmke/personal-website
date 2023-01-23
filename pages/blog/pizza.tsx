@@ -20,7 +20,7 @@ const BlogPost: NextPage = () => {
               The Perfect(ish) NYC Pizza 🍕
             </div>
             <div className='text-xl mt-7'>
-              Wisconsin man&apos;s experimental journey to make the best NYC pizza.<br/>
+              Wisconsin man&apos;s experimental journey to make the ultimate NYC pizza.<br/>
             </div>
             <div className='text-xl mt-5'>
               Bucket List Progress as of 1/22/23: <span className='text-navy font-bold'>44/1000</span>
@@ -72,7 +72,7 @@ const BlogPost: NextPage = () => {
               <p>Put your pizza steel(recommended)/stone on the second highest oven rack before preheating</p>
               <p>Preheat oven to its highest temperature for at least 25 minutes</p>
               <p>Cook until crust is browned to your liking, this should take around 5-7 minutes</p>
-              <p>Drizzel a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
+              <p>Drizzle a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
               <p>Set the pizza on to a cooling rack when it&apos;s done baking for a crispier crust</p>
             </div>
           </div>

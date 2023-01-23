@@ -43,9 +43,21 @@ const BlogPost: NextPage = () => {
               <p>~1.5 tbsp, sesame oil</p>
               <p>~1 tbsp, rice vinegar</p>
               <p>~1 tbsp, Gochujang (optional)</p>
-              <p>1 spring onion, sliced</p>
-              <p className='pt-5 text-2xl font-bold'>Cooking Tips</p>
-              <p>Coming Soon...</p>
+              <p>1 spring onion, sliced (optional)</p>
+              <p className='pt-5 text-2xl font-bold'>Preparation</p>
+              <p>In a small dish combine the soy sauce, rice vinegar and Gochujang</p>
+              <p>In a second small dish combine the MSG, white pepper and sugar</p>
+              <p>In a third small dish whisk the eggs and add a pinch of salt</p>
+              <p className='pt-5 text-2xl font-bold'>Cooking Instructions</p>
+              <p>1. Heat the vegetable/peanut oil in a wok over medium heat</p>
+              <p>2. Add the minced garlic to the wok and stir fry until it turns a light golden color</p>
+              <p>3. Remove the garlic from the wok into a small dish, leaving the garlic-infused oil behind</p>
+              <p>4. Add the eggs to the wok and stir until almost solid</p>
+              <p>5. Add the rice to the wok and stir fry for 30 seconds, breaking any clumps as necessary</p>
+              <p>6. Pour the wet ingredient dish along the outside of the wok and mix everything</p>
+              <p>7. Dump the dry ingredient dish into the wok and continue mixing for 30 seconds</p>
+              <p>8. Remove the wok from the heat, drizzle the sesame oil over the rice</p>
+              <p>9. Garnish the garlic fried rice with the sliced spring onion and enjoy</p>
             </div>
           </div>
         </div>
