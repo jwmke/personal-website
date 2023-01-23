@@ -33,7 +33,7 @@ const BlogPost: NextPage = () => {
                 </span> */}
               </div>
               <p>~1.5 cups, rice (50:50 blend of long-grain white rice and jasmine rice)</p>
-              <p>2 medium sized eggs</p>
+              <p>2 large eggs</p>
               <p>~3 tbsp, peanut OR vegetable oil</p>
               <p>4-6 cloves of garlic, minced</p>
               <p>~1 tsp, MSG (Monosodium Glutamate)</p>

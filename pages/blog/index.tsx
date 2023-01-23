@@ -33,10 +33,10 @@ const Blog: NextPage = () => {
               Recipes
             </div>
             <div className='text-xl mt-7'>
-              <Link href='/blog/rice' target="_blank" rel="noreferrer"><span className='hover:text-teal hover:cursor-pointer'>Garlic Fried Rice</span></Link>
+              <Link href='/blog/rice' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Garlic Fried Rice</span></Link>
             </div>
             <div className='text-xl mt-4'>
-              <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal hover:cursor-pointer'>Perfect NYC Pizza</span></Link>
+              <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Perfect NYC Pizza</span></Link>
             </div>
           </div>
         </div>
