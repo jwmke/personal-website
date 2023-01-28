@@ -1,8 +1,13 @@
 # Personal Portfolio Website
 
-[https://weller.ml](https://weller.ml)
+## [https://weller.ml](https://weller.ml)
 
-Technologies:  
+<br/>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45d11573-182c-4759-9f49-7dd83f2b954a/deploy-status)](https://app.netlify.com/sites/weller-mke/deploys)
+
+
+### Technologies:  
 - React
 - TypeScript
 - NextJS 12
@@ -10,7 +15,7 @@ Technologies:
 - ThreeJS
 - React-Spring
 
-To run locally:  
+### To run locally:  
 1. clone project
 2. cd into project directory
 3. ```npm install```

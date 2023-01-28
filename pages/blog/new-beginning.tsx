@@ -14,7 +14,7 @@ const BlogPost: NextPage = () => {
           <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar/>
-      <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left">
+      <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left select-none">
         <div className='mx-auto pt-36'>
         <div className='text-white text-left mx-5 mb-24'>
             <div className='text-4xl font-bold'>
@@ -29,7 +29,7 @@ const BlogPost: NextPage = () => {
               <p>In reality, that prison was a sanctuary.</p>
               <p className='text-2xl font-bold pt-3'>The Price we Pay for Love</p>
               <p className='italic'>&quot;How lucky I am to have something that makes saying goodbye so hard?&quot;<br/>Winne-the-Pooh</p>
-              <p>Narrowing my attention to the short-term future, I could only focus on what was going to lost upon graduating. I progressively became more aware of everything that I had been taking for granted; as I did, it felt like the world around me was collapsing in on itself.</p>
+              <p>Narrowing my attention to the short-term future, I could only focus on what was going to lose upon graduating. I progressively became more aware of everything that I had been taking for granted; as I did, it felt like the world around me was collapsing in on itself.</p>
               <p>I first began to fear the loss of structure that university provided. In one way or another, every aspect of university was methodically planned out. From the socializing that&apos;s built into the framework of education, to the foundational routines of learning and activities that were omnipresent, each component of university was organized such that I could continuously improve myself, as well as enjoy myself, all while essentially living on autopilot.</p>
               <p>After more reflection, I realized the loss of community that would occur. Never before in my life had I made connections as deep as the ones I that built up with my friends and professors. While I knew it would still be possible to maintain these connections with my closest friends post-graduation, the idea of no longer being able to easily communicate and banter with my peers made me feel as if I was leaving a significant part of my life behind.</p>
               <p>Lastly, I became aware of the loss of Identity that I would experience. There had never been a time period in my (sentient) past where I wasn&apos;t a student. The idea of this student fragment of my identity being torn away sent me into a state of confusion and disconnectedness. In addition to this, I became painfully aware of my own mortality, which I had been blissfully ignoring for the previous 22 years of my life.</p>
