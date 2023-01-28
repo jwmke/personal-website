@@ -22,6 +22,9 @@ const BlogPost: NextPage = () => {
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <p>It was around halfway into my final year at university when the eager anticipation of my upcoming graduation transformed into dismay.</p>
+              <div className='flex justify-center'>
+                <Image width={700} height={466} src={"/img/blog/grad.jpg"} alt="grad" className='rounded-xl'/>
+              </div>
               <p>Up until then, graduation was the light at the end of the tunnel that my peers and I had been wandering toward for the entirety of our emerging adulthood. This wandering was more or less aimless as I naively thought that all of the efforts I was contributing were in the name of escaping some sort of metaphoric prison that was infringing on my sense of agency.</p>
               <p>In reality, that prison was a sanctuary.</p>
               <p className='text-2xl font-bold pt-3'>The Price we Pay for Love</p>
@@ -33,7 +36,7 @@ const BlogPost: NextPage = () => {
               <p>When the day finally came, and I walked across that stage, nothing had ever felt more anticlimactic. I had seemingly spent my entire life working towards this exact moment, yet I was nearly entirely void of emotion. As I walked back to my seat and sat down I thought to myself, &quot;what now?&quot;</p>
               <p className='text-2xl font-bold pt-3'>Moving Forward</p>
               <div className='flex justify-center'>
-                <Image width={468} height={244} src={"/img/blog/copium.png"} alt="copium" className='rounded-xl'/>
+                <Image width={468} height={244} src={"/img/blog/copium.jpg"} alt="copium" className='rounded-xl'/>
               </div>
               <p>By now, you might be thinking I&apos;m just using this post to cope with my recent departure from university, and you might also assume the impression that I&apos;m not aware of how privileged I am to be in my position. While I believe I&apos;ve worked hard to get to where I am, it&apos;s not my place to agree or disagree with this assumption. However, one thing is certain, there&apos;s never a reason to not strive to be better, even when originating from a place of privilege.</p>
               <p>Throughout university, the concept of self-betterment became a topic that I became particularly engaged with, and with good reason. Through the effort of attempting to live every day even 1% better than the last, as opposed to simply doing what was expedient, my self-esteem grew, my mental health improved, and I was steadily moving closer to my own definition of success.</p>
