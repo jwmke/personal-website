@@ -54,6 +54,11 @@ const Navbar = ({isFixed}:{isFixed?:boolean}) => {
             <div className={` absolute lg:top-0 lg:relative top-24 ml-5 w-34 lg:inline-flex lg:flex-grow lg:w-auto`}>
             <animated.div style={{ ...animatedProps }} className="lg:ml-auto bg-teal backdrop-blur-sm bg-opacity-20 rounded-xl">
               <div className='lg:inline-flex lg:flex-row lg:w-auto lg:items-center flex flex-col items-start lg:h-auto'>
+                <Link href='/blog'>
+                  <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}>
+                    .blog()
+                  </a>
+                </Link>
                 <Link href='/dojoe'>
                   <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}>
                     .theDojoe()
@@ -62,11 +67,6 @@ const Navbar = ({isFixed}:{isFixed?:boolean}) => {
                 <Link href='/bucketlist'>
                   <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}>
                     .bucketList()
-                  </a>
-                </Link>
-                <Link href='/blog'>
-                  <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}>
-                    .blog()
                   </a>
                 </Link>
                 <a className={(position == 'fixed' ? "text-white hover:text-pine" : 'text-navy hover:text-white') + " text-xl hover:cursor-nesw-resize lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}

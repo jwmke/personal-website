@@ -19,7 +19,7 @@ const BlogPost: NextPage = () => {
             <div className='text-4xl font-bold'>
               The Perfect(ish) NYC Pizza 🍕
             </div>
-            <div className='text-xl mt-7'>
+            <div className='text-xl mt-8'>
               Wisconsin man&apos;s experimental journey to make the ultimate NYC pizza.<br/>
             </div>
             <div className='text-xl mt-5'>

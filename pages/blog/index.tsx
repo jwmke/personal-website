@@ -20,14 +20,17 @@ const Blog: NextPage = () => {
             <div className='text-4xl font-bold'>
               Blog
             </div>
-            <div className='text-xl mt-7'> {/* TODO: remove &apos;ll after first blog post */}
-              Welcome. This is where I&apos;ll write about things that interest me.
+            <div className='text-xl mt-7'> 
+              Welcome. This is where I write about things that interest me.
             </div>
             <div className='text-2xl font-bold mt-7'>
               General Posts
             </div>
             <div className='text-xl mt-7'>
-              Coming soon...
+              <Link href='/blog/new-beginning' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>For the Student Dreading the End of University</span></Link>
+            </div>
+            <div className='text-xl mt-4'>
+              More Coming Soon...
             </div>
             <div className='text-2xl font-bold mt-7'>
               Recipes

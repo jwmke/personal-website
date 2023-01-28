@@ -23,7 +23,7 @@ const BlogPost: NextPage = () => {
               My take on the traditional Chinese dish of fried rice, with certain elements borrowed from Sinangag, a traditional Filipino dish. 
               Heavily inspired by <a href='https://www.youtube.com/mrnigelng' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Uncle Roger</a>&apos;s fried rice recipe. 
             </div>
-            <div className='text-xl child:mt-5 mt-8'>
+            <div className='text-xl child:mt-5 mt-7'>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
                   <p className='pt-2 text-2xl font-bold'>Ingredients</p>
