@@ -43,7 +43,7 @@ const BlogPost: NextPage = () => {
               <p>Not only is it necessary to maintain a flexible mindset and be receptive to feedback once you determine your answer, but you also mustn&apos;t be too strict on yourself in the pursuit of this success, as the best of life is experienced on the adventures along the way, not the destination.</p>
               <p className='text-2xl font-bold pt-3'>It&apos;s the Journey</p>
               <div className='flex justify-center'>
-                <Image width={468} height={244} src={"/img/blog/obi.gif"} alt="obi" className='rounded-xl'/>
+                <Image width={468} height={244} src={"/img/blog/obi.gif"} alt="obi" className='rounded-xl' unoptimized={true}/>
               </div>
               <p className='italic'>&quot;Life moves pretty fast. If you don&apos;t stop and look around once in a while, you could miss it.&quot;<br/>Ferris Bueller</p>
               <p>To live life to the fullest, and be present for the whole journey, you need an aim. When I sat back down in that seat after I had walked across the stage, the first thing I did was decouple my identity from being a student. The new identity I chose wasn&apos;t tied to my career, or else I&apos;d risk being miserable upon retirement, but instead built upon countless hours of introspection in which I discovered my core priorities and, along with them, my definition of success.</p>
