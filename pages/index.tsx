@@ -8,9 +8,13 @@ import Portfolio from '../components/Portfolio';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import useWindowDimensions from '../hooks/useWindowDimensions';
+import { useEffect } from 'react';
 
 const Home: NextPage = () => {
   const { height, width } = useWindowDimensions();
+  useEffect(()=> {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + 'px');
+  }, []);
   return (
     <div className='h-screen bg-teal font-lato select-none'>
       <Head>
