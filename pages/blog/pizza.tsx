@@ -23,10 +23,10 @@ const BlogPost: NextPage = () => {
               Wisconsin man&apos;s experimental journey to make the ultimate NYC pizza.<br/>
             </div>
             <div className='text-xl mt-5'>
-              Bucket List Progress as of 2/3/23: <span className='text-navy font-bold'>47/1000</span>
+              Bucket List Progress as of 2/18/23: <span className='text-navy font-bold'>52/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((47/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((52/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
