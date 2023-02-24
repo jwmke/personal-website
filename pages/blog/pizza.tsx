@@ -56,6 +56,7 @@ const BlogPost: NextPage = () => {
               <p>4g sugar (~1 tsp)</p>
               <p>13g olive oil (~1 tbsp)</p>
               <p>1 garlic clove, minced</p>
+              <p>2g red chili flakes (~1 tsp)</p>
               <p>1g dried oregano (~1 tsp)</p>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
