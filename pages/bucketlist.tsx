@@ -26,7 +26,7 @@ const BucketList: NextPage = () => {
             <p>Walk 4,000,000 steps in a year</p>
             <p>Earn a purple belt in Brazilian Jiu-Jitsu</p>
             <p>Ski a black diamond in Colorado</p>
-            <p>Create an app that&apos;s downloaded by 10,000+ people</p>
+            <p>Create an app that impacts 10,000+ people</p>
             <p>Live in NYC for one year</p>
             <p>Make 1000 <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>homemade NYC pizzas</span></Link></p>
             <p>Do 50 pushups every day for 3 months</p>

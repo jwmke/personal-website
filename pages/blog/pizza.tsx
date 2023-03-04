@@ -23,10 +23,10 @@ const BlogPost: NextPage = () => {
               Wisconsin man&apos;s experimental journey to make the ultimate NYC pizza.<br/>
             </div>
             <div className='text-xl mt-5'>
-              Bucket List Progress as of 2/28/23: <span className='text-navy font-bold'>60/1000</span>
+              Bucket List Progress as of 3/5/23: <span className='text-navy font-bold'>64/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((60/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((64/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
@@ -41,7 +41,7 @@ const BlogPost: NextPage = () => {
               <p>3.5g dry yeast (~1 tsp)</p>
               <p>12g sugar (~1 tbsp)</p>
               <p>17g salt (~1 tbsp)</p>
-              <p>780g bread flour (~6 cups)</p>
+              <p>790g bread flour (~6 cups)</p>
               <p>20g olive oil (~1.5 tbsp)</p>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
