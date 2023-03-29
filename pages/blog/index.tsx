@@ -36,6 +36,9 @@ const Blog: NextPage = () => {
               Recipes
             </div>
             <div className='text-xl mt-7'>
+              <Link href='/blog/shake' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>1K Calorie Protein Shake</span></Link>
+            </div>
+            <div className='text-xl mt-4'>
               <Link href='/blog/rice' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Garlic Fried Rice</span></Link>
             </div>
             <div className='text-xl mt-4'>
