@@ -21,7 +21,7 @@ const BlogPost: NextPage = () => {
                 The World&apos;s Largest Cereal Bowl; an Ode to Absurdism
             </div>
             <div className='text-xl child:mt-5 mt-8'>
-              <p>*record scratch* Yep, that's me. You're probably wondering how I got here.</p>
+              <p>*record scratch* Yep, that&apos;s me. You&apos;re probably wondering how I got here.</p>
               <div className='flex justify-center'>
                 <Image width={700} height={466} src={"/img/blog/knee_deep.jpg"} alt="knee_deep" className='rounded-xl'/>
               </div>
