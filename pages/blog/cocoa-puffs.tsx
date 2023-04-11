@@ -107,13 +107,43 @@ const BlogPost: NextPage = () => {
               </ul>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/before-after.gif"} alt="before-after" className='rounded-xl'/>
-                  <p>Proof we cleaned up because we&apos;re not a-holes</p>
+                  <Image width={468} height={244} src={"/img/blog/before-after.gif"} alt="before-after" className='rounded-xl' unoptimized={true}/>
+                  <p>Proof that we cleaned up because we&apos;re not human garbage</p>
                 </div>
               </div>
               <p>Now that we had <p className='inline line-through'>10K</p> <p className='inline line-through'>9K</p> 8K pounds of cereal in our possession, we sat down and asked ourselves, why?</p>
               <p className='text-3xl font-bold pt-3'>Step 3: <p className='inline line-through'>Contemplate Existence</p> Make a Plan</p>
-              <p>A</p>
+              <p className='italic'>&quot;In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing.&quot;<br/>Theodore Roosevelt</p>
+              <p>You might be asking yourself, shouldn&apos;t making a plan have been the first step in this guide? A point with which my left brain completely agrees, however, by attempting to craft the perfect plan at the beginning of the adventure, we risked crossing paths with analysis paralysis. That encounter could have ended this whole expedition before it even began.</p>
+              <p>And what better way to force yourself into action than having the commitment of three 2008 Honda Civics worth of breakfast cereal tied to your name.</p>
+              <p>After a bit of brainstorming, it was clear that the only big thing you could really do with this much cereal is build the world&apos;s largest cereal bowl.</p>
+              <p>So with the puffs in our back pocket, we produced a plan, and by we I mostly mean my roommate because, at the time, I was trying to juggle being a part-time tutor, part-time intern, full-time student, and (poorly) attempting to maintain a social life through extracurriculars.</p>
+              <p className='text-2xl font-bold'>The Plan</p>
+              <p>To maximize clout, we wanted to make this thing official, so we began by reaching out to Guinness for guidelines on how to qualify for breaking the current record. We then proceeded to wait 3 months for a reply since we didn&apos;t pay for their $800 &quot;premium&quot; communication package.</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={244} height={244} src={"/img/blog/da_rules.png"} alt="da-rules" className='rounded-xl'/>
+                </div>
+              </div>
+              <p>When they eventually got back to us, they provided a few pages of requirements. Here are a few of the notable ones:</p>
+              <ol>
+                <li className='pb-2'>1. The bowl must be weighable by scale, rather than by calculating the theoretical weight (i.e. no inground pools or grain silos)</li>
+                <li className='pb-2'>2. Milk or a non-dairy alternative must be poured into the bowl and it should constitute no more than 30% of the final weight</li>
+                <li className='pb-2'>3. The bowl must look like a bowl (no dumping everything in a shipping container and calling it a day)</li>
+                <li>4. A public health official and an expert in weights and measurements must be present as the bowl is being filled to ensure that all ingredients and procedures are sanitary (yikes) and to periodically record the weight of the bowl as it&apos;s being filled</li>
+              </ol>
+              <p>With da rules in hand, our engineering backgrounds were put to use as we explored the next moves.</p>
+              <p>Through the process of elimination, the only container option for the bowl that logistically made sense was a roofing dumpster. We could rent the dumpster and have a truck drop it off on our doorstep. This way, when everything would be said and done, the truck would return and whisk away the dumpster, cereal, and all of our cleanup problems.</p>
+              <p>The only flaw in this choice of container was that it was obviously not round. So we decided we would design and construct a facade in an attempt to give the dumpster the illusion of being a colossal, round, polka-dotted bowl.</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/bom.jpg"} alt="schematic" className='rounded-xl' unoptimized={true}/>
+                  <p>Schematic for one of the facade trusses</p>
+                </div>
+              </div>
+              <p>To weigh said bowl, the most economic choice we discovered was to rent a pair of scales that were traditionally used to weigh semi-trucks. One minor con of these scales was that they weighed around 450 pounds apiece. This meant we&apos;d also require a means of removing them from the trailer they&apos;d be transported in. For this, we opted to build a 12-foot-tall gantry crane.</p>
+              <p>Thinking ahead to filling the bowl, we originally decided on using a human-conveyor belt system with ladders and scaffolding to get the ingredients into the bowl. However, upon 5 seconds of additional thought, we realized how many potential downsides that system had, so we instead chose to build a platform that could be raised and lowered by a forklift so that we could simply and efficiently pour the ingredients into the bowl.</p>
+              <p>And last, but not least, we needed a bit of milk.</p>
               <p className='text-3xl font-bold pt-3'>Step 4: Got Milk?</p>
               <p>A</p>{/* Yes, 550 Gallons of Milk */}
               <p className='text-3xl font-bold pt-3'>Step 5: Praise Capitalism</p>
