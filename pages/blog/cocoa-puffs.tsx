@@ -20,7 +20,7 @@ const BlogPost: NextPage = () => {
                 How to Make the World&apos;s Largest Bowl of Cereal
             </div>
             <div className='text-xl child:mt-5 mt-8'>
-              <p className='text-pine'>{"//"} TL;DR - a step-by-step guide on how to fill a <p className='inline line-through'>roofing dumpster</p> bowl with over nine thousand pounds of cereal and milk because why not</p>
+              <p className='text-pine'>{"// TL;DR - a step-by-step guide on how to fill a "}<p className='inline line-through'>{"roofing dumpster"}</p>{" bowl with over nine thousand pounds of cereal and milk because why not"}</p>
               <p>*record scratch* Yep, that&apos;s me. You&apos;re probably wondering how I got here.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
@@ -40,7 +40,7 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>For those who aren&apos;t as brushed up on your trucker terminology, a tamper tag is a glorified zip tie that&apos;s required by law to seal semi-trailers when they&apos;re transporting consumable goods. If the tag is removed in transit, or, in the case of Carl, forgotten to be put on in the first place, the goods are considered to be compromised, and must either be:</p>
-              <ol>
+              <ol className='pl-10'>
                 <li className='pb-2'>1. Incinerated</li>
                 <li className='pb-2'>2. Buried in a landfill</li>
                 <li className='pb-2'>3. Given away for free</li>
@@ -61,7 +61,7 @@ const BlogPost: NextPage = () => {
               <p className='text-3xl font-bold pt-3'>Step 1: Obtain 10,000 lbs of Cereal for Free</p>
               <p>The plan was simple. Two phases. In and out.</p>
               <p className='text-2xl font-bold'>Phase 1, Procuring</p>
-              <ol>
+              <ol className='pl-10'>
                 <li className='pb-2'>1. Rent the largest moving truck we could legally drive and attach a trailer to it for good measure</li>
                 <li className='pb-2'>2. Pull up to the cargo yard where the semi-trailer containing the Cocoa Puffs was located</li>
                 <li>3. Fill every square inch of the moving truck with cereal, first with pallets, then with garbage bags full of cereal to fill in all nooks and crannies <p className='italic inline'>(shoutout to Phil and his friends from the cargo yard for letting us use their heavy machines and for offering us some of their weed (we graciously declined))</p></li>
@@ -74,7 +74,7 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p className='text-2xl font-bold'>Phase 2, Hoarding</p>
-              <ol>
+              <ol className='pl-10'>
                 <li className='pb-2'>1. Redeem two <p className='inline font-bold'>first-month free</p> deals for the self-storage place&apos;s largest lockers. This would be done under the name of the two of us who drew the shortest straws</li>
                 <li className='pb-2'>2. Discreetly unload ten thousand pounds of cereal into the lockers, this time without heavy machines</li>
                 <li className='pb-2'>3. Wait 29 days before drawing straws again to determine who would use the same deal to sign up for two new lockers, and then proceed to migrate all of the cereal from locker to locker</li>
@@ -99,7 +99,7 @@ const BlogPost: NextPage = () => {
               <p className='text-2xl font-bold'>How to Cause a Three-Hour Delay on Interstate-94 Using Only 5 Tons of Cereal</p>
               <p>After we reattached the trailer and mentally confirmed that there was now only a {"<5%"} chance that we&apos;d be receiving our deposit back. Our journey resumed, and somehow, we eventually made it to the self-storage facility.</p>
               <p>I&apos;ll just give the SparkNotes about how the second phase unfolded so that we can get to the meat and potatoes of the guide, i.e. the cereal bowl.</p>
-              <ul>
+              <ul className='pl-10'>
                 <li className='pb-2'>• Having no heavy machinery meant that we had to simply push and drop the pallets off the back of the CocoaMoble, and pray they didn&apos;t explode in the process (most didn&apos;t)</li>
                 <li className='pb-2'>• The rented lockers were randomly selected to be on the second floor of the facility, meaning we not only had to bring the cereal to them by hand, but we also had to fit everything in an elevator with an opening barely wider than the width of the pallets</li>
                 <li className='pb-2'>• The garbage bags and pallets were constantly leaking and tearing, leaving piles of Cocoa Puffs everywhere in our path (parking lot, corridors, elevator shaft, etc.) as we were transporting them to the lockers. This resulted in a total loss of around 1000 pounds of puffs</li>
@@ -126,9 +126,9 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>When they eventually got back to us, they provided a few pages of requirements. Here are a few of the notable ones:</p>
-              <ol>
+              <ol className='pl-10'>
                 <li className='pb-2'>1. The bowl must be weighable by scale, rather than by calculating the theoretical weight (i.e. no inground pools or grain silos)</li>
-                <li className='pb-2'>2. Milk or a non-dairy alternative must be poured into the bowl and it should constitute no more than 30% of the final weight</li>
+                <li className='pb-2'>2. Milk or a non-dairy alternative must be poured into the bowl and the milk to the cereal-to-milk ratio cannot be inordinately unreasonable</li>
                 <li className='pb-2'>3. The bowl must look like a bowl (no dumping everything in a shipping container and calling it a day)</li>
                 <li>4. A public health official and an expert in weights and measurements must be present as the bowl is being filled to ensure that all ingredients and procedures are sanitary (yikes) and to periodically record the weight of the bowl as it&apos;s being filled</li>
               </ol>
@@ -141,11 +141,32 @@ const BlogPost: NextPage = () => {
                   <p>Schematic for one of the facade trusses</p>
                 </div>
               </div>
-              <p>To weigh said bowl, the most economic choice we discovered was to rent a pair of scales that were traditionally used to weigh semi-trucks. One minor con of these scales was that they weighed around 450 pounds apiece. This meant we&apos;d also require a means of removing them from the trailer they&apos;d be transported in. For this, we opted to build a 12-foot-tall gantry crane.</p>
-              <p>Thinking ahead to filling the bowl, we originally decided on using a human-conveyor belt system with ladders and scaffolding to get the ingredients into the bowl. However, upon 5 seconds of additional thought, we realized how many potential downsides that system had, so we instead chose to build a platform that could be raised and lowered by a forklift so that we could simply and efficiently pour the ingredients into the bowl.</p>
-              <p>And last, but not least, we needed a bit of milk.</p>
+              <p>To weigh said bowl, the most economic choice we found was to rent a pair of scales that were traditionally used to weigh semi-trucks. One minor con of these scales was that they weighed around 450 pounds apiece. This meant we&apos;d also require a means of removing them from the trailer they&apos;d be transported in. For this, we opted to build a 12-foot-tall gantry crane.</p>
+              <p>Thinking ahead to filling the bowl, we originally decided on using a human-conveyor belt system with ladders and scaffolding to get the ingredients into the bowl. However, upon 5 seconds of retrospect on this idea, we realized how many potential downsides that system had.</p>
+              <p>So instead, we chose to build a platform that could be raised and lowered by a forklift so that we could simply and efficiently pour the ingredients into the bowl.</p>
+              <p>And last but not least, we needed some milk.</p>
               <p className='text-3xl font-bold pt-3'>Step 4: Got Milk?</p>
-              <p>A</p>{/* Yes, 550 Gallons of Milk */}
+              <p>If you do, we could really use it, all the grocery stores and gas stations in a 5-mile radius are fresh out.</p>
+              <p>Well, perhaps not. In an alternative universe where we weren&apos;t on a budget, purchasing every local gallon of milk would have been excellent for the meme. However, back in reality, we were broke college students.</p>
+              <p>To adhere to the milk guidelines that were given in da rules, we crunched some numbers and estimated that we&apos;d need around 500 gallons.</p>
+              <p className='text-2xl font-bold'>Cow Milk?</p>
+              <p>Buying 500 gallons of milk locally, assuming we could hypothetically find and be allowed to purchase that much, would have run us at least $1600. So, we decided to get creative instead.</p>
+              <p className='italic'>&quot;Necessity is the mother of invention.&quot;<br/>Plato</p>
+              <p className='text-2xl font-bold'>Powdered Milk?</p>
+              <p>Since no one would actually be eating from the cereal bowl, we decided to be as cheap as possible. Our first idea we combining powdered milk and hose water, but it turns out that mass amounts of powdered milk are also quite expensive. So we ruled this option out.</p>
+              <p className='text-2xl font-bold'>Oat Milk?</p>
+              <p>Then, we explored the options of making large batches of oat/almond milk. The most budgetary option that we could find here was 50-pound bags of industrial horse oats. So we bought two of those with the intention of grinding the oats in blenders and combining the product with hose water.</p>
+              <p>As the big day got closer, we realized how excruciatingly strenuous it would be to grind 100 pounds of oats, so we nixed that idea and resorted back to powdered milk.</p>
+              <p>We then realized we&apos;d need somewhere to mix and store all 500 gallons of this milk, so we turned to our best frienemy, Facebook Marketplace, once more, and sure enough.</p>
+              <p className='text-2xl font-bold'>For Sale - Ten Used 55 Gallon Oil Drums</p>
+              <p>Another solution dropped right into our laps. If we were to have skipped step 0, this never wouldn&apos;t have happened.</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className='rounded-xl' unoptimized={true}/>
+                  <p>A glimpse into operation M.I.L.K.</p>
+                </div>
+              </div>
+              <p>Needless to say, we added these oil drums, along with many other items, to our shopping list.</p>
               <p className='text-3xl font-bold pt-3'>Step 5: Praise Capitalism</p>
               <p>A</p>
               <p className='text-3xl font-bold pt-3'>Step 6: Showtime</p>
