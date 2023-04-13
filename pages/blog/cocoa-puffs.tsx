@@ -97,7 +97,7 @@ const BlogPost: NextPage = () => {
               <p>The passenger of the SUV nearly immediately called the CocoaMobile and politely screamed at the driver what was happening, and that he needed to speed up, (to stop the fishtailing), then slow down and pull over.</p>
               <p>Luckily the driver was able to get to the side of the highway safely, but if that call would have been made even 10 seconds later, this post likely would have had a different title.</p>
               <p className='text-2xl font-bold'>How to Cause a Three-Hour Delay on Interstate-94 Using Only 5 Tons of Cereal</p>
-              <p>After we reattached the trailer and mentally confirmed that there was now only a {"<5%"} chance that we&apos;d be receiving our deposit back. Our journey resumed, and somehow, we eventually made it to the self-storage facility.</p>
+              <p>After we reattached the trailer and mentally confirmed that there was now only a {"<5%"} chance that we&apos;d be receiving our deposit back on the trailer. Our journey resumed, and somehow, we eventually made it to the self-storage facility.</p>
               <p>I&apos;ll just give the SparkNotes about how the second phase unfolded so that we can get to the meat and potatoes of the guide, i.e. the cereal bowl.</p>
               <ul className='pl-10'>
                 <li className='pb-2'>• Having no heavy machinery meant that we had to simply push and drop the pallets off the back of the CocoaMoble, and pray they didn&apos;t explode in the process (most didn&apos;t)</li>
@@ -148,7 +148,7 @@ const BlogPost: NextPage = () => {
               <p className='text-3xl font-bold pt-3'>Step 4: Got Milk?</p>
               <p>If you do, we could really use it, all the grocery stores and gas stations in a 5-mile radius are fresh out.</p>
               <p>Well, perhaps not. In an alternative universe where we weren&apos;t on a budget, purchasing every local gallon of milk would have been excellent for the meme. However, back in reality, we were broke college students.</p>
-              <p>To adhere to the milk guidelines that were given in da rules, we crunched some numbers and estimated that we&apos;d need around 500 gallons.</p>
+              <p>To adhere to the milk guidelines that were given in da rules, we crunched some numbers and estimated that we&apos;d need around 500 gallons. Knowing this, we began to explore our options.</p>
               <p className='text-2xl font-bold'>Cow Milk?</p>
               <p>Buying 500 gallons of milk locally, assuming we could hypothetically find and be allowed to purchase that much, would have run us at least $1600. So, we decided to get creative instead.</p>
               <p className='italic'>&quot;Necessity is the mother of invention.&quot;<br/>Plato</p>
@@ -166,9 +166,26 @@ const BlogPost: NextPage = () => {
                   <p>A glimpse into operation M.I.L.K.</p>
                 </div>
               </div>
-              <p>Needless to say, we added these oil drums, along with many other items, to our shopping list.</p>
+              <p>Needless to say, we added these oil drums, along with many other items, to our near-infinite shopping list.</p>
               <p className='text-3xl font-bold pt-3'>Step 5: Praise Capitalism</p>
-              <p>A</p>
+              <p>An observant reader might have noticed that over the course of the last few steps, a modest tab has been racked up. Including but not limited to:</p>
+              <ul className='pl-10'>
+                  <li className='pb-2'>• A forklift rental</li>
+                  <li className='pb-2'>• Semi truck scales</li>
+                  <li className='pb-2'>• Multiple trailer & U-Haul rentals</li>
+                  <li className='pb-2'>• The largest roofing dumpster feasible</li>
+                  <li className='pb-2'>• Steel, tarps, cardboard, and paint</li>
+                  <li className='pb-2'>• 10 x 55 gallon oil drums</li>
+                  <li className='pb-2'>• Paint mixers, pumps, and powdered milk</li>
+                  <li className='pb-2'>• Lumber for a gantry crane</li>
+                  <li className='pb-2'>• Lumber for the forklift filling platform</li>
+                  <li className='pb-2'>• <p className='inline line-through'>A bribe for a public health official</p></li>
+                  <li className='pb-2'>• Countless other tools and materials</li>
+                  <li>• Merch</li>
+              </ul>
+              <p>Credit must be given where credit is due. My roommate foot the bill for nearly the entirety of the operation. Not only with his wallet but also with his time, as he was the primary planner and leader of the whole ordeal.</p>
+              <p>Also, credit certainly has to be given to the capitalistic system I was born into that not only allows for all this absurdity to take place but actively encourages it.</p>
+              <p>With the prelude out of the way, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
               <p className='text-3xl font-bold pt-3'>Step 6: Showtime</p>
               <p>A</p>
               <p className='text-3xl font-bold pt-3'>Step 7: Swimming in It</p>
