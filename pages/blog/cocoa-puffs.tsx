@@ -143,20 +143,20 @@ const BlogPost: NextPage = () => {
               </div>
               <p>To weigh said bowl, the most economic choice we found was to rent a pair of scales that were traditionally used to weigh semi-trucks. One minor con of these scales was that they weighed around 450 pounds apiece. This meant we&apos;d also require a means of removing them from the trailer they&apos;d be transported in. For this, we opted to build a 12-foot-tall gantry crane.</p>
               <p>Thinking ahead to filling the bowl, we originally decided on using a human-conveyor belt system with ladders and scaffolding to get the ingredients into the bowl. However, upon 5 seconds of retrospect on this idea, we realized how many potential downsides that system had.</p>
-              <p>So instead, we chose to build a platform that could be raised and lowered by a forklift so that we could simply and efficiently pour the ingredients into the bowl.</p>
+              <p>So instead, we chose to build a pair of platforms that could be loaded up with bags/barrels of ingredients and then raised by a forklift so that we could simply pour the ingredients into the bowl.</p>
               <p>And last but not least, we needed some milk.</p>
               <p className='text-3xl font-bold pt-3'>Step 4: Got Milk?</p>
               <p>If you do, we could really use it, all the grocery stores and gas stations in a 5-mile radius are fresh out.</p>
               <p>Well, perhaps not. In an alternative universe where we weren&apos;t on a budget, purchasing every local gallon of milk would have been excellent for the meme. However, back in reality, we were broke college students.</p>
               <p>To adhere to the milk guidelines that were given in da rules, we crunched some numbers and estimated that we&apos;d need around 500 gallons. Knowing this, we began to explore our options.</p>
               <p className='text-2xl font-bold'>Cow Milk?</p>
-              <p>Buying 500 gallons of milk locally, assuming we could hypothetically find and be allowed to purchase that much, would have run us at least $1600. So, we decided to get creative instead.</p>
+              <p>Buying 500 gallons of milk locally, assuming we could hypothetically find and be allowed to purchase that much from a store, would have run us at least $1600. So, we decided to get creative instead.</p>
               <p className='italic'>&quot;Necessity is the mother of invention.&quot;<br/>Plato</p>
               <p className='text-2xl font-bold'>Powdered Milk?</p>
               <p>Since no one would actually be eating from the cereal bowl, we decided to be as cheap as possible. Our first idea we combining powdered milk and hose water, but it turns out that mass amounts of powdered milk are also quite expensive. So we ruled this option out.</p>
               <p className='text-2xl font-bold'>Oat Milk?</p>
               <p>Then, we explored the options of making large batches of oat/almond milk. The most budgetary option that we could find here was 50-pound bags of industrial horse oats. So we bought two of those with the intention of grinding the oats in blenders and combining the product with hose water.</p>
-              <p>As the big day got closer, we realized how excruciatingly strenuous it would be to grind 100 pounds of oats, so we nixed that idea and resorted back to powdered milk.</p>
+              <p>As the big day drew closer, we realized how excruciatingly laborious it would be to grind 100 pounds of oats, so we nixed that idea and resorted back to powdered milk.</p>
               <p>We then realized we&apos;d need somewhere to mix and store all 500 gallons of this milk, so we turned to our best frienemy, Facebook Marketplace, once more, and sure enough.</p>
               <p className='text-2xl font-bold'>For Sale - Ten Used 55 Gallon Oil Drums</p>
               <p>Another solution dropped right into our laps. If we were to have skipped step 0, this never wouldn&apos;t have happened.</p>
@@ -178,17 +178,78 @@ const BlogPost: NextPage = () => {
                   <li className='pb-2'>• 10 x 55 gallon oil drums</li>
                   <li className='pb-2'>• Paint mixers, pumps, and powdered milk</li>
                   <li className='pb-2'>• Lumber for a gantry crane</li>
-                  <li className='pb-2'>• Lumber for the forklift filling platform</li>
+                  <li className='pb-2'>• Lumber for the forklift platforms</li>
                   <li className='pb-2'>• <p className='inline line-through'>A bribe for a public health official</p></li>
                   <li className='pb-2'>• Countless other tools and materials</li>
                   <li>• Merch</li>
               </ul>
               <p>Credit must be given where credit is due. My roommate foot the bill for nearly the entirety of the operation. Not only with his wallet but also with his time, as he was the primary planner and leader of the whole ordeal.</p>
               <p>Also, credit certainly has to be given to the capitalistic system I was born into that not only allows for all this absurdity to take place but actively encourages it.</p>
-              <p>With the prelude out of the way, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
+              <p>With all of that prelude out of the way, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
               <p className='text-3xl font-bold pt-3'>Step 6: Showtime</p>
+              <p>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <p className='inline italic'>food-grade</p> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning.</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className='rounded-xl' unoptimized={true}/>
+                  <p>The night before, T-10 hours</p>
+                </div>
+              </div>
+              <p>The prior week of preparation had been nothing short of insanity.</p>
+              <p>A</p>
+              <p>A</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs px-3'>
+                  <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl' unoptimized={true}/>
+                  <p>Unloading the scales</p>
+                </div>
+                <div className='inline-block text-center text-xs px-3'>
+                  <Image width={244} height={468} src={"/img/blog/facade.jpg"} alt="facade" className='rounded-xl' unoptimized={true}/>
+                  <p>Assembling the facade</p>
+                </div>
+              </div>
+              <p>A</p>
+              <p>A</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl' unoptimized={true}/>
+                  <p>Operation front lawn, ~1/3rd of the cereal</p>
+                </div>
+              </div>
+              <p>A</p>
+              <p>A</p>
+              <p>A</p>
+              <p>A</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className='rounded-xl' unoptimized={true}/>
+                  <p>Chocolate rain</p>
+                </div>
+              </div>
+              <p>A</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/pour.jpg"} alt="pour" className='rounded-xl' unoptimized={true}/>
+                  <p>Two lethal doses of calcium</p>
+                </div>
+              </div>
+              <p>A</p>
+              <p>A</p>
+              <p>A</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className='rounded-xl' unoptimized={true}/>
+                  <p>The world&apos;s largest bowl of cereal</p>
+                </div>
+              </div>
               <p>A</p>
               <p className='text-3xl font-bold pt-3'>Step 7: Swimming in It</p>
+              <p>A</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={468} height={244} src={"/img/blog/swim.jpg"} alt="swimming" className='rounded-xl' unoptimized={true}/>
+                  <p>Sink or swim?</p>
+                </div>
+              </div>
               <p>A</p>
               <p className='text-3xl font-bold pt-3'>Step 8: Condemn Capitalism</p>
               <p>A</p>
