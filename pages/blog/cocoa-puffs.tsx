@@ -183,7 +183,7 @@ const BlogPost: NextPage = () => {
                   <li className='pb-2'>• Countless other tools and materials</li>
                   <li>• Merch</li>
               </ul>
-              <p>Credit must be given where credit is due. My roommate foot the bill for nearly the entirety of the operation. Not only with his wallet but also with his time, as he was the primary planner and leader of the whole ordeal.</p>
+              <p>Credit must be given where credit is due. My roommate foot the bill for nearly the entirety of the operation. Not only with his wallet but also with his time, as he was the primary planner of the whole ordeal.</p>
               <p>Also, credit certainly has to be given to the capitalistic system I was born into that not only allows for all this absurdity to take place but actively encourages it.</p>
               <p>With all of that prelude out of the way, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
               <p className='text-3xl font-bold pt-3'>Step 6: Showtime</p>
@@ -195,8 +195,8 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>The prior week of preparation had been nothing short of insanity.</p>
-              <p>A</p>
-              <p>A</p>
+              <p>Upon completing one task, two more would appear in its place. We had to buy/cut/weld the steel trusses, powerwash the oil drums, construct the gantry crane and platforms, pick up and unload the scales, forklift, and roofing dumpster, perform a rescue mission on the cereal, draft waivers for our legion of volunteers, coordinate with the Guinness required professionals, etc., etc., etc.</p>
+              <p></p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs px-3'>
                   <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl' unoptimized={true}/>
@@ -207,16 +207,16 @@ const BlogPost: NextPage = () => {
                   <p>Assembling the facade</p>
                 </div>
               </div>
-              <p>A</p>
-              <p>A</p>
+              <p>we got there</p>
+              <p>transition to morning of</p>
+              <p>lawn check</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl' unoptimized={true}/>
-                  <p>Operation front lawn, ~1/3rd of the cereal</p>
+                  <p>~1/3rd of the cereal</p>
                 </div>
               </div>
-              <p>A</p>
-              <p>A</p>
+              <p>platform pourin process</p>
               <p>A</p>
               <p>A</p>
               <div className='flex justify-center'>
@@ -225,34 +225,35 @@ const BlogPost: NextPage = () => {
                   <p>Chocolate rain</p>
                 </div>
               </div>
-              <p>A</p>
+              <p>can't forget the milk</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/pour.jpg"} alt="pour" className='rounded-xl' unoptimized={true}/>
                   <p>Two lethal doses of calcium</p>
                 </div>
               </div>
-              <p>A</p>
-              <p>A</p>
-              <p>A</p>
+              <p>all not for nothing</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className='rounded-xl' unoptimized={true}/>
                   <p>The world&apos;s largest bowl of cereal</p>
                 </div>
               </div>
-              <p>A</p>
+              <p>broke prv record by > 2.5x</p>
+              <p>what else to do but to celebrate</p>
               <p className='text-3xl font-bold pt-3'>Step 7: Swimming in It</p>
-              <p>A</p>
+              <p>Sink or swim?</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/swim.jpg"} alt="swimming" className='rounded-xl' unoptimized={true}/>
-                  <p>Sink or swim?</p>
+                  <p>In love with the cocoa</p>
                 </div>
               </div>
               <p>A</p>
               <p className='text-3xl font-bold pt-3'>Step 8: Condemn Capitalism</p>
-              <p>A</p>
+              <p>Guinness is p2w</p>
+              <p>now u know</p>
+              <p>written by a human</p>
             </div>
           </div>
         </div>
