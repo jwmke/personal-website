@@ -58,7 +58,7 @@ const BlogPost: NextPage = () => {
               <p>While my head was overflowing with questions, he abruptly asked if I would help him &quot;get the cereal.&quot; I was reluctant, but since our winter break was less than a week away, and I didn&apos;t have any other plans, I figured that helping out with this, whatever <p className='inline italic'>this</p> was going to be, would likely be more entertaining than immediately heading home, so I agreed.</p>
               <p>He organized a day to meet up with the man who was in possession of the pallets and reached out to around 10 other friends, who turned out to be just as bored yet curious as me, to see if they&apos;d be willing to lend a hand.</p>
               <p>Then, with an army amassed, the ringleader and his troops marched into war.</p>
-              <p className='text-3xl font-bold pt-3'>Step 1: Obtain 10,000 lbs of Cereal for Free</p>
+              <p className='text-3xl font-bold pt-3'>Step 1: Obtain 10,000 lbs of Cereal</p>
               <p>The plan was simple. Two phases. In and out.</p>
               <p className='text-2xl font-bold'>Phase 1, Procuring</p>
               <ol className='pl-10'>
@@ -187,7 +187,7 @@ const BlogPost: NextPage = () => {
               <p>Also, credit certainly has to be given to the capitalistic system I was born into that not only allows for all this absurdity to take place but actively encourages it.</p>
               <p>With all of that prelude out of the way, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
               <p className='text-3xl font-bold pt-3'>Step 6: Showtime</p>
-              <p>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <p className='inline italic'>food-grade</p> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning.</p>
+              <p>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <p className='inline italic'>food-grade</p> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning was upon us.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className='rounded-xl'/>
@@ -195,13 +195,14 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>The prior week of preparation had been nothing short of insanity.</p>
-              <p>Upon completing one task, two more would appear in its place. We had to powerwash the oil drums, buy/cut/weld the steel trusses, construct the gantry crane and platforms, pick up and unload the scales, forklift, and dumpster, perform a rescue mission on the cereal, draft waivers for our legion of volunteers, coordinate with the Wofficials required by Guinness, etc., etc., etc.</p>
+              <p>Upon completing one task, two more would appear in its place. We had to powerwash the oil drums, buy/cut/weld the steel trusses, construct the gantry crane and platforms, pick up and unload the scales, forklift, and dumpster, perform a rescue mission on the cereal, draft waivers for our legion of volunteers, coordinate with the officials required by Guinness, etc., etc., etc.</p>
               <p className='text-2xl font-bold'>Wait a minute, where are we?</p>
               <p>In addition to the frenzy of completing these tasks, we weren&apos;t even aware of the location of where the bowl would be filled until rather last minute. </p>
-              <p>We had originally reached out to a few stores and businesses with the proposal of making the event a charity fundraiser in public in their parking lots. One of these businesses even initially said yes, however, since this was towards the beginning of the pandemic, they revoked their offer out of caution</p>
-              <p>By this point, we were too invested in the current date to postpone the event and find a new venue, so we were left with one final option. Begging. </p>
-              <p>My roommate, with confidence far greater than my own, went to his parents and proposed the idea of hosting the ceremony in their backyard, and after a few days of negotiation, they generously allowed us to privately host the event on their property.</p>
-              <p>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of creating and filling this bowl created a sense of camaraderie, the likes of which you&apos;d more typically see with a sports team, that pushed us through the storm.</p>
+              <p>We had originally reached out to a few stores and businesses with the proposal of making the event a public charity fundraiser in their parking lots. One of these businesses even initially said yes, however, since this was towards the beginning of the pandemic, they revoked their offer out of caution</p>
+              <p>By this point, we were too invested in the current date to postpone the event and find a new venue, so we were left with one final option.</p>
+              <p className='text-2xl font-bold'>Beg.</p>
+              <p>My roommate, with chutzpa far greater than my own, went to his parents and proposed the idea of hosting the ceremony in their backyard, and after a few days of negotiation, they allowed him to privately host the event on their property.</p>
+              <p>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of filling this bowl created a sense of camaraderie, the likes of which you&apos;d more typically see with a sports team, that pushed us through the storm.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs px-3'>
                   <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl'/>
@@ -213,8 +214,8 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>Eventually, we did fasten the final tarp and retreated for the night. On the other side of that slumber, our demons patiently waited for us, willing to wage war.</p>
-              <p>We woke up at 8 a.m., ate a quick breakfast of anything except cereal, and were out the door, ready to make history.</p>
-              <p>After completing a few finishing touches on the bowl, we had to pick up the puffs. They were currently docked in the driveway of my roommate&apos;s neighborhood friend, all stored in lawn bags. Multiple trips were taken throughout the day to transport them to my roommate&apos;s front lawn.</p>
+              <p>We woke up at 8 a.m., ate a quick breakfast of anything except cereal, and were out the door.</p>
+              <p>After completing a few finishing touches on the bowl, we had to pick up the puffs. They were currently docked in the driveway of my roommate&apos;s neighborhood friend, all stored in lawn bags for eventual ease of pouring. Multiple trips were taken throughout the day to transport them to my roommate&apos;s front lawn.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl'/>
@@ -226,7 +227,7 @@ const BlogPost: NextPage = () => {
               <p className='text-2xl font-bold'>Team TREK</p>
               <p>Responsible for migrating all of the cereal from the neighborhood friend&apos;s driveway to my roommate&apos;s front lawn.</p>
               <p className='text-2xl font-bold'>Team FILL</p>
-              <p>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl. Also responsible for having someone in the bowl to evenly spread out the cereal (resume flashback).</p>
+              <p>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl; additionally responsible for having someone in the bowl to evenly spread out the cereal *resume flashback*.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className='rounded-xl'/>
@@ -242,8 +243,8 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p className='text-2xl font-bold'>Team BOSS</p>
-              <p>Responsible for maintaining the stereotype that any well-functioning system requires bureaucracy by pointing at people and telling them to do things that they were already doing.</p>
-              <p>And when you morph these teams together, add a bit of water, and let them do their thing for 4-6 hours, bada-bing bada-boom:</p>
+              <p>Responsible for maintaining the stereotype that any well-functioning system requires bureaucracy introduced by people by pointing at other people and telling them to do things that they were already doing.</p>
+              <p>And when you morph these teams together, add a bit of water and sunshine, and let them do their thing for 4-6 hours, bada-bing bada-boom:</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className='rounded-xl'/>
@@ -251,8 +252,8 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>The total weight came out to be 9,045 pounds of stale, salmonella-inducing breakfast goodness. More than 2.5 times the previous world record.</p>
-              <p>Also, this number only included around 200 gallons of milk, compared to the 500 we had made. We had to postpone pouring the remainder of the milk in as the public health official had to leave early, and we didn&apos;t want to risk doing anything off record. But in my heart, we broke 10K pounds.</p>
-              <p>Somehow, we had made it this far without any colossal disasters, so what else was there to do at this point but to celebrate?</p>
+              <p>As an aside, this number only included around 200 gallons of milk, compared to the 500 we had made. We had to postpone pouring the remainder of the milk in as the public health official had to leave early, and we didn&apos;t want to risk doing anything off record. But deep down in my heart, we broke 10,000 pounds.</p>
+              <p>Somehow, we had made it this far without any gigantic disasters, so what else was there to do at this point but to celebrate?</p>
               <p className='text-3xl font-bold pt-3'>Step 7: Swim in It</p>
               <p>Not much to say here, just a few friends lounging in a dumpster, inhaling enough chocolate dust to cause a new form of lung cancer.</p>
               <div className='flex justify-center'>
@@ -261,7 +262,7 @@ const BlogPost: NextPage = () => {
                   <p>In love with the cocoa</p>
                 </div>
               </div>
-              <p>A few hours after this picture was taken, the roofing dumpster rental company swung by to reclaim what was theirs, and, in accordance with what we initially agreed, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill.</p>
+              <p>A few hours after this picture was taken, the roofing dumpster rental company swung by to reclaim what was theirs, and, in accordance with what we initially agreed with them, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill. 😇</p>
               <p className='pb-96'>Now, all that was left was to submit the necessary paperwork and evidence to Guinness and wait...</p>
               <p className='pb-96'>And wait some more...</p>
               <p className='pb-96'>Just a few more weeks...</p>
@@ -274,23 +275,23 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p className='text-3xl font-bold pt-3'>Step 8: Condemn Capitalism</p>
-              <p>Upon reading this email, my roommate decided he was going to speedrun the 5 stages of grief.</p>
-              <p>&quot;This has to be some sort of misunderstanding,&quot; he told me, &quot;we triple-checked every piece of information they asked for.&quot;</p>
+              <p>Upon reading this email, my roommate decided he was going to speedrun, any %, the 5 stages of grief.</p>
+              <p>&quot;This has to be some sort of misunderstanding,&quot; he told me, &quot;we triple-checked every piece of information they asked for.&quot; Which was true.</p>
               <p>On the surface the rationale for the decision was clear. The email stated that &quot;after an extensive review of your documentation, the pre-tared weight of the bowl was found to be missing.&quot;</p>
-              <p>Even though this information was never explicitly being asked for in the first place, no worries, we thought. Fortunately, we had that information on hand, so we sent it over to them and played the waiting game once more.</p>
-              <p>However, this time, their time to reply was much quicker.</p>
-              <p className='italic'>&quot;The decision made on your application is final and cannot be amended.&quot;<br/>Guinness employee who enjoys kicking puppies in his free time</p>
-              <p>And just like that, our golden ticket to being immortalized in history metamorphosized into a fairly expensive lesson.</p>
+              <p>Even though this information was never explicitly being asked for in the first place, no worries, we thought. We, fortunately, had that information on hand, so we sent it over to them and played the waiting game once more.</p>
+              <p>However, this time, they replied much quicker.</p>
+              <p className='italic'>&quot;The decision made on your application is final and cannot be amended.&quot;<br/>Guinness employee who enjoys kicking puppies</p>
+              <p>And just like that, our golden ticket to being immortalized in history (temporarily, at least) metamorphosized into a reasonably expensive lesson.</p>
               <p className='text-2xl font-bold'>Guinness is Pay-to-Win</p>
-              <p>To preface this theory, I&apos;d like to point out that not only did we not opt into paying $800 for Guinness&apos; communication package, but we also declined their offer for an adjudicator to fly from Ireland to <p className='inline italic'>potentially</p> recognize our record the same day it happened for the low price of $16,000 + travel fees.</p>
+              <p>To preface this theory, I&apos;d like to point out that not only did we not opt into paying $800 for Guinness&apos; premium communication package, but we also declined their offer for an adjudicator to fly from Ireland to <p className='inline italic'>potentially</p> recognize our record the same day it happened for the low price of $16,000 + travel fees.</p>
               <p>Now if you&apos;re as cynical as me when reading opinions on the internet, you might think that I&apos;m being a sore loser and that I should move with my life instead of jumping to such a conclusion.</p>
-              <p>However, this speculation isn&apos;t exclusive to me. With a single Google search, multiple articles such as <a target="_blank" rel="noreferrer" href='https://www.vox.com/2015/3/6/8157639/guinness-world-record-business' className='inline underline hover:text-mint'>this</a> and <a target="_blank" rel="noreferrer" href='https://pawebpage.com/2252/archive/guinness-world-records-from-faithful-to-fraudulent/' className='inline underline hover:text-mint'>this</a> appear that support the claims that &quot;Guinness has a track record of approving or disapproving record attempts based on whether or not it will benefit their image.&quot;</p>
-              <p>Admittedly, the final picture of the bowl didn&apos;t look as visually stunning as it could&apos;ve been. But this notion coupled with the fact that we didn&apos;t pay Guinness a single cent led us to the conclusion that we were rejected based on a technicality, but instead, for the sake of preserving their brand (i.e. $$$).</p>
+              <p>However, this speculation isn&apos;t exclusive to me. With a single Google search, a few articles such as <a target="_blank" rel="noreferrer" href='https://www.vox.com/2015/3/6/8157639/guinness-world-record-business' className='inline underline hover:text-mint'>this</a> and <a target="_blank" rel="noreferrer" href='https://pawebpage.com/2252/archive/guinness-world-records-from-faithful-to-fraudulent/' className='inline underline hover:text-mint'>this</a> appear that support the claim that &quot;Guinness has a track record of approving or disapproving record attempts based on whether or not it will benefit their corporate image.&quot; But then, again anyone can write anything on the internet.</p>
+              <p>Admittedly, the final picture of the bowl didn&apos;t look as visually stunning as it could&apos;ve been. But this notion coupled with the fact that we didn&apos;t pay Guinness a single cent led us to the conclusion that we were rejected not based on a technicality, but instead, for the sake of preserving Guinness&apos; brand (also read $$$).</p>
               <p>But honestly, I can&apos;t blame them. They&apos;re a for-profit business, not a charity. I think that it&apos;s simply unfortunate that they purport themselves as being &quot;the world&apos;s unrivaled authority on record-breaking achievement&quot; while simultaneously having to play by the rules of the game of capitalism to survive. But I digress.</p>
               <p className='text-3xl font-bold pt-3'>Step 9: Reject Authority</p>
               <p>By Guinness&apos; standard, we were out of the race, but as the ashes fell and the chocolatey dust settled, we were left with nothing but our own tales to commemorate this feat.</p>
-              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to accomplish, regardless of what any self-proclaimed authority could tell us otherwise.</p>
-              <p>Now, before you go out into the world and follow this guide to make your own cereal bowl, you might be wondering, &quot;Was this a worthwhile endeavor?&quot; or &quot;Would you ever do this again?&quot;</p>
+              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to do, regardless of what any self-proclaimed authority could otherwise tell us.</p>
+              <p>Now, before you embark into the world and follow this guide to make your own cereal bowl, you might be wondering, &quot;Was this a worthwhile endeavor?&quot; or &quot;Would you ever do this again?&quot;</p>
               <p>Thank you for taking the time to read this blog post.</p>
               {/* <div className='flex justify-center'>
                 <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
