@@ -33,12 +33,12 @@ const BlogPost: NextPage = () => {
               <p className='italic'>&quot;Luck is when an opportunity comes along and you&apos;re prepared for it&quot;<br/>Denzel Washington</p>
               <p>It all began with a General Mills truck driver, for the sake of anonimity, we&apos;ll call him Carl. Sometime in January of 2020, Carl was assigned an objective to transport a trailer of 24 pallets of Cocoa Puffs from one coast to the other.</p>
               <p>As Carl reached the end of his journey he noticed a fatal mistake he had made at the start of it. This error pertained to the tamper tag on his trailer, or rather, the lack thereof.</p>
-              <div className='flex justify-center'>
+              {/* <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/tag.jpg"} alt="tag" className='rounded-xl'/>
                   <p>Tamper tag on a semi truck</p>
                 </div>
-              </div>
+              </div> */}
               <p>For those who aren&apos;t as brushed up on your trucker terminology, a tamper tag is a glorified zip tie that&apos;s required by law to seal semi-trailers when they&apos;re transporting consumable goods. If the tag is removed in transit, or, in the case of Carl, forgotten to be put on in the first place, the goods are considered to be compromised, and must either be:</p>
               <ol className='pl-10'>
                 <li className='pb-2'>1. Incinerated</li>
@@ -137,7 +137,7 @@ const BlogPost: NextPage = () => {
               <p>The only flaw in this choice of container was that it was obviously not round. So we decided we would design and construct a facade in an attempt to give the dumpster the illusion of being a colossal, round, polka-dotted bowl.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/bom.jpg"} alt="schematic" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/bom.jpg"} alt="schematic" className='rounded-xl'/>
                   <p>Schematic for one of the facade trusses</p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const BlogPost: NextPage = () => {
               <p>Another solution dropped right into our laps. If we were to have skipped step 0, this never wouldn&apos;t have happened.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className='rounded-xl'/>
                   <p>A glimpse into operation M.I.L.K.</p>
                 </div>
               </div>
@@ -190,70 +190,113 @@ const BlogPost: NextPage = () => {
               <p>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <p className='inline italic'>food-grade</p> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className='rounded-xl'/>
                   <p>The night before, T-10 hours</p>
                 </div>
               </div>
               <p>The prior week of preparation had been nothing short of insanity.</p>
-              <p>Upon completing one task, two more would appear in its place. We had to buy/cut/weld the steel trusses, powerwash the oil drums, construct the gantry crane and platforms, pick up and unload the scales, forklift, and roofing dumpster, perform a rescue mission on the cereal, draft waivers for our legion of volunteers, coordinate with the Guinness required professionals, etc., etc., etc.</p>
-              <p></p>
+              <p>Upon completing one task, two more would appear in its place. We had to powerwash the oil drums, buy/cut/weld the steel trusses, construct the gantry crane and platforms, pick up and unload the scales, forklift, and dumpster, perform a rescue mission on the cereal, draft waivers for our legion of volunteers, coordinate with the Wofficials required by Guinness, etc., etc., etc.</p>
+              <p className='text-2xl font-bold'>Wait a minute, where are we?</p>
+              <p>In addition to the frenzy of completing these tasks, we weren&apos;t even aware of the location of where the bowl would be filled until rather last minute. </p>
+              <p>We had originally reached out to a few stores and businesses with the proposal of making the event a charity fundraiser in public in their parking lots. One of these businesses even initially said yes, however, since this was towards the beginning of the pandemic, they revoked their offer out of caution</p>
+              <p>By this point, we were too invested in the current date to postpone the event and find a new venue, so we were left with one final option. Begging. </p>
+              <p>My roommate, with confidence far greater than my own, went to his parents and proposed the idea of hosting the ceremony in their backyard, and after a few days of negotiation, they generously allowed us to privately host the event on their property.</p>
+              <p>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of creating and filling this bowl created a sense of camaraderie, the likes of which you&apos;d more typically see with a sports team, that pushed us through the storm.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs px-3'>
-                  <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl' unoptimized={true}/>
+                  <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl'/>
                   <p>Unloading the scales</p>
                 </div>
                 <div className='inline-block text-center text-xs px-3'>
-                  <Image width={244} height={468} src={"/img/blog/facade.jpg"} alt="facade" className='rounded-xl' unoptimized={true}/>
+                  <Image width={244} height={468} src={"/img/blog/facade.jpg"} alt="facade" className='rounded-xl'/>
                   <p>Assembling the facade</p>
                 </div>
               </div>
-              <p>we got there</p>
-              <p>transition to morning of</p>
-              <p>lawn check</p>
+              <p>Eventually, we did fasten the final tarp and retreated for the night. On the other side of that slumber, our demons patiently waited for us, willing to wage war.</p>
+              <p>We woke up at 8 a.m., ate a quick breakfast of anything except cereal, and were out the door, ready to make history.</p>
+              <p>After completing a few finishing touches on the bowl, we had to pick up the puffs. They were currently docked in the driveway of my roommate&apos;s neighborhood friend, all stored in lawn bags. Multiple trips were taken throughout the day to transport them to my roommate&apos;s front lawn.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl'/>
                   <p>~1/3rd of the cereal</p>
                 </div>
               </div>
-              <p>platform pourin process</p>
-              <p>A</p>
-              <p>A</p>
+              <p>As soon as the public health official and weights and measurements expert arrived on the scene, we were off to the races.</p>
+              <p>To ensure everything was progressing smoothly, multiple (unevenly sized) fireteams were assembled from the 20+ volunteers who signed up.</p>
+              <p className='text-2xl font-bold'>Team TREK</p>
+              <p>Responsible for migrating all of the cereal from the neighborhood friend&apos;s driveway to my roommate&apos;s front lawn.</p>
+              <p className='text-2xl font-bold'>Team FILL</p>
+              <p>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl. Also responsible for having someone in the bowl to evenly spread out the cereal (resume flashback).</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className='rounded-xl'/>
                   <p>Chocolate rain</p>
                 </div>
               </div>
-              <p>can't forget the milk</p>
+              <p className='text-2xl font-bold'>Team SKIM</p>
+              <p>Responsible for creating milk batches in an oil drum that we angle-grinded the top off of, and then pumping said milk into the other empty oil drums to later be used by Team FILL.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/pour.jpg"} alt="pour" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/pour.jpg"} alt="pour" className='rounded-xl'/>
                   <p>Two lethal doses of calcium</p>
                 </div>
               </div>
-              <p>all not for nothing</p>
+              <p className='text-2xl font-bold'>Team BOSS</p>
+              <p>Responsible for maintaining the stereotype that any well-functioning system requires bureaucracy by pointing at people and telling them to do things that they were already doing.</p>
+              <p>And when you morph these teams together, add a bit of water, and let them do their thing for 4-6 hours, bada-bing bada-boom:</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className='rounded-xl'/>
                   <p>The world&apos;s largest bowl of cereal</p>
                 </div>
               </div>
-              <p>broke prv record by > 2.5x</p>
-              <p>what else to do but to celebrate</p>
-              <p className='text-3xl font-bold pt-3'>Step 7: Swimming in It</p>
-              <p>Sink or swim?</p>
+              <p>The total weight came out to be 9,045 pounds of stale, salmonella-inducing breakfast goodness. More than 2.5 times the previous world record.</p>
+              <p>Also, this number only included around 200 gallons of milk, compared to the 500 we had made. We had to postpone pouring the remainder of the milk in as the public health official had to leave early, and we didn&apos;t want to risk doing anything off record. But in my heart, we broke 10K pounds.</p>
+              <p>Somehow, we had made it this far without any colossal disasters, so what else was there to do at this point but to celebrate?</p>
+              <p className='text-3xl font-bold pt-3'>Step 7: Swim in It</p>
+              <p>Not much to say here, just a few friends lounging in a dumpster, inhaling enough chocolate dust to cause a new form of lung cancer.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
-                  <Image width={468} height={244} src={"/img/blog/swim.jpg"} alt="swimming" className='rounded-xl' unoptimized={true}/>
+                  <Image width={468} height={244} src={"/img/blog/swim.jpg"} alt="swimming" className='rounded-xl'/>
                   <p>In love with the cocoa</p>
                 </div>
               </div>
-              <p>A</p>
+              <p>A few hours after this picture was taken, the roofing dumpster rental company swung by to reclaim what was theirs, and, in accordance with what we initially agreed, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill.</p>
+              <p className='pb-96'>Now, all that was left was to submit the necessary paperwork and evidence to Guinness and wait...</p>
+              <p className='pb-96'>And wait some more...</p>
+              <p className='pb-96'>Just a few more weeks...</p>
+              <p className='pb-96'>Any day now...</p>
+              <p className='italic'>*You have 1 new email from Guinness*</p>
+              <p className='text-2xl font-bold'>We regret to inform you that your world record application has been denied.</p>
+              <div className='flex justify-center'>
+                <div className='inline-block text-center text-xs'>
+                  <Image width={244} height={244} src={"/img/blog/bruh.gif"} alt="bruh" className='rounded-xl' unoptimized={true}/>
+                </div>
+              </div>
               <p className='text-3xl font-bold pt-3'>Step 8: Condemn Capitalism</p>
-              <p>Guinness is p2w</p>
-              <p>now u know</p>
-              <p>written by a human</p>
+              <p>Upon reading this email, my roommate decided he was going to speedrun the 5 stages of grief.</p>
+              <p>&quot;This has to be some sort of misunderstanding,&quot; he told me, &quot;we triple-checked every piece of information they asked for.&quot;</p>
+              <p>On the surface the rationale for the decision was clear. The email stated that &quot;after an extensive review of your documentation, the pre-tared weight of the bowl was found to be missing.&quot;</p>
+              <p>Even though this information was never explicitly being asked for in the first place, no worries, we thought. Fortunately, we had that information on hand, so we sent it over to them and played the waiting game once more.</p>
+              <p>However, this time, their time to reply was much quicker.</p>
+              <p className='italic'>&quot;The decision made on your application is final and cannot be amended.&quot;<br/>Guinness employee who enjoys kicking puppies in his free time</p>
+              <p>And just like that, our golden ticket to being immortalized in history metamorphosized into a fairly expensive lesson.</p>
+              <p className='text-2xl font-bold'>Guinness is Pay-to-Win</p>
+              <p>To preface this theory, I&apos;d like to point out that not only did we not opt into paying $800 for Guinness&apos; communication package, but we also declined their offer for an adjudicator to fly from Ireland to <p className='inline italic'>potentially</p> recognize our record the same day it happened for the low price of $16,000 + travel fees.</p>
+              <p>Now if you&apos;re as cynical as me when reading opinions on the internet, you might think that I&apos;m being a sore loser and that I should move with my life instead of jumping to such a conclusion.</p>
+              <p>However, this speculation isn&apos;t exclusive to me. With a single Google search, multiple articles such as <a target="_blank" rel="noreferrer" href='https://www.vox.com/2015/3/6/8157639/guinness-world-record-business' className='inline underline hover:text-mint'>this</a> and <a target="_blank" rel="noreferrer" href='https://pawebpage.com/2252/archive/guinness-world-records-from-faithful-to-fraudulent/' className='inline underline hover:text-mint'>this</a> appear that support the claims that &quot;Guinness has a track record of approving or disapproving record attempts based on whether or not it will benefit their image.&quot;</p>
+              <p>Admittedly, the final picture of the bowl didn&apos;t look as visually stunning as it could&apos;ve been. But this notion coupled with the fact that we didn&apos;t pay Guinness a single cent led us to the conclusion that we were rejected based on a technicality, but instead, for the sake of preserving their brand (i.e. $$$).</p>
+              <p>But honestly, I can&apos;t blame them. They&apos;re a for-profit business, not a charity. I think that it&apos;s simply unfortunate that they purport themselves as being &quot;the world&apos;s unrivaled authority on record-breaking achievement&quot; while simultaneously having to play by the rules of the game of capitalism to survive. But I digress.</p>
+              <p className='text-3xl font-bold pt-3'>Step 9: Reject Authority</p>
+              <p>By Guinness&apos; standard, we were out of the race, but as the ashes fell and the chocolatey dust settled, we were left with nothing but our own tales to commemorate this feat.</p>
+              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to accomplish, regardless of what any self-proclaimed authority could tell us otherwise.</p>
+              <p>Now, before you go out into the world and follow this guide to make your own cereal bowl, you might be wondering, &quot;Was this a worthwhile endeavor?&quot; or &quot;Would you ever do this again?&quot;</p>
+              <p>Thank you for taking the time to read this blog post.</p>
+              {/* <div className='flex justify-center'>
+                <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
+                  <Image width={132} height={42} src={"/img/blog/human.png"} alt="human"/>
+                </a>
+              </div> */}
             </div>
           </div>
         </div>
