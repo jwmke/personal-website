@@ -9,7 +9,7 @@ const BlogPost: NextPage = () => {
       <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy'> {/* select-none */}
       <Head>
           <title>Joe Weller</title>
-          <meta name="description" content="Cuckoo for the sake being cuckoo." />
+          <meta name="description" content="Cuckoo for the sake being cuckoo."/>
           <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar/>
@@ -291,8 +291,9 @@ const BlogPost: NextPage = () => {
               <p>But honestly, I can&apos;t blame them. They&apos;re a for-profit business, not a charity. I think that it&apos;s simply unfortunate that they assert themselves as being &quot;the world&apos;s unrivaled authority on record-breaking achievement&quot; while simultaneously having to play by the rules of the game of capitalism to survive. But I digress.</p>
               <p className='text-3xl font-bold pt-3'>Step 9: Reject Authority</p>
               <p>By Guinness&apos; standard, we were out of the race, but as the ashes fell and the chocolatey dust settled, we were left with nothing but our own tales to commemorate this feat.</p>
-              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to achieve, regardless of what any self-proclaimed authority could otherwise tell us.</p>
-              <p>Now, before you embark into the world and follow this guide to make your own cereal bowl, you might be wondering, &quot;Was this a worthwhile endeavor?&quot; or &quot;Would you ever do this again?&quot;</p>
+              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to achieve, regardless of what any self-proclaimed authority could tell us otherwise.</p>
+              <p>Now go embark into the world and make an oversized cereal bowl of your own. But, before you do, you might be wondering:</p>
+              <p className='text-2xl font-bold pb-96'>&quot;If given a chance to go back in time, would I choose to do this all again?&quot;</p>
               <p>Thank you for taking the time to read this blog post.</p>
               {/* <div className='flex justify-center'>
                 <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
