@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar';
 
 const BlogPost: NextPage = () => {
     return (
-      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy'> {/* select-none */}
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="Cuckoo for the sake being cuckoo." />
@@ -25,20 +25,20 @@ const BlogPost: NextPage = () => {
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                     <Image width={700} height={466} src={"/img/blog/knee_deep.jpg"} alt="knee_deep" className='rounded-xl'/>
-                    <p>Knee deep in a 8 foot tall dumpster full of Cocoa Puffs</p>
+                    <p>Knee deep in an 8-foot tall dumpster full of Cocoa Puffs</p>
                 </div>
               </div>
               <p>To get there, we first need to rewind by 6 months from when this picture was taken, to when my roommate approached me, seemingly innocently, to show me a listing on one of the most problematic digital markets to gain traction since the Silk Road, Facebook Marketplace.</p> {/* https://en.wikipedia.org/wiki/Silk_Road_(marketplace) */}
               <p className='text-3xl font-bold pt-3'>Step 0: Get Lucky</p>
               <p className='italic'>&quot;Luck is when an opportunity comes along and you&apos;re prepared for it&quot;<br/>Denzel Washington</p>
-              <p>It all began with a General Mills truck driver, for the sake of anonimity, we&apos;ll call him Carl. Sometime in January of 2020, Carl was assigned an objective to transport a trailer of 24 pallets of Cocoa Puffs from one coast to the other.</p>
+              <p>It all began with a General Mills truck driver, for the sake of anonymity, we&apos;ll call him Carl. Sometime in January 2020, Carl was assigned an objective to transport a trailer of 24 pallets of Cocoa Puffs from one coast to the other.</p>
               <p>As Carl reached the end of his journey he noticed a fatal mistake he had made at the start of it. This error pertained to the tamper tag on his trailer, or rather, the lack thereof.</p>
-              {/* <div className='flex justify-center'>
+              <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/tag.jpg"} alt="tag" className='rounded-xl'/>
-                  <p>Tamper tag on a semi truck</p>
+                  <p>Tamper tag</p>
                 </div>
-              </div> */}
+              </div>
               <p>For those who aren&apos;t as brushed up on your trucker terminology, a tamper tag is a glorified zip tie that&apos;s required by law to seal semi-trailers when they&apos;re transporting consumable goods. If the tag is removed in transit, or, in the case of Carl, forgotten to be put on in the first place, the goods are considered to be compromised, and must either be:</p>
               <ol className='pl-10'>
                 <li className='pb-2'>1. Incinerated</li>
@@ -56,7 +56,7 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>While my head was overflowing with questions, he abruptly asked if I would help him &quot;get the cereal.&quot; I was reluctant, but since our winter break was less than a week away, and I didn&apos;t have any other plans, I figured that helping out with this, whatever <p className='inline italic'>this</p> was going to be, would likely be more entertaining than immediately heading home, so I agreed.</p>
-              <p>He organized a day to meet up with the man who was in possession of the pallets and reached out to around 10 other friends, who turned out to be just as bored yet curious as me, to see if they&apos;d be willing to lend a hand.</p>
+              <p>He organized a day to meet up with the man who was in possession of the pallets and reached out to around 10 other friends, who turned out to be just as bored and curious as me, to see if they&apos;d be willing to lend a hand.</p>
               <p>Then, with an army amassed, the ringleader and his troops marched into war.</p>
               <p className='text-3xl font-bold pt-3'>Step 1: Obtain 10,000 lbs of Cereal</p>
               <p>The plan was simple. Two phases. In and out.</p>
@@ -66,7 +66,7 @@ const BlogPost: NextPage = () => {
                 <li className='pb-2'>2. Pull up to the cargo yard where the semi-trailer containing the Cocoa Puffs was located</li>
                 <li>3. Fill every square inch of the moving truck with cereal, first with pallets, then with garbage bags full of cereal to fill in all nooks and crannies <p className='italic inline'>(shoutout to Phil and his friends from the cargo yard for letting us use their heavy machines and for offering us some of their weed (we graciously declined))</p></li>
               </ol>
-              <p>Once dusk was upon us, we would pack up and drive to a self-storage facility 40 minutes from the cargo yard. The second phase of the plan would be then be initiated.</p>
+              <p>Once dusk was upon us, we would pack up and drive to a self-storage facility 40 minutes from the cargo yard. The second phase of the plan would then be initiated.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/uhaul.jpg"} alt="uhaul" className='rounded-xl'/>
@@ -85,25 +85,25 @@ const BlogPost: NextPage = () => {
               <p>At around 5:00 PM, as the sun was setting, we departed from the cargo yard, beginning our trek to the self-storage facility.</p>
               <p>Leading the convoy was a minivan, (also filled to the brim with cereal garbage bags), behind it, the CocoaMobile in all its glory, and the trailing escort vehicle was an SUV carrying the remainder of the infantry.</p>
               <p>The CocoaMobile may or may not have been just a pound or two <p className='inline line-through'>thousand</p> over its suggested haul limit, so the SUV was strategically following it at the tail end of the convoy, with the passengers of both vehicles on speed dial with each other in case any catastrophes were to arise.</p>
-              <p>With the exception of the fact that the CocoaMobile max speed was 10 miles under the highway speed limit, the voyage was going smoothly until around 20 minutes in.</p>
+              <p>With the exception of the fact that the CocoaMobile&apos;s max speed was 10 miles under the highway speed limit, the voyage was going smoothly until around 20 minutes in.</p>
               <p>Out of nowhere, an NPC truck attempted to cut off CocoaMobile, causing its driver to slam on the brakes. This caused the trailer to force itself off the hitch, meaning the trailer was only attached by the safety chains as the front of it was grinding itself into nothingness against the road.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/cord.jpg"} alt="cord" className='rounded-xl'/>
-                  <p>Break-light cord that got guillotined by the trailer&apos;s safety chains, kept as a souvenir</p>
+                  <p>Break-light cord that was guillotined by the trailer&apos;s safety chains, kept as a souvenir</p>
                 </div>
               </div>
               <p>It was easy to notice this was happening from the SUV&apos;s point of view, not only because of the light show of sparks that suddenly occurred but also because the trailer began to start violently fishtailing back and forth.</p>
-              <p>The passenger of the SUV nearly immediately called the CocoaMobile and politely screamed at the driver what was happening, and that he needed to speed up, (to stop the fishtailing), then slow down and pull over.</p>
-              <p>Luckily the driver was able to get to the side of the highway safely, but if that call would have been made even 10 seconds later, this post likely would have had a different title.</p>
+              <p>The passenger of the SUV nearly immediately called the CocoaMobile and politely screamed at the driver what was happening, and that he needed to speed up, to stop the fishtailing, then slow down and pull over.</p>
+              <p>Luckily the driver was able to get to the side of the highway safely, but if that call would have been made even 10 seconds later, this guide likely would have had a different title.</p>
               <p className='text-2xl font-bold'>How to Cause a Three-Hour Delay on Interstate-94 Using Only 5 Tons of Cereal</p>
-              <p>After we reattached the trailer and mentally confirmed that there was now only a {"<5%"} chance that we&apos;d be receiving our deposit back on the trailer. Our journey resumed, and somehow, we eventually made it to the self-storage facility.</p>
-              <p>I&apos;ll just give the SparkNotes about how the second phase unfolded so that we can get to the meat and potatoes of the guide, i.e. the cereal bowl.</p>
+              <p>After we reattached the trailer and mentally confirmed that there was now only a {"<5%"} chance that we&apos;d be receiving our deposit back. Our journey resumed, and somehow, we eventually made it to the self-storage facility.</p>
+              <p>I&apos;ll just give the SparkNotes about how the second phase unfolded so that we can get to the bread and butter of the guide quicker.</p>
               <ul className='pl-10'>
-                <li className='pb-2'>• Having no heavy machinery meant that we had to simply push and drop the pallets off the back of the CocoaMoble, and pray they didn&apos;t explode in the process (most didn&apos;t)</li>
-                <li className='pb-2'>• The rented lockers were randomly selected to be on the second floor of the facility, meaning we not only had to bring the cereal to them by hand, but we also had to fit everything in an elevator with an opening barely wider than the width of the pallets</li>
+                <li className='pb-2'>• Having no heavy machinery meant that we had to simply push and drop the pallets off the back of the CocoaMoble, and pray they didn&apos;t explode in the process (most didn&apos;t!)</li>
+                <li className='pb-2'>• The rented lockers were <p className='italic inline'>randomly</p> selected to be on the second floor of the facility, meaning we not only had to bring the cereal to them by hand, but we also had to fit everything in an elevator with an opening barely wider than the width of the pallets</li>
                 <li className='pb-2'>• The garbage bags and pallets were constantly leaking and tearing, leaving piles of Cocoa Puffs everywhere in our path (parking lot, corridors, elevator shaft, etc.) as we were transporting them to the lockers. This resulted in a total loss of around 1000 pounds of puffs</li>
-                <li>• Our unlimited free storage hack was discovered the second time we were transferring the cereal to different lockers, so we had to move all of the cereal to a new self-storage facility, resulting in around another 1000 lost pounds of puffs</li>
+                <li>• Our unlimited free storage hack was discovered the second time we were transferring the cereal to different lockers, so we had to move all of the cereal to a new self-storage facility, leading to around another 1000 lost pounds of puffs</li>
               </ul>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
@@ -117,7 +117,7 @@ const BlogPost: NextPage = () => {
               <p>You might be asking yourself, shouldn&apos;t making a plan have been the first step in this guide? A point with which my left brain completely agrees, however, by attempting to craft the perfect plan at the beginning of the adventure, we risked crossing paths with analysis paralysis. That encounter could have ended this whole expedition before it even began.</p>
               <p>And what better way to force yourself into action than having the commitment of three 2008 Honda Civics worth of breakfast cereal tied to your name.</p>
               <p>After a bit of brainstorming, it was clear that the only big thing you could really do with this much cereal is build the world&apos;s largest cereal bowl.</p>
-              <p>So with the puffs in our back pocket, we produced a plan, and by we I mostly mean my roommate because, at the time, I was trying to juggle being a part-time tutor, part-time intern, full-time student, and (poorly) attempting to maintain a social life through extracurriculars.</p>
+              <p>So with the puffs in our back pocket, we produced a plan, and by we, I mostly mean my roommate because, at the time, I was trying to juggle being a tutor, intern, student, and (poorly) attempting to maintain a social life through extracurriculars.</p>
               <p className='text-2xl font-bold'>The Plan</p>
               <p>To maximize clout, we wanted to make this thing official, so we began by reaching out to Guinness for guidelines on how to qualify for breaking the current record. We then proceeded to wait 3 months for a reply since we didn&apos;t pay for their $800 &quot;premium&quot; communication package.</p>
               <div className='flex justify-center'>
@@ -132,38 +132,38 @@ const BlogPost: NextPage = () => {
                 <li className='pb-2'>3. The bowl must look like a bowl (no dumping everything in a shipping container and calling it a day)</li>
                 <li>4. A public health official and an expert in weights and measurements must be present as the bowl is being filled to ensure that all ingredients and procedures are sanitary (yikes) and to periodically record the weight of the bowl as it&apos;s being filled</li>
               </ol>
-              <p>With da rules in hand, our engineering backgrounds were put to use as we explored the next moves.</p>
-              <p>Through the process of elimination, the only container option for the bowl that logistically made sense was a roofing dumpster. We could rent the dumpster and have a truck drop it off on our doorstep. This way, when everything would be said and done, the truck would return and whisk away the dumpster, cereal, and all of our cleanup problems.</p>
-              <p>The only flaw in this choice of container was that it was obviously not round. So we decided we would design and construct a facade in an attempt to give the dumpster the illusion of being a colossal, round, polka-dotted bowl.</p>
+              <p>With da rules in hand, our engineering backgrounds were put to use as we explored our next moves.</p>
+              <p>Through the process of elimination, the only container option for the bowl that logistically made sense was a roofing dumpster. We could rent the dumpster and have a truck drop it off on our doorstep, and when everything would be said and done, the truck would return and whisk away the dumpster, cereal, and all of our cleanup problems.</p>
+              <p>The only flaw in this choice of container was that it was obviously not round. So we decided we would design and construct a facade in an attempt to give the dumpster the illusion of being a colossal, semi-spherical, polka-dotted bowl.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/bom.jpg"} alt="schematic" className='rounded-xl'/>
                   <p>Schematic for one of the facade trusses</p>
                 </div>
               </div>
-              <p>To weigh said bowl, the most economic choice we found was to rent a pair of scales that were traditionally used to weigh semi-trucks. One minor con of these scales was that they weighed around 450 pounds apiece. This meant we&apos;d also require a means of removing them from the trailer they&apos;d be transported in. For this, we opted to build a 12-foot-tall gantry crane.</p>
-              <p>Thinking ahead to filling the bowl, we originally decided on using a human-conveyor belt system with ladders and scaffolding to get the ingredients into the bowl. However, upon 5 seconds of retrospect on this idea, we realized how many potential downsides that system had.</p>
-              <p>So instead, we chose to build a pair of platforms that could be loaded up with bags/barrels of ingredients and then raised by a forklift so that we could simply pour the ingredients into the bowl.</p>
+              <p>To weigh said bowl, the most economic choice we found was to rent a pair of scales that were traditionally used to weigh semi-trucks. One slight con of using these scales was that they weighed around 450 pounds apiece. This meant we&apos;d also require a means of removing them from the trailer they&apos;d be transported in. So we decided to build a 12-foot-tall gantry crane as well.</p>
+              <p>And then to fill the bowl, we originally decided on using a human-conveyor system with ladders and scaffolding to get the ingredients into the bowl. However, upon 5 seconds of retrospecting on this idea, we realized how many potential downsides that system had.</p>
+              <p>So instead, we chose to build a pair of platforms that could be loaded up with the ingredients and then raised by a forklift so that we could simply pour the ingredients into the bowl.</p>
               <p>And last but not least, we needed some milk.</p>
               <p className='text-3xl font-bold pt-3'>Step 4: Got Milk?</p>
               <p>If you do, we could really use it, all the grocery stores and gas stations in a 5-mile radius are fresh out.</p>
               <p>Well, perhaps not. In an alternative universe where we weren&apos;t on a budget, purchasing every local gallon of milk would have been excellent for the meme. However, back in reality, we were broke college students.</p>
               <p>To adhere to the milk guidelines that were given in da rules, we crunched some numbers and estimated that we&apos;d need around 500 gallons. Knowing this, we began to explore our options.</p>
               <p className='text-2xl font-bold'>Cow Milk?</p>
-              <p>Buying 500 gallons of milk locally, assuming we could hypothetically find and be allowed to purchase that much from a store, would have run us at least $1600. So, we decided to get creative instead.</p>
+              <p>Buying 500 gallons of milk locally, assuming we could hypothetically find and be allowed to purchase that milk much from a store, would have run us at least $1600. So, we decided to get creative instead.</p>
               <p className='italic'>&quot;Necessity is the mother of invention.&quot;<br/>Plato</p>
               <p className='text-2xl font-bold'>Powdered Milk?</p>
               <p>Since no one would actually be eating from the cereal bowl, we decided to be as cheap as possible. Our first idea we combining powdered milk and hose water, but it turns out that mass amounts of powdered milk are also quite expensive. So we ruled this option out.</p>
-              <p className='text-2xl font-bold'>Oat Milk?</p>
+              <p className='text-2xl font-bold'>Hipster Milk?</p>
               <p>Then, we explored the options of making large batches of oat/almond milk. The most budgetary option that we could find here was 50-pound bags of industrial horse oats. So we bought two of those with the intention of grinding the oats in blenders and combining the product with hose water.</p>
               <p>As the big day drew closer, we realized how excruciatingly laborious it would be to grind 100 pounds of oats, so we nixed that idea and resorted back to powdered milk.</p>
               <p>We then realized we&apos;d need somewhere to mix and store all 500 gallons of this milk, so we turned to our best frienemy, Facebook Marketplace, once more, and sure enough.</p>
               <p className='text-2xl font-bold'>For Sale - Ten Used 55 Gallon Oil Drums</p>
-              <p>Another solution dropped right into our laps. If we were to have skipped step 0, this never wouldn&apos;t have happened.</p>
+              <p>Another solution dropped right into our laps. If we were to have skipped step 0, this never would&apos;ve happened.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className='rounded-xl'/>
-                  <p>A glimpse into operation M.I.L.K.</p>
+                  <p>A glimpse into Operation M.I.L.K.</p>
                 </div>
               </div>
               <p>Needless to say, we added these oil drums, along with many other items, to our near-infinite shopping list.</p>
@@ -175,7 +175,7 @@ const BlogPost: NextPage = () => {
                   <li className='pb-2'>• Multiple trailer & U-Haul rentals</li>
                   <li className='pb-2'>• The largest roofing dumpster feasible</li>
                   <li className='pb-2'>• Steel, tarps, cardboard, and paint</li>
-                  <li className='pb-2'>• 10 x 55 gallon oil drums</li>
+                  <li className='pb-2'>• 10 x 55-gallon oil drums</li>
                   <li className='pb-2'>• Paint mixers, pumps, and powdered milk</li>
                   <li className='pb-2'>• Lumber for a gantry crane</li>
                   <li className='pb-2'>• Lumber for the forklift platforms</li>
@@ -183,11 +183,11 @@ const BlogPost: NextPage = () => {
                   <li className='pb-2'>• Countless other tools and materials</li>
                   <li>• Merch</li>
               </ul>
-              <p>Credit must be given where credit is due. My roommate foot the bill for nearly the entirety of the operation. Not only with his wallet but also with his time, as he was the primary planner of the whole ordeal.</p>
+              <p>Credit must be given where credit is due. My roommate ate the cost for nearly the entirety of the operation. Not only with his wallet but also with his time, as he was the primary planner of the whole ordeal.</p>
               <p>Also, credit certainly has to be given to the capitalistic system I was born into that not only allows for all this absurdity to take place but actively encourages it.</p>
-              <p>With all of that prelude out of the way, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
+              <p>Now, without further ado, it&apos;s time to get to the reason you clicked on this guide in the first place.</p>
               <p className='text-3xl font-bold pt-3'>Step 6: Showtime</p>
-              <p>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <p className='inline italic'>food-grade</p> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning was upon us.</p>
+              <p>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <p className='inline italic'>food-grade</p> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning was upon them.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className='rounded-xl'/>
@@ -201,8 +201,8 @@ const BlogPost: NextPage = () => {
               <p>We had originally reached out to a few stores and businesses with the proposal of making the event a public charity fundraiser in their parking lots. One of these businesses even initially said yes, however, since this was towards the beginning of the pandemic, they revoked their offer out of caution</p>
               <p>By this point, we were too invested in the current date to postpone the event and find a new venue, so we were left with one final option.</p>
               <p className='text-2xl font-bold'>Beg.</p>
-              <p>My roommate, with chutzpa far greater than my own, went to his parents and proposed the idea of hosting the ceremony in their backyard, and after a few days of negotiation, they allowed him to privately host the event on their property.</p>
-              <p>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of filling this bowl created a sense of camaraderie, the likes of which you&apos;d more typically see with a sports team, that pushed us through the storm.</p>
+              <p>My roommate, with chutzpa far greater than my own, went to his parents and proposed the idea of hosting the ceremony in their backyard, and after a few days of negotiation, they generously allowed him to privately host the event on their property.</p>
+              <p>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of building and filling this bowl created a sense of camaraderie that pushed us through the storm.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs px-3'>
                   <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl'/>
@@ -215,7 +215,7 @@ const BlogPost: NextPage = () => {
               </div>
               <p>Eventually, we did fasten the final tarp and retreated for the night. On the other side of that slumber, our demons patiently waited for us, willing to wage war.</p>
               <p>We woke up at 8 a.m., ate a quick breakfast of anything except cereal, and were out the door.</p>
-              <p>After completing a few finishing touches on the bowl, we had to pick up the puffs. They were currently docked in the driveway of my roommate&apos;s neighborhood friend, all stored in lawn bags for eventual ease of pouring. Multiple trips were taken throughout the day to transport them to my roommate&apos;s front lawn.</p>
+              <p>After completing a few finishing touches on the bowl, we had to pick up the puffs. They were currently docked in the driveway of my roommate&apos;s neighborhood friend, all stored in lawn bags for eventual ease of emptying. Multiple trips were taken throughout the day to transport them to my roommate&apos;s front lawn.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl'/>
@@ -223,11 +223,11 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p>As soon as the public health official and weights and measurements expert arrived on the scene, we were off to the races.</p>
-              <p>To ensure everything was progressing smoothly, multiple (unevenly sized) fireteams were assembled from the 20+ volunteers who signed up.</p>
+              <p>To ensure everything progressed smoothly, multiple unevenly sized fireteams were assembled from the 20+ volunteers who signed up.</p>
               <p className='text-2xl font-bold'>Team TREK</p>
               <p>Responsible for migrating all of the cereal from the neighborhood friend&apos;s driveway to my roommate&apos;s front lawn.</p>
               <p className='text-2xl font-bold'>Team FILL</p>
-              <p>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl; additionally responsible for having someone in the bowl to evenly spread out the cereal *resume flashback*.</p>
+              <p>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl; additionally responsible for having someone in the bowl to evenly spread out the cereal. <p className='inline italic'>*resume flashback*</p></p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
                   <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className='rounded-xl'/>
@@ -243,7 +243,7 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p className='text-2xl font-bold'>Team BOSS</p>
-              <p>Responsible for maintaining the stereotype that any well-functioning system requires bureaucracy introduced by people by pointing at other people and telling them to do things that they were already doing.</p>
+              <p>Responsible for maintaining the stereotype that any well-functioning system requires a minimum threshold of bureaucracy.</p>
               <p>And when you morph these teams together, add a bit of water and sunshine, and let them do their thing for 4-6 hours, bada-bing bada-boom:</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
@@ -253,7 +253,7 @@ const BlogPost: NextPage = () => {
               </div>
               <p>The total weight came out to be 9,045 pounds of stale, salmonella-inducing breakfast goodness. More than 2.5 times the previous world record.</p>
               <p>As an aside, this number only included around 200 gallons of milk, compared to the 500 we had made. We had to postpone pouring the remainder of the milk in as the public health official had to leave early, and we didn&apos;t want to risk doing anything off record. But deep down in my heart, we broke 10,000 pounds.</p>
-              <p>Somehow, we had made it this far without any gigantic disasters, so what else was there to do at this point but to celebrate?</p>
+              <p>Somehow, we had made it this far without any catastrophes, so what else was there to do at this point but to celebrate?</p>
               <p className='text-3xl font-bold pt-3'>Step 7: Swim in It</p>
               <p>Not much to say here, just a few friends lounging in a dumpster, inhaling enough chocolate dust to cause a new form of lung cancer.</p>
               <div className='flex justify-center'>
@@ -262,7 +262,7 @@ const BlogPost: NextPage = () => {
                   <p>In love with the cocoa</p>
                 </div>
               </div>
-              <p>A few hours after this picture was taken, the roofing dumpster rental company swung by to reclaim what was theirs, and, in accordance with what we initially agreed with them, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill. 😇</p>
+              <p>A few hours after this picture was taken, the roofing dumpster rental company swung by to reclaim what was theirs, and, per what we initially agreed with them, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill. </p>
               <p className='pb-96'>Now, all that was left was to submit the necessary paperwork and evidence to Guinness and wait...</p>
               <p className='pb-96'>And wait some more...</p>
               <p className='pb-96'>Just a few more weeks...</p>
@@ -275,22 +275,23 @@ const BlogPost: NextPage = () => {
                 </div>
               </div>
               <p className='text-3xl font-bold pt-3'>Step 8: Condemn Capitalism</p>
-              <p>Upon reading this email, my roommate decided he was going to speedrun, any %, the 5 stages of grief.</p>
-              <p>&quot;This has to be some sort of misunderstanding,&quot; he told me, &quot;we triple-checked every piece of information they asked for.&quot; Which was true.</p>
-              <p>On the surface the rationale for the decision was clear. The email stated that &quot;after an extensive review of your documentation, the pre-tared weight of the bowl was found to be missing.&quot;</p>
-              <p>Even though this information was never explicitly being asked for in the first place, no worries, we thought. We, fortunately, had that information on hand, so we sent it over to them and played the waiting game once more.</p>
-              <p>However, this time, they replied much quicker.</p>
+              <p>Upon reading this email, my roommate decided he was going to speedrun (any %) the 5 stages of grief.</p>
+              <p>&quot;This has to be some sort of misunderstanding,&quot; he told me, &quot;we triple-checked every piece of information they asked for.&quot; He wasn&apos;t even over-exaggerating.</p>
+              <p>But on the surface the rationale for the decision was clear.</p>
+              <p>The email stated that &quot;after an extensive review of your documentation, the pre-tared weight of the bowl was found to be missing.&quot;</p>
+              <p>Even though this information was never explicitly being asked for in the first place, no worries, we thought. Fortunately, we had that information on hand, so we sent it over to them and played the waiting game once more.</p>
+              <p>However, this time, they replied much more quickly.</p>
               <p className='italic'>&quot;The decision made on your application is final and cannot be amended.&quot;<br/>Guinness employee who enjoys kicking puppies</p>
-              <p>And just like that, our golden ticket to being immortalized in history (temporarily, at least) metamorphosized into a reasonably expensive lesson.</p>
+              <p>And just like that, our golden ticket to being immortalized in history, at least, temporarily, metamorphosized into a reasonably expensive lesson.</p>
               <p className='text-2xl font-bold'>Guinness is Pay-to-Win</p>
-              <p>To preface this theory, I&apos;d like to point out that not only did we not opt into paying $800 for Guinness&apos; premium communication package, but we also declined their offer for an adjudicator to fly from Ireland to <p className='inline italic'>potentially</p> recognize our record the same day it happened for the low price of $16,000 + travel fees.</p>
+              <p>To preface this theory, I&apos;d like to point out that not only did we not opt into paying $800 for Guinness&apos; premium communication package, but we also declined their offer for an adjudicator to fly from Ireland on our dime to <p className='inline italic'>potentially</p> recognize our record the same day it happened for the low price of $16,000.</p>
               <p>Now if you&apos;re as cynical as me when reading opinions on the internet, you might think that I&apos;m being a sore loser and that I should move with my life instead of jumping to such a conclusion.</p>
-              <p>However, this speculation isn&apos;t exclusive to me. With a single Google search, a few articles such as <a target="_blank" rel="noreferrer" href='https://www.vox.com/2015/3/6/8157639/guinness-world-record-business' className='inline underline hover:text-mint'>this</a> and <a target="_blank" rel="noreferrer" href='https://pawebpage.com/2252/archive/guinness-world-records-from-faithful-to-fraudulent/' className='inline underline hover:text-mint'>this</a> appear that support the claim that &quot;Guinness has a track record of approving or disapproving record attempts based on whether or not it will benefit their corporate image.&quot; But then, again anyone can write anything on the internet.</p>
-              <p>Admittedly, the final picture of the bowl didn&apos;t look as visually stunning as it could&apos;ve been. But this notion coupled with the fact that we didn&apos;t pay Guinness a single cent led us to the conclusion that we were rejected not based on a technicality, but instead, for the sake of preserving Guinness&apos; brand (also read $$$).</p>
-              <p>But honestly, I can&apos;t blame them. They&apos;re a for-profit business, not a charity. I think that it&apos;s simply unfortunate that they purport themselves as being &quot;the world&apos;s unrivaled authority on record-breaking achievement&quot; while simultaneously having to play by the rules of the game of capitalism to survive. But I digress.</p>
+              <p>However, this speculation isn&apos;t exclusive to me. With a single Google search, articles such as <a target="_blank" rel="noreferrer" href='https://www.vox.com/2015/3/6/8157639/guinness-world-record-business' className='inline underline hover:text-mint'>this</a> and <a target="_blank" rel="noreferrer" href='https://pawebpage.com/2252/archive/guinness-world-records-from-faithful-to-fraudulent/' className='inline underline hover:text-mint'>this</a> appear that support the claim that &quot;Guinness has a track record of approving or disapproving record attempts based on whether or not it will benefit their corporate image.&quot; But then again, anyone can write anything on the internet.</p>
+              <p>Admittedly, the final picture of the bowl didn&apos;t look as visually stunning as it could&apos;ve been. But this notion coupled with the fact that we didn&apos;t pay Guinness a single cent led us to the conclusion that we were rejected not based on a technicality, but instead, for the sake of preserving Guinness&apos; brand (i.e. $$$).</p>
+              <p>But honestly, I can&apos;t blame them. They&apos;re a for-profit business, not a charity. I think that it&apos;s simply unfortunate that they assert themselves as being &quot;the world&apos;s unrivaled authority on record-breaking achievement&quot; while simultaneously having to play by the rules of the game of capitalism to survive. But I digress.</p>
               <p className='text-3xl font-bold pt-3'>Step 9: Reject Authority</p>
               <p>By Guinness&apos; standard, we were out of the race, but as the ashes fell and the chocolatey dust settled, we were left with nothing but our own tales to commemorate this feat.</p>
-              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to do, regardless of what any self-proclaimed authority could otherwise tell us.</p>
+              <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to achieve, regardless of what any self-proclaimed authority could otherwise tell us.</p>
               <p>Now, before you embark into the world and follow this guide to make your own cereal bowl, you might be wondering, &quot;Was this a worthwhile endeavor?&quot; or &quot;Would you ever do this again?&quot;</p>
               <p>Thank you for taking the time to read this blog post.</p>
               {/* <div className='flex justify-center'>

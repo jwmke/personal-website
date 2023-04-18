@@ -26,10 +26,10 @@ const Blog: NextPage = () => {
             <div className='text-2xl font-bold mt-7'>
               General Posts
             </div>
-            <div className='text-xl mt-7'>
-              {/* <Link href='/blog/cocoa-puffs' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>The World&apos;s Largest Cereal Bowl; an Ode to Absurdism</span></Link>
-            </div>
-            <div className='text-xl mt-4'> */}
+            {/* <div className='text-xl mt-7'>
+              <Link href='/blog/cocoa-puffs' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>How to Make the World&apos;s Largest Bowl of Cereal</span></Link>
+            </div> */}
+            <div className='text-xl mt-4'>
               <Link href='/blog/new-beginning' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>For the Student Dreading the End of University</span></Link>
             </div>
             <div className='text-xl mt-4'>
