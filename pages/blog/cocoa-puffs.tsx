@@ -20,7 +20,7 @@ const BlogPost: NextPage = () => {
                 How to Make the World&apos;s Largest Bowl of Cereal
             </div>
             <div className='text-xl child:mt-5 mt-8'>
-              <p className='text-pine'>{"// TL;DR - a step-by-step guide on how to fill a "}<p className='inline line-through'>{"roofing dumpster"}</p>{" bowl with over nine thousand pounds of cereal and milk because why not"}</p>
+              <p className='text-pine'>{"// TL;DR - a step-by-step guide on how to fill a "}<p className='inline line-through'>{"construction dumpster"}</p>{" bowl with over nine thousand pounds of cereal and milk because why not"}</p>
               <p>*record scratch* Yep, that&apos;s me. You&apos;re probably wondering how I got here.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
@@ -133,7 +133,7 @@ const BlogPost: NextPage = () => {
                 <li>4. A public health official and an expert in weights and measurements must be present as the bowl is being filled to ensure that all ingredients and procedures are sanitary (yikes) and to periodically record the weight of the bowl as it&apos;s being filled</li>
               </ol>
               <p>With da rules in hand, our engineering backgrounds were put to use as we explored our next moves.</p>
-              <p>Through the process of elimination, the only container option for the bowl that logistically made sense was a roofing dumpster. We could rent the dumpster and have a truck drop it off on our doorstep, and when everything would be said and done, the truck would return and whisk away the dumpster, cereal, and all of our cleanup problems.</p>
+              <p>Through the process of elimination, the only container option for the bowl that logistically made sense was a construction dumpster. We could rent the dumpster and have a truck drop it off on our doorstep, and when everything would be said and done, the truck would return and whisk away the dumpster, cereal, and all of our cleanup problems.</p>
               <p>The only flaw in this choice of container was that it was obviously not round. So we decided we would design and construct a facade in an attempt to give the dumpster the illusion of being a colossal, semi-spherical, polka-dotted bowl.</p>
               <div className='flex justify-center'>
                 <div className='inline-block text-center text-xs'>
@@ -173,7 +173,7 @@ const BlogPost: NextPage = () => {
                   <li className='pb-2'>• A forklift rental</li>
                   <li className='pb-2'>• Semi truck scales</li>
                   <li className='pb-2'>• Multiple trailer & U-Haul rentals</li>
-                  <li className='pb-2'>• The largest roofing dumpster feasible</li>
+                  <li className='pb-2'>• The largest construction dumpster feasible</li>
                   <li className='pb-2'>• Steel, tarps, cardboard, and paint</li>
                   <li className='pb-2'>• 10 x 55-gallon oil drums</li>
                   <li className='pb-2'>• Paint mixers, pumps, and powdered milk</li>
@@ -262,7 +262,7 @@ const BlogPost: NextPage = () => {
                   <p>In love with the cocoa</p>
                 </div>
               </div>
-              <p>A few hours after this picture was taken, the roofing dumpster rental company swung by to reclaim what was theirs, and, per what we initially agreed with them, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill. </p>
+              <p>A few hours after this picture was taken, the construction dumpster rental company swung by to reclaim what was theirs, and, per what we initially agreed with them, we gave them an additional tip in exchange for them getting rid of the cereal at a composting facility instead of a landfill. </p>
               <p className='pb-96'>Now, all that was left was to submit the necessary paperwork and evidence to Guinness and wait...</p>
               <p className='pb-96'>And wait some more...</p>
               <p className='pb-96'>Just a few more weeks...</p>
