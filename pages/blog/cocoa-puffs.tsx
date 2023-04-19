@@ -292,7 +292,7 @@ const BlogPost: NextPage = () => {
               <p className='text-3xl font-bold pt-3'>Step 9: Reject Authority</p>
               <p>By Guinness&apos; standard, we were out of the race, but as the ashes fell and the chocolatey dust settled, we were left with nothing but our own tales to commemorate this feat.</p>
               <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to achieve, regardless of what any self-proclaimed authority could tell us otherwise.</p>
-              <p>And who knows, in the end, maybe getting denied by Guinness was the better of the two outcomes. Not only did it humble us into awareness of the primitive realities of this world, but it also allowed us to shift our hindsight to the aspects of the endeavor which might&apos;ve been considered lesser otherwise.</p>
+              <p>And who knows, in the end, maybe getting denied by Guinness was the better of the two outcomes. Not only did it humble us into awareness of the primitive realities of this world, but it also allowed us to shift our hindsight to the aspects of the whole endeavor which we might&apos;ve considered lesser otherwise.</p>
               <p>Now, armed with this knowledge, go embark into the world, and make an oversized cereal bowl of your own.</p>
               <div className='flex justify-center pt-4'>
                 <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
