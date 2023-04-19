@@ -52,6 +52,11 @@ const BlogPost: NextPage = () => {
               <p>To live life to the fullest, and be present for the whole journey, you need an aim. When I sat back down in that seat after I had walked across the stage, the first thing I did was decouple my identity from being a student. The new identity I chose wasn&apos;t tied to my career, or else I&apos;d risk being miserable upon retirement, but instead built upon countless hours of introspection in which I discovered my core priorities and, along with them, my own definition of success.</p>
               <p>To anyone who&apos;s currently nearing the end of their university odyssey, you must uncover what you want out of life, and use the vehicle of habitual betterment as means to arrive at this destination.</p>
               <p>Armed with this knowledge, go forth, and conquer the world.</p>
+              <div className='flex justify-center pt-4'>
+                <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
+                  <Image width={132} height={42} src={"/img/blog/human.png"} alt="human"/>
+                </a>
+              </div>
             </div>
           </div>
         </div>

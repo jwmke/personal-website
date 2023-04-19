@@ -95,7 +95,7 @@ const BlogPost: NextPage = () => {
               </div>
               <p>It was easy to notice this was happening from the SUV&apos;s point of view, not only because of the light show of sparks that suddenly occurred but also because the trailer began to start violently fishtailing back and forth.</p>
               <p>The passenger of the SUV nearly immediately called the CocoaMobile and politely screamed at the driver what was happening, and that he needed to speed up, to stop the fishtailing, then slow down and pull over.</p>
-              <p>Luckily the driver was able to get to the side of the highway safely, but if that call would have been made even 10 seconds later, this guide likely would have had a different title.</p>
+              <p>Luckily the driver was able to get to the side of the highway safely, but if that call would have been made even 10 seconds later, this guide likely would have had a much different title:</p>
               <p className='text-2xl font-bold'>How to Cause a Three-Hour Delay on Interstate-94 Using Only 5 Tons of Cereal</p>
               <p>After we reattached the trailer and mentally confirmed that there was now only a {"<5%"} chance that we&apos;d be receiving our deposit back. Our journey resumed, and somehow, we eventually made it to the self-storage facility.</p>
               <p>I&apos;ll just give the SparkNotes about how the second phase unfolded so that we can get to the bread and butter of the guide quicker.</p>
@@ -292,14 +292,13 @@ const BlogPost: NextPage = () => {
               <p className='text-3xl font-bold pt-3'>Step 9: Reject Authority</p>
               <p>By Guinness&apos; standard, we were out of the race, but as the ashes fell and the chocolatey dust settled, we were left with nothing but our own tales to commemorate this feat.</p>
               <p>With our heads held high, we knew that, together, we had achieved the triumph that we had originally set out to achieve, regardless of what any self-proclaimed authority could tell us otherwise.</p>
-              <p>Now go embark into the world and make an oversized cereal bowl of your own. But, before you do, you might be wondering:</p>
-              <p className='text-2xl font-bold pb-96'>&quot;If given a chance to go back in time, would I choose to do this all again?&quot;</p>
-              <p>Thank you for taking the time to read this blog post.</p>
-              {/* <div className='flex justify-center'>
+              <p>And who knows, in the end, maybe getting denied by Guinness was the better of the two outcomes. Not only did it humble us into awareness of the primitive realities of this world, but it also allowed us to shift our hindsight to the aspects of the endeavor which might&apos;ve been considered lesser otherwise.</p>
+              <p>Now, armed with this knowledge, go embark into the world, and make an oversized cereal bowl of your own.</p>
+              <div className='flex justify-center pt-4'>
                 <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
                   <Image width={132} height={42} src={"/img/blog/human.png"} alt="human"/>
                 </a>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
