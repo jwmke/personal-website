@@ -21,7 +21,7 @@ const BucketList: NextPage = () => {
             Bucket List
           </div>
           <div className='text-xl child:mt-5'>
-            <p className='pt-5'>Read 500 books</p>
+            <p className='pt-5'>Read <a href='https://www.goodreads.com/jwmke' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>500 books</a></p>
             <p>Pass the TOPIK-I (Test of Proficiency in Korean)</p>
             <p>Walk 4,000,000 steps in a year</p>
             <p>Earn a purple belt in Brazilian Jiu-Jitsu</p>
@@ -29,7 +29,7 @@ const BucketList: NextPage = () => {
             <p>Create an app that impacts 10,000+ people</p>
             <p>Live in NYC for one year</p>
             <p>Make 1000 <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>homemade NYC pizzas</span></Link></p>
-            <p>Do 50 pushups every day for 3 months</p>
+            <p>Bench press my body weight</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
             <p>Make every dish in a cookbook</p>
             <p>Explore Eastern Asia for 3 months</p>
@@ -44,7 +44,7 @@ const BucketList: NextPage = () => {
             <p className='line-through'>Have my name on a patent (August, 2021)</p>
             <p>Celebrate the Chinese New Year in China</p>
             <p>Achieve zero debt</p>
-            <p>Stay in a hostel</p>
+            <p>Stay in a European hostel</p>
             <p>Climb Mount Kilimanjaro</p>
           </div>
         </div>
