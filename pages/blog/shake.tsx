@@ -20,7 +20,7 @@ const BlogPost: NextPage = () => {
                 1K Calorie Chocolate Protein Shake 🏋️
             </div>
             <div className='text-xl child:mt-5 mt-8'>
-              <p>A peanut butter, banana, and chocolate milkshake that contains 65g of protein, 1100 calories, and makes for a perfect post-workout treat.</p>
+              <p>A peanut butter, banana, and chocolate milkshake that contains 65g of protein, 1100 calories, and makes for the perfect post-workout treat.</p>
               <p className='text-2xl font-bold pt-3'>Ingredients</p>
               <p>1 banana</p>
               <p>1 cup, whole milk</p>
