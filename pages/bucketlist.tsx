@@ -29,7 +29,7 @@ const BucketList: NextPage = () => {
             <p>Create an app that impacts 10,000+ people</p>
             <p>Live in NYC for one year</p>
             <p>Make 1000 <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>homemade NYC pizzas</span></Link></p>
-            <p>Bench press 135 pounds</p>
+            <p>Bench press my body weight</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
             <p>Make every dish in a cookbook</p>
             <p>Explore Eastern Asia for 3 months</p>

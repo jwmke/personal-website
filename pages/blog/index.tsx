@@ -27,7 +27,7 @@ const Blog: NextPage = () => {
               General Posts
             </div>
             {/* <div className='text-xl mt-7'>
-              <Link href='/blog/electric' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>The Ultimate Guide to Personal Electric Vehicles</span></Link>
+              <Link href='/blog/electric' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>A Beginner&apos;s Guide to Personal Electric Vehicles</span></Link>
             </div> */}
             <div className='text-xl mt-7'>
               <Link href='/blog/cocoa-puffs' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>How to Make the World&apos;s Largest Bowl of Cereal</span></Link>
