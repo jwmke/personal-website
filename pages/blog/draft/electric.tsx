@@ -33,7 +33,8 @@ const BlogPost: NextPage = () => {
               <p>Secondly, since PEVs be used to travel/commute short distances, ultra-small EVs such as E-skates and Hoverboards also won&apos;t be considered in this guide, as walking is often far more productive.</p>
               <p>With these exceptions out of the way let&apos;s briefly jump into why you&apos;d even want a PEV in the first place, before evaluating your best options in terms of purchasing one.</p>
               <p className='text-2xl font-bold pt-3'>Aren&apos;t these things just toys?</p>
-              <p>Yes.</p>
+              <p className='italic'>&quot;As men get older, the toys get more expensive.&quot;<br/>Marvin Davis</p>
+              <p>Well, yes and no.</p> {/* explore philosophical side of fun then talk about last mile(s) commute */}
               <p>https://shop.niu.com/products/niu-kqi3-max-electric-kick-scooter-for-adults</p>
               <p>https://fluidfreeride.com/products/fluid-mosquito?ref=18</p>
               <p>https://www.euco.us/products/inmotion-v10-electric-unicycle</p>
