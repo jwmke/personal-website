@@ -10,7 +10,7 @@ const BucketList: NextPage = () => {
     <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
     <Head>
         <title>Joe Weller</title>
-        <meta name="description" content="Joe Weller's Bucket List." />
+        <meta name="description" content="My Bucket List." />
         <link rel="icon" href="/favicon/favicon.ico" />
     </Head>
     <Navbar isFixed={true}/>

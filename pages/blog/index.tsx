@@ -10,7 +10,7 @@ const Blog: NextPage = () => {
       <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
       <Head>
           <title>Joe Weller</title>
-          <meta name="description" content="Joe Weller's Blog." />
+          <meta name="description" content="Where I write about things that interest me." />
           <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
       <Navbar/>
