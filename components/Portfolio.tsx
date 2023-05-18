@@ -19,7 +19,7 @@ const Portfolio = () => {
                             🌏 Learning Korean, 안녕하세요!
                         </p>
                         <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            ⚡ Electric Longboarding Fanatic
+                            🦜 Messing around with <a href='https://github.com/hwchase17/langchain' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>LangChain</a>
                         </p>
                         <p className='text-mint text-xl pb-5'>
                             &lt;/present&gt;
@@ -36,7 +36,7 @@ const Portfolio = () => {
                             🏭 Interned at Rockwell Automation and MSI Data
                         </p>
                         <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            🔧 Co-founded a competitive robotics organization
+                            🧀 Wisconsin native, born and raised
                         </p>
                         <p className='text-mint text-xl'>
                             &lt;/past&gt;
