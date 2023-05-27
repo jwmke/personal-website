@@ -34,6 +34,7 @@ const BucketList: NextPage = () => {
             <p>Make every dish in a cookbook</p>
             <p>Explore Eastern Asia for 3 months</p>
             <p className='line-through'>Meditate for 30 days in a row (December, 2022)</p>
+            <p>Do a kickflip</p>
             <p>Attend the <a href='https://en.wikipedia.org/wiki/Carnival_of_Ivrea' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Battle of Oranges</a> in Italy</p>
             <p>Be a guest lecturer at a university</p>
             <p>Attend <a href='https://www.ces.tech/about-ces.aspx' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>CES</a> in Las Vegas</p>
