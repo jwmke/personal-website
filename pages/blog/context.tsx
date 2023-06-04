@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 
 const BlogPost: NextPage = () => {
-    const styledLink = (text: String, link: String) => (
+    const styledLink = (text: string, link: string) => (
         <a href={link} target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>
             {text}
         </a>
