@@ -48,7 +48,7 @@ const BlogPost: NextPage = () => {
               <p>The first issue we run into is that the memory and time costs of inference with the attention mechanism of LLMs {styledLink("scale quadratically", "https://lilianweng.github.io/posts/2023-01-10-inference-optimization/")} with the size of their context window. In English, this means when going from 32k to 64k length of context window, it isn&apos;t 2x as expensive, but 4x more expensive.</p>
               <div className='flex justify-center'>
                   <Image width={468} height={244} src={"/img/blog/graph.jpg"} alt="graph" className='rounded-xl'/>
-              </div>I
+              </div>
               <p>At the moment, this is a rather big deal since it costs {styledLink("just under $2", "https://news.ycombinator.com/item?id=35841708")} to prompt GPT-4 with 32k tokens, despite OpenAI charging a flat amount per 1k tokens <p className='inline text-sm'>(if I had to speculate why they do this, I&apos;d say it&apos;s likely for increasing customer loyalty by offering a less confusing pricing model at the expense of reduced profit margins)</p>.</p>
               <p>However, this is the weaker of my critiques against using an inflated context window since:</p>
               <ol className='pl-10'>
