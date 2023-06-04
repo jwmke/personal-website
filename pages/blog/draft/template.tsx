@@ -21,7 +21,7 @@ const BlogPost: NextPage = () => {
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <p>text</p>
-              <p className='text-2xl font-bold pt-3'>heading</p>
+              <p className='text-3xl font-bold pt-3'>heading</p>
               <p>text</p>
             </div>
           </div>
