@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Navbar from '../../components/Navbar';
 
@@ -20,10 +21,10 @@ const BlogPost: NextPage = () => {
               The Perfect(ish) NYC Pizza 🍕
             </div>
             <div className='text-xl mt-8'>
-              Wisconsin man&apos;s experimental journey to make the ultimate NYC pizza.<br/>
+              My experimental journey to make the ultimate NYC slice.<br/>
             </div>
             <div className='text-xl mt-5'>
-              Bucket List Progress as of 6/2/23: <span className='text-navy font-bold'>84/1000</span>
+              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 6/2/23: <span className='text-navy font-bold'>84/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
               <div className="bg-navy h-2 rounded-full" style={{"width": ((84/1000.0)*100) + "%"}}></div>

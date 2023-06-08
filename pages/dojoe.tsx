@@ -45,11 +45,12 @@ const Dojoe: NextPage = () => {
             (My Hall of Fame)
           </span>
             <p className='text-xl leading-9 mt-8'>
-              Throughout my life, I&apos;ve been fortunate enough to meet some amazing people. 
-              These people have been the Mr. Miyagis and the Huckleberry Finns in my journeys who have all had a lasting impact on who I am today.
-              They&apos;ve taught me technical skills and life lessons, given me opportunities, and have been there when I&apos;ve needed help.
+              I&apos;ve been fortunate to meet some fantastic people throughout my life. These people have been the Mr. Miyagis in my journeys who have all impacted who I am today. They&apos;ve taught me technical skills and life lessons, given me opportunities, and have been there when I needed help.
             </p>
-            <p className='text-xl my-8'>
+            <p className='text-xl my-5 leading-9'>
+              The purpose of the Dojoe is twofold. It not only exists to show my appreciation to these folks; but it&apos;s also for you, the reader, to reflect on who would be in your hall of fame.
+            </p>
+            <p className='text-xl mt-5 mb-8'>
               To everyone here, thank you for everything.
             </p>
           </div>
