@@ -24,10 +24,10 @@ const BlogPost: NextPage = () => {
               My experimental journey to make the ultimate NYC slice.<br/>
             </div>
             <div className='text-xl mt-5'>
-              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 6/2/23: <span className='text-navy font-bold'>84/1000</span>
+              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 6/9/23: <span className='text-navy font-bold'>86/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((84/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((86/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
@@ -42,7 +42,7 @@ const BlogPost: NextPage = () => {
               <p>3.5g dry yeast (~1 tsp)</p>
               <p>12g sugar (~1 tbsp)</p>
               <p>17g salt (~1 tbsp)</p>
-              <p>790g bread flour (~6 cups)</p>
+              <p>810g bread flour (~6.25 cups)</p>
               <p>20g olive oil (~1.5 tbsp)</p>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
@@ -54,12 +54,11 @@ const BlogPost: NextPage = () => {
               </div>
               <p>12oz roma tomato sauce</p>
               <p>6g salt (~1 tsp)</p>
-              <p>4g sugar (~1 tsp)</p>
+              <p>8g sugar (~2 tsp)</p>
               <p>13g olive oil (~1 tbsp)</p>
               <p>1 garlic clove, minced</p>
               <p>1g dried oregano (~1 tsp)</p>
               <p>2g red chili flakes (~1 tsp)</p>
-              <p>5-10 fresh basil leaves (optional)</p>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
                   <p className='pt-5 text-2xl font-bold'>Cheese</p>
@@ -74,7 +73,7 @@ const BlogPost: NextPage = () => {
               <p>When making the dough, measure the ingredients by weight for best results</p>
               <p>Put your pizza steel(recommended)/stone on the second highest oven rack before preheating</p>
               <p>Preheat oven to its highest temperature for at least 25 minutes</p>
-              <p>Add the fresh basil leaves on top of the pizza before putting it in the oven</p>
+              <p>Optionally add 5-10 fresh basil leaves on top of the pizza before putting it in the oven</p>
               <p>Cook until crust is browned to your liking, this should take around 5-7 minutes</p>
               <p>Drizzle a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
               <p>Set the pizza on to a cooling rack when it&apos;s done baking for a crispier crust</p>
