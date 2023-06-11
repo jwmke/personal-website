@@ -34,9 +34,9 @@ const Blog: NextPage = () => {
               Recipes
             </div>
             <div className='text-xl mt-7'>
-              {/* <Link href='/blog/orange' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Panda Orange Chicken 🍊</span></Link>
+              <Link href='/blog/orange' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Panda Orange Chicken 🍊</span></Link>
             </div>
-            <div className='text-xl mt-4'> */}
+            <div className='text-xl mt-4'>
               <Link href='/blog/avocado' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Easy Avocado Toast 🥑</span></Link>
             </div>
             <div className='text-xl mt-4'>
