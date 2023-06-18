@@ -67,7 +67,7 @@ const Landing = () => {
                     }}
                     />
                 </h1>
-                <animated.div style={fadeStyles} className="top-2/3 left-1/4 lg:left-64 mt-16 ml-5 relative z-30 ">
+                <animated.div style={fadeStyles} className="top-2/3 left-1/4 lg:left-64 mt-16 ml-2 relative z-30 ">
                     <h1 className='text-3xl text-white'>
                         Full Stack • Machine Learning • Robotics
                     </h1>
