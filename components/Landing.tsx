@@ -35,7 +35,7 @@ const Landing = () => {
     return (
         <div>
             {width&&width<700 ? <div className="absolute h-1/2">
-                <h1 className={`text-4xl small-text text-white top-24 mt-12 mx-10 relative font-bold z-30`}>
+                <h1 className={`text-4xl small-text bg-gradient-to-r from-pine to-teal bg-clip-text inline-block text-transparent top-24 mt-12 mx-10 relative font-bold z-30`}>
                     <div className="tall-lines">
                         <Typewriter
                         onInit={(typewriter)=> {
@@ -48,7 +48,7 @@ const Landing = () => {
                     </div>
                 </h1>
                 <animated.div style={fadeStyles} className="top-28 left-10 relative z-30 w-3/4 text">
-                    <h1 className='text-xl text-white tall-lines'>
+                    <h1 className='text-xl text-pine tall-lines'>
                         Hi! I&apos;m Joe, an engineer based
                         out of Tampa, FL who&apos;s interested
                         in robotics, full stack development, machine learning
@@ -57,7 +57,7 @@ const Landing = () => {
                 </animated.div>
             </div> : 
             <div className="absolute h-1/2">
-                <h1 className={`text-8xl text-white top-2/3 left-1/4 lg:left-64 w-96 relative font-bold z-30`}>
+                <h1 className={`text-8xl bg-gradient-to-r from-pine to-teal bg-clip-text inline-block text-transparent pb-1 top-2/3 left-1/4 lg:left-64 relative font-bold z-30`}>
                     <Typewriter
                     onInit={(typewriter)=> {
                     typewriter
@@ -67,8 +67,8 @@ const Landing = () => {
                     }}
                     />
                 </h1>
-                <animated.div style={fadeStyles} className="top-2/3 left-1/4 lg:left-64 mt-16 ml-2 relative z-30 ">
-                    <h1 className='text-3xl text-white'>
+                <animated.div style={fadeStyles} className="top-2/3 left-1/4 lg:left-64 mt-14 ml-2 relative z-30 ">
+                    <h1 className='text-3xl text-pine'>
                         Full Stack • Machine Learning • Robotics
                     </h1>
                 </animated.div>
