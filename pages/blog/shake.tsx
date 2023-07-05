@@ -6,16 +6,16 @@ import Navbar from '../../components/Navbar';
 const BlogPost: NextPage = () => {
     return (
       
-      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint select-none'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="Preferred beverage of Zeus." />
           <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar bg/>
       <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full h-100 lg:text-center text-left">
         <div className='mx-auto pt-36 mb-24'>
-        <div className='text-white text-left mx-5'>
+        <div className='text-navy text-left mx-5'>
             <div className='text-4xl font-bold'>
                 Zeus&apos; 1K Calorie Chocolate Protein Shake 🏋️
             </div>

@@ -252,12 +252,12 @@ const projectsList = [
 
 const Projects = () => {
     return (
-        <div className='flex bg-gradient-to-b from-navy to-dark-navy w-full'>
+        <div className='flex bg-gradient-to-br from-white to-light-mint w-full'>
             <div className='mx-auto w-3/4'>
-                <div className='mt-36 mb-12'>
-                    <PortfolioHeader text={"// Previous contributions"} />
+                <div className='mt-32 mb-12'>
+                    <PortfolioHeader text={"// Previous contributions"} color={"text-navy"}/>
                 </div>
-                <div className='grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6'>
+                <div className='grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mb-32'>
                     {projectsList.map((projectDetails) => 
                         <Project key={projectDetails.name} details={projectDetails}/>
                     )}
