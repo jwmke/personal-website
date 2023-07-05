@@ -13,7 +13,7 @@ const BucketList: NextPage = () => {
         <meta name="description" content="My Bucket List." />
         <link rel="icon" href="/favicon/favicon.ico" />
     </Head>
-    <Navbar isFixed={true}/>
+    <Navbar/>
     <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left">
       <div className='mx-auto pt-36'>
       <div className='text-white text-left mx-5 mb-24'>

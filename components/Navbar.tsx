@@ -7,7 +7,7 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-const Navbar = ({isFixed}:{isFixed?:boolean}) => {
+const Navbar = () => {
   const [active, setActive] = useState(false);
   const { height, width } = useWindowDimensions();
   const triggerRef = useRef(null);
