@@ -3,7 +3,7 @@ import PortfolioHeader from './PortfolioHeader';
 const Portfolio = () => {
     return (
         <div className="flex w-full bg-gradient-to-b from-pine to-navy">
-            <div className='mx-auto w-3/4 pt-32'>
+            <div className='mx-auto w-3/4 py-32'>
                 <div className='mb-8'>
                     <PortfolioHeader text={"// Just your average Joe"} />
                 </div>

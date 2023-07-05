@@ -23,7 +23,7 @@ const Project = (props: {
 
     return (
         <>
-            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mb-12 rounded-xl overflow-hidden shadow-black shadow-2xl bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint grid-span-2">
+            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mb-12 rounded-xl overflow-hidden shadow-dark-navy shadow-2xl bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-teal grid-span-2">
                 <div className='z-20'>
                     <Image placeholder="blur" blurDataURL={props.details.mediaBlur} className="w-full" width={550} height={285} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
                 </div>

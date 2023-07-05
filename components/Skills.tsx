@@ -12,8 +12,8 @@ const SkillGrid = (props: { children: JSX.Element[], medRightMargin: boolean, ta
 
 const Skills = () => {
     return (
-        <div className='bg-gradient-to-b from-dark-navy to-black flex w-full'>
-            <div className='mx-auto w-3/4 mt-24 mb-12'>
+        <div className='bg-gradient-to-b from-pine to-navy flex w-full'>
+            <div className='mx-auto w-3/4 mt-32 mb-12'>
                 <PortfolioHeader text={"// My toolbox"} />
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                     <SkillGrid medRightMargin={true} tagText={"FrontEnd"}>
@@ -386,7 +386,7 @@ const Skills = () => {
                             <p className='text-white mt-1'>LaTeX</p>
                         </div>
                     </SkillGrid>
-                    <div className='mb-24' />
+                    <div className='mb-36' />
                 </div>
             </div>
         </div>
