@@ -49,7 +49,7 @@ const Navbar = (props: {bg?:boolean}) => {
               </a>
             </Link>
             <div className={'z-40 inline-flex m-2 mt-1 mr-0 p-1 lg:hidden ml-auto outline-none backdrop-blur-sm bg-opacity-20 rounded-xl ' + (props.bg ? "bg-white" : 'bg-teal')}>
-                <Hamburger toggled={active} toggle={setActive} color={position == 'fixed' ? "#edf5e1" : '#05396b'} distance="sm"/>
+                <Hamburger toggled={active} toggle={setActive} color={position == 'fixed' ? "#05396b" : '#05396b'} distance="sm"/>
             </div>
             <div className={` absolute lg:top-0 lg:relative top-24 ml-5 w-34 lg:inline-flex lg:flex-grow lg:w-auto`}>
             <animated.div style={{ ...animatedProps }} className={"lg:ml-auto backdrop-blur-sm bg-opacity-20 rounded-xl " + (props.bg ? "bg-white" : 'bg-teal')}>
