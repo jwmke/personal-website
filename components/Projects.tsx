@@ -252,7 +252,7 @@ const projectsList = [
 
 const Projects = () => {
     return (
-        <div className='flex bg-white w-full'>
+        <div className='flex bg-gradient-to-br from-white to-light-mint w-full'>
             <div className='mx-auto w-3/4'>
                 <div className='mt-32 mb-12'>
                     <PortfolioHeader text={"// Previous contributions"} color={"text-navy"}/>

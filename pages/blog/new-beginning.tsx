@@ -7,16 +7,16 @@ import Navbar from '../../components/Navbar';
 const BlogPost: NextPage = () => {
     return (
       
-      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="Advice for the student dreading the end of university." />
           <link rel="icon" href="/favicon/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar bg/>
       <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left select-none">
         <div className='mx-auto pt-36'>
-        <div className='text-white text-left mx-5 mb-24'>
+        <div className='text-navy text-left mx-5 mb-24'>
             <div className='text-4xl font-bold'>
                 For the Student Dreading the End of University
             </div>
