@@ -48,6 +48,21 @@ const Blog: NextPage = () => {
             <div className='text-xl mt-4'>
               <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Perfect NYC Pizza 🍕</span></Link>
             </div>
+            <div className='text-2xl font-bold mt-7 md:mt-14'>
+              Other Blogs
+            </div>
+            <div className='text-xl mt-7'>
+              <a href='http://www.paulgraham.com/articles.html' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Paul Graham</span></a>
+            </div>
+            <div className='text-xl mt-4'>
+              <a href='https://sive.rs/blog' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Derek Sivers</span></a>
+            </div>
+            <div className='text-xl mt-4'>
+              <a href='https://paulstamatiou.com/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Paul Stamatiou</span></a>
+            </div>
+            <div className='text-xl mt-4'>
+              <a href='https://mango.pdf.zone/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Alex Mango</span></a>
+            </div>
           </div>
         </div>
       </main>
