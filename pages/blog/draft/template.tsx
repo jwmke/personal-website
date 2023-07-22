@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 
 import Navbar from '../../../components/Navbar';
 
 const BlogPost: NextPage = () => {
     return (
       
-      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint select-none'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="" /> {/* TODO: add content */}

@@ -24,10 +24,10 @@ const BlogPost: NextPage = () => {
               My experimental journey to make the ultimate NYC slice.<br/>
             </div>
             <div className='text-xl mt-5'>
-              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 6/25/23: <span className='text-navy font-bold'>92/1000</span>
+              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 7/22/23: <span className='text-navy font-bold'>94/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((92/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((94/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
