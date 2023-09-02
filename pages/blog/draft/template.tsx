@@ -16,7 +16,7 @@ const BlogPost: NextPage = () => {
       <Navbar/>
       <main className="mx-auto lg:w-1/2 lg:mx-auto md:mx-24 w-full lg:text-center text-left">
         <div className='mx-auto pt-36'>
-        <div className='text-white text-left mx-5 mb-24'>
+        <div className='text-navy text-left mx-5 mb-24'>
             <div className='text-4xl font-bold'>
                 Title
             </div>
