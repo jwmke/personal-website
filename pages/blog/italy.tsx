@@ -429,56 +429,6 @@ const BlogPost: NextPage = () => {
             height: 110,
             width: 85
         },
-        // {
-        //     src: '/img/italy_final/Italy-85.jpg',
-        //     height: 85,
-        //     width: 110
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-86.jpg',
-        //     height: 110,
-        //     width: 85
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-87.jpg',
-        //     height: 110,
-        //     width: 85
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-88.jpg',
-        //     height: 85,
-        //     width: 110
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-89.jpg',
-        //     height: 85,
-        //     width: 110
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-90.jpg',
-        //     height: 110,
-        //     width: 85
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-91.jpg',
-        //     height: 85,
-        //     width: 110
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-92.jpg',
-        //     height: 85,
-        //     width: 110
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-93.jpg',
-        //     height: 110,
-        //     width: 85
-        // },
-        // {
-        //     src: '/img/italy_final/Italy-94.jpg',
-        //     height: 110,
-        //     width: 85
-        // }
       ];
 
     const [isOpen, setOpen] = useState(false);
