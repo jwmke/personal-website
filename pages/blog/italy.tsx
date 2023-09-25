@@ -450,7 +450,7 @@ const BlogPost: NextPage = () => {
                 Italy on Film
             </div>
             <div className='text-pine text-xl child:mt-5 my-8'>
-              <p>// Shot on a Kodak Ektar H35 with Kodak Gold 200</p>
+              <p>{"// Shot on a Kodak Ektar H35 with Kodak Gold 200"}</p>
             </div>
             <ImageMosaic images={images}
                 handleClick={(e, { index }) => {
