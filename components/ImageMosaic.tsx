@@ -1,6 +1,6 @@
 import Gallery from "react-photo-gallery";
 
-const ImageMosaic = ({ images, handleClick }) => {
+const ImageMosaic = ({ images, handleClick }: any) => {
     return ( <div>
         <Gallery
             columns={containerWidth => {

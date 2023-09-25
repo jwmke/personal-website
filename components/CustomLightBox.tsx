@@ -6,7 +6,7 @@ const CustomLightBox = ({
     setCurrentIndex,
     isOpen,
     onClose
-  }) => {
+  }: any) => {
 
     const gotoPrevious = () =>
       currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
