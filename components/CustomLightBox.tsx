@@ -22,30 +22,9 @@ const CustomLightBox = ({
         onNext={gotoNext}
         images={images}
         currentIndex={currentImageIndex}
-        /* Add your own UI */
-        // renderHeader={() => (<CustomHeader />)}
-        // renderFooter={() => (<CustomFooter />)}
-        // renderPrevButton={() => (<CustomLeftArrowButton />)}
-        // renderNextButton={() => (<CustomRightArrowButton />)}
-        // renderImageOverlay={() => (<ImageOverlayComponent >)}
-  
-
-        /* Add styling */
         style={{ background: "rgba(0, 0, 0, .7)" }}
-  
-        /* Handle closing */
         onClose={onClose}
-  
-        /* Use single or double click to zoom */
         singleClickToZoom
-  
-        /* react-spring config for open/close animation */
-        // pageTransitionConfig={{
-        //   from: { transform: "scale(0.75)", opacity: 0 },
-        //   enter: { transform: "scale(1)", opacity: 1 },
-        //   leave: { transform: "scale(0.75)", opacity: 0 },
-        //   config: { mass: 1, tension: 320, friction: 32 }
-        // }}
       />
     )
 };

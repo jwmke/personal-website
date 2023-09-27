@@ -1,19 +1,15 @@
-import Gallery from "react-photo-gallery";
+import PhotoAlbum from "react-photo-album";
+import NextJsImage from "./NextJSImage";
 
 const ImageMosaic = ({ images, handleClick }: any) => {
     return ( <div>
-        <Gallery
-            columns={containerWidth => {
-                let columns = 1;
-                if (containerWidth >= 500) columns = 2;
-                if (containerWidth >= 900) columns = 3;
-
-                return columns;
-            }}
+        <PhotoAlbum
             onClick={handleClick}
             photos={images}
-            margin={6}
-            direction="row"
+            renderPhoto={NextJsImage}
+            rowConstraints={{maxPhotos: 3}}
+            layout="rows"
+            sizes={{ size: "calc(100vw - 240px)" }}
         />
     </div>
     )

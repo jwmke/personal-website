@@ -21,7 +21,7 @@ const BlogCard = (props: {
                         <div className="inline-block absolute">
                             <div className="font-bold text-xl text-dark-navy relative top-3.5 mx-5 w-auto">{props.name}</div>
                             <div className='m-5 mt-6 w-12 h-1 border-pine border-b xl:block hidden'/>
-                            <div className='text-dark-navy xl:-mt-2 mt-4 mx-5 '>{props.description}</div>
+                            <div className='text-dark-navy xl:-mt-2 mt-4 mx-5'>{props.description}</div>
                             {/* <div className='text-pine -bottom-2 text-xs right-2 absolute'>{props.date}</div> */}
                         </div>
                     </div>

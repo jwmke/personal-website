@@ -453,7 +453,7 @@ const BlogPost: NextPage = () => {
               <p>{"// Shot on a Kodak Ektar H35 with Kodak Gold 200"}</p>
             </div>
             <ImageMosaic images={images}
-                handleClick={(e:any, { index }:any) => {
+                handleClick={({ index }:any) => {
                 setCurrentIndex(index);
                 setOpen(true);
             }}/>
