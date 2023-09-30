@@ -22,7 +22,7 @@ const BlogPost: NextPage = () => {
         <div className='mx-auto pt-36'>
         <div className='text-navy text-left mx-5 mb-24'>
             <div className='text-4xl font-bold'>
-              Romanticization of the Doomer in Postmodern Western Society
+              Romanticization of the Doomer in Western Society
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='flex justify-center'>

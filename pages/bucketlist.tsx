@@ -24,23 +24,22 @@ const BucketList: NextPage = () => {
             <p className='pt-5'>Read <a href='https://bookshelved.com/@j' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>500 books</a></p>
             <p>Pass the TOPIK-I (Test of Proficiency in Korean)</p>
             <p>Walk 4,000,000 steps in a year</p>
-            <p>Earn a purple belt in Brazilian Jiu-Jitsu</p>
+            <p>Earn a purple belt in BJJ or Muay Thai</p>
             <p>Ski a black diamond in Colorado</p>
             <p>Create an app that impacts 10,000+ people</p>
-            <p>Live in NYC for one year</p>
+            <p>Live in NYC for a year</p>
             <p>Make 1000 <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>homemade NYC pizzas</span></Link></p>
             <p>Bench press my body weight</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
+            <p>Attend <a href='https://www.ces.tech/about-ces.aspx' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>CES</a> in Las Vegas</p>
             <p>Make every dish in a cookbook</p>
             <p>Explore Eastern Asia for 3 months</p>
             <p className='line-through'>Meditate for 30 days in a row (December, 2022)</p>
             <p>Do a kickflip</p>
             <p>Attend the <a href='https://en.wikipedia.org/wiki/Carnival_of_Ivrea' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Battle of Oranges</a> in Italy</p>
             <p>Be a guest lecturer at a university</p>
-            <p>Attend <a href='https://www.ces.tech/about-ces.aspx' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>CES</a> in Las Vegas</p>
             <p>Reach 1600 elo in blitz chess</p>
-            <p>Attend the Summer Olympics</p>
-            <p>Attend the Winter Olympics</p>
+            <p>Attend the Olympics</p>
             <p>Write and publish a book</p>
             <p className='line-through'>Have my name on a patent (August, 2021)</p>
             <p>Celebrate the Chinese New Year in China</p>
