@@ -62,7 +62,7 @@ const Blog: NextPage = () => {
             <div className='text-xl mt-4'>
               <a href='https://sive.rs/blog' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Derek Sivers</span></a>
             </div>
-            <div className='text-xl mt-7'>
+            <div className='text-xl mt-4'>
               <a href='https://geohot.github.io/blog/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>George Hotz</span></a>
             </div>
             <div className='text-xl mt-4'>
