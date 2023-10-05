@@ -24,10 +24,10 @@ const BlogPost: NextPage = () => {
               My experimental journey to make the ultimate NYC slice.<br/>
             </div>
             <div className='text-xl mt-5'>
-              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 9/21/23: <span className='text-navy font-bold'>107/1000</span>
+              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 10/4/23: <span className='text-navy font-bold'>111/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((107/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((111/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
@@ -42,8 +42,8 @@ const BlogPost: NextPage = () => {
               <p>3.5g dry yeast (~1 tsp)</p>
               <p>12g sugar (~1 tbsp)</p>
               <p>17g salt (~1 tbsp)</p>
-              <p>810g bread flour (~6.25 cups)</p>
-              <p>20g olive oil (~1.5 tbsp)</p>
+              <p>830g bread flour (~6.25 cups)</p>
+              <p>15g olive oil (~1.5 tbsp)</p>
               <div className='align-text-bottom'>
                 <span className='inline-block'>
                   <p className='pt-5 text-2xl font-bold'>Sauce</p>
