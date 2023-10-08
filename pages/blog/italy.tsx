@@ -436,7 +436,7 @@ const BlogPost: NextPage = () => {
 
     return (
       
-      <div className='font-lato w-full min-h-screen flex bg-gradient-to-b from-white to-light-mint select-none'>
+      <div className='font-lato w-full min-h-screen flex bg-gradient-to-b from-white to-light-mint'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="Italy on Film." />

@@ -12,7 +12,7 @@ const BlogPost: NextPage = () => {
     )
 
     return (
-      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint select-none'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="The Lasting Significance of the LLM Context Window Problem" />

@@ -11,7 +11,7 @@ const BlogPost: NextPage = () => {
     </a>
   )
     return (
-      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint select-none'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-white to-light-mint'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="Life is suffering, but is that a bad thing?" />

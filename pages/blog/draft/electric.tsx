@@ -7,7 +7,7 @@ import Navbar from '../../../components/Navbar';
 const BlogPost: NextPage = () => {
     return (
       
-      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy select-none'>
+      <div className='font-lato w-full flex bg-gradient-to-b from-teal to-navy'>
       <Head>
           <title>Joe Weller</title>
           <meta name="description" content="Gotta go fast." />
