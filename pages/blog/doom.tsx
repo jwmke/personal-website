@@ -100,7 +100,7 @@ const BlogPost: NextPage = () => {
               <p>Baetman&apos;s obsession with fitting in caused him to express himself in extreme ways, making him lose touch with his sense of humanity. Durden&apos;s desire for more than just consumerism combined with his mental health issues resulted in a self-operating cult with the goal of overthrowing society&apos;s power structures. And Travis Bickle&apos;s traumatic past, combined with his insomnia, causes him to lose touch with reality, initiating his descent into madness.</p>
               <p>It only makes sense that as young adults navigate their way through this world, they would find solstice in these movies and shows, as they represent exaggerated examples of what they experience on a day-to-day basis.</p>
               <p>This might seem unhealthy to some, however, it offers these self-declared Doomers a piece of media that they can hold close in a world that often shies away from representing these topics in media without explicitly villainizing them.</p>
-              <p>And hile no one sees themselves as actually being Patrick Bateman, the Literally Me subgenre has developed a growing community that glorifies these characters&apos; struggles through memes and romanticized edits.</p>
+              <p>And while no one sees themselves as actually being Patrick Bateman, the Literally Me subgenre has developed a growing community that glorifies these characters&apos; struggles through memes and romanticized edits.</p>
               <div className='flex justify-center'>
                 <iframe
                   width="700"
