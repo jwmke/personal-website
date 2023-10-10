@@ -121,3 +121,22 @@ body {
     opacity: 1;
   }
 }
+
+#loading {
+  top: 5px;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(237,245,225, 0.3);
+  border-radius: 50%;
+  border-top-color: #edf5e1;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
