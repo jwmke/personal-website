@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const BlogSearch = (props: {}) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -9,8 +10,20 @@ const BlogSearch = (props: {}) => {
         setIsLoading(true);
 
         const delayDebounceFn = setTimeout(async () => {
-            console.log(searchTerm);
-            // Send Axios request here
+
+            const elasticSearchUrl = `https://afya525i8p:f74juqzpop@pw-search-4151560379.us-east-1.bonsaisearch.net:443/blog/_search/
+            ?source_content_type=application/json&source={"query":{"match_phrase":{"body":"${searchTerm}"}},"highlight":{"fragment_size":100,"fields":{"body":{}}}}`;
+
+            if (searchTerm !== "") {
+                const res = await axios.get(elasticSearchUrl, {
+                 auth: {
+                    username: "afya525i8p",
+                    password: "f74juqzpop"
+                  }
+                });
+                
+                console.log(res.data.args);
+            }
             setIsLoading(false);
         }, 2000)
     
