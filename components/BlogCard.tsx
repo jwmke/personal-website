@@ -15,7 +15,7 @@ const BlogCard = (props: {
             <Link href={`/blog/${props.link}`} target="_blank" rel="noreferrer"><div className='hover:text-teal underline hover:cursor-pointer text-xl mt-4 md:hidden block'>{props.name}</div></Link>
             <div className='mt-7 md:block hidden max-w-3-1xl'>
                 <Link href={`/blog/${props.link}`} target="_blank" rel="noreferrer">
-                    <div className={`${props.highlights?.length > 0 ? "" : "shadow-black shadow-2xl"} z-50 relative rounded-xl max-h-32 max-w-3-1xl overflow-hidden shadow-black shadow-custom bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint active:bg-pine`}>
+                    <div className={`${props.highlights && props.highlights?.length > 0 ? "" : "shadow-black shadow-2xl"} z-50 relative rounded-xl max-h-32 max-w-3-1xl overflow-hidden shadow-black shadow-custom bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-mint active:bg-pine`}>
                         <div className='z-20 inline-block'>
                             <Image placeholder="blur" blurDataURL={props.mediaBlur} width={196} height={130} src={"/img/blog/" + props.media + ".jpg"} alt="project_img" />
                         </div>
@@ -27,8 +27,8 @@ const BlogCard = (props: {
                         </div>
                     </div>
                 </Link>
-                <div className={`${props.highlights?.length > 0 ? "" : "hidden"} z-30 bg-pine max-w-3-1xl relative -top-3 pt-4 pb-2 px-5 rounded-b-xl shadow-black shadow-lg`}>
-                    {props.highlights?.map(message => {
+                <div className={`${props.highlights && props.highlights?.length > 0 ? "" : "hidden"} z-30 bg-pine max-w-3-1xl relative -top-3 pt-4 pb-2 px-5 rounded-b-xl shadow-black shadow-lg`}>
+                    {props.highlights && props.highlights?.map(message => {
                         let newMessage = message.replaceAll("<em>", '<b>');
                         newMessage = newMessage.replaceAll("</em>", "</b>");
                         return <div key={message} dangerouslySetInnerHTML={{__html: newMessage}} />
