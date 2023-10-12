@@ -11,7 +11,7 @@ const BlogSearch = (props: {setResults: Function}) => {
 
         const delayDebounceFn = setTimeout(async () => {
 
-            const elasticSearchUrl = `https://afya525i8p:f74juqzpop@pw-search-4151560379.us-east-1.bonsaisearch.net:443/blog/_search/?source_content_type=application/json&source={"query":{"match_phrase":{"body":"${searchTerm}"}},"highlight":{"fragment_size":100,"fields":{"body":{}}}}`;
+            const elasticSearchUrl = `https://afya525i8p:f74juqzpop@pw-search-4151560379.us-east-1.bonsaisearch.net:443/blog/_search/?source_content_type=application/json&source={"query":{"match_phrase":{"body":"${searchTerm}"}},"highlight":{"fragment_size":80,"fields":{"body":{}}}}`;
 
             if (searchTerm !== "") {
                 let resultList = [];
@@ -37,7 +37,7 @@ const BlogSearch = (props: {setResults: Function}) => {
                 props.setResults([]);
             }
             setIsLoading(false);
-        }, 1000)
+        }, 300)
     
         return () => clearTimeout(delayDebounceFn)
       }, [searchTerm])
