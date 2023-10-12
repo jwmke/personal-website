@@ -14,16 +14,16 @@ const BlogSearch = (props: {setResults: Function}) => {
             const elasticSearchUrl = `https://afya525i8p:f74juqzpop@pw-search-4151560379.us-east-1.bonsaisearch.net:443/blog/_search/?source_content_type=application/json&source={"query":{"match_phrase":{"body":"${searchTerm}"}},"highlight":{"fragment_size":80,"fields":{"body":{}}}}`;
 
             if (searchTerm !== "") {
-                let resultList = [];
+                let resultList:any = [];
 
-                const res = await axios.get(elasticSearchUrl, {
+                const res:any = await axios.get(elasticSearchUrl, {
                  auth: {
                     username: "afya525i8p",
                     password: "f74juqzpop"
                   }
                 });
                 
-                const resultsArray = res.data.hits.hits;
+                const resultsArray:any = res.data.hits.hits;
 
                 resultsArray.forEach(post => {
                     resultList.push({
