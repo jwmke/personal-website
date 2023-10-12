@@ -45,8 +45,8 @@ const Blog: NextPage = () => {
                   highlghts = result.highlights;
                 }
               })
-              if (highlghts.length > 0) return <BlogCard {...post} highlights={highlghts}/>
-            }) : posts.map(post => <BlogCard {...post}/>)}
+              if (highlghts.length > 0) return <BlogCard key={post.name} {...post} highlights={highlghts}/>
+            }) : posts.map(post => <BlogCard key={post.name} {...post}/>)}
             <div className='text-2xl font-bold mt-7 md:mt-14'>
               Random Posts
             </div>
