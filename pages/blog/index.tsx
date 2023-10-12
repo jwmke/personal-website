@@ -40,7 +40,7 @@ const Blog: NextPage = () => {
             </div>
             {searchResults.length > 0 ? posts.map(post => {
               let highlghts = [];
-              searchResults.forEach(result => {
+              searchResults.forEach((result:any) => {
                 if (result.title === post.name) {
                   highlghts = result.highlights;
                 }

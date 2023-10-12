@@ -25,7 +25,7 @@ const BlogSearch = (props: {setResults: Function}) => {
                 
                 const resultsArray:any = res.data.hits.hits;
 
-                resultsArray.forEach(post => {
+                resultsArray.forEach((post:any) => {
                     resultList.push({
                         title: post._source.title,
                         highlights: post.highlight.body
@@ -49,7 +49,7 @@ const BlogSearch = (props: {setResults: Function}) => {
                     { isLoading ? <div id='loading'/> : "🔎︎"}
                 </span>
                 <span style={{flex: "32"}}>
-                    <input onChange={(e) => setSearchTerm(e.target.value)} autoFocus className='caret-white w-full placeholder-white placeholder-opacity-80' style={{backgroundColor: "transparent", "outline": "none"}} placeholder='Search contents of blogs...'/>
+                    <input onChange={(e:any) => setSearchTerm(e.target.value)} autoFocus className='caret-white w-full placeholder-white placeholder-opacity-80' style={{backgroundColor: "transparent", "outline": "none"}} placeholder='Search contents of blogs...'/>
                 </span>
             </div>
         </>

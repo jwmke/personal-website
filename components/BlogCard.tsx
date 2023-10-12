@@ -28,7 +28,7 @@ const BlogCard = (props: {
                     </div>
                 </Link>
                 <div className={`${props.highlights && props.highlights?.length > 0 ? "" : "hidden"} z-30 bg-pine max-w-3-1xl relative -top-3 pt-4 pb-2 px-5 rounded-b-xl shadow-black shadow-lg`}>
-                    {props.highlights && props.highlights?.map(message => {
+                    {props.highlights && props.highlights?.map((message:string) => {
                         let newMessage:string = message.replaceAll("<em>", '<b>');
                         newMessage = newMessage.replaceAll("</em>", "</b>");
                         return <div key={message} dangerouslySetInnerHTML={{__html: newMessage}} />
