@@ -140,3 +140,7 @@ body {
 @-webkit-keyframes spin {
   to { -webkit-transform: rotate(360deg); }
 }
+
+b {
+  color: #05396b;
+}
