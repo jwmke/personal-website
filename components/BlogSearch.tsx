@@ -44,7 +44,7 @@ const BlogSearch = (props: {setResults: Function}) => {
 
     return (
         <>
-            <div className='hover:cursor-text bg-pine text-lg shadow-pine shadow-2xl rounded-xl max-h-32 px-4 py-2 max-w-3-1xl flex'>
+            <div className='hover:cursor-text md:flex hidden bg-pine text-lg shadow-pine shadow-2xl rounded-xl max-h-32 px-4 py-2 max-w-3-1xl'>
                 <span className='flex-1 text-white hover:cursor-pointer hover:text-mint mr-2'>
                     { isLoading ? <div id='loading'/> : "🔎︎"}
                 </span>
