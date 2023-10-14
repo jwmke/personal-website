@@ -31,7 +31,9 @@ const BlogSearch = (props: {setResults: Function}) => {
                         highlights: post.highlight.body
                     })
                 });
-
+                if (resultList.length === 0) {
+                    resultList = [searchTerm];
+                }
                 props.setResults(resultList);
             } else {
                 props.setResults([]);
@@ -44,12 +46,12 @@ const BlogSearch = (props: {setResults: Function}) => {
 
     return (
         <>
-            <div className='hover:cursor-text md:flex hidden bg-pine text-lg shadow-pine shadow-2xl rounded-xl max-h-32 px-4 py-2 max-w-3-1xl'>
+            <div className='hover:cursor-text flex bg-pine text-lg shadow-pine shadow-2xl rounded-xl max-h-32 px-4 py-2 max-w-3-1xl'>
                 <span className='flex-1 text-white hover:cursor-pointer hover:text-mint mr-2'>
                     { isLoading ? <div id='loading'/> : "🔎︎"}
                 </span>
                 <span style={{flex: "32"}}>
-                    <input onChange={(e:any) => setSearchTerm(e.target.value)} autoFocus className='caret-white w-full placeholder-white placeholder-opacity-80' style={{backgroundColor: "transparent", "outline": "none"}} placeholder='Search contents of blogs...'/>
+                    <input onChange={(e:any) => setSearchTerm(e.target.value)} autoFocus className='caret-white w-full placeholder-white placeholder-opacity-70' style={{backgroundColor: "transparent", "outline": "none"}} placeholder='Search contents of the blogs'/>
                 </span>
             </div>
         </>

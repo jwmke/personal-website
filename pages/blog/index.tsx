@@ -38,7 +38,9 @@ const Blog: NextPage = () => {
             <div className='text-2xl font-bold mt-5 pb-3 md:pb-0'>
               General Posts
             </div>
-            {searchResults.length > 0 ? posts.map(post => {
+            {searchResults.length > 0 ? (typeof searchResults[0] == "string" ? 
+            <div className='text-navy md:mt-6 -mb-2 text-xl'>Unable to find the term <p className='text-mint inline-block'>{searchResults[0]}</p> in any of the blogs, please try again.</div>
+             : posts.map(post => {
               let highlghts:any = [];
               searchResults.forEach((result:any) => {
                 if (result.title === post.name) {
@@ -46,7 +48,7 @@ const Blog: NextPage = () => {
                 }
               })
               if (highlghts.length > 0) return <BlogCard key={post.name} {...post} highlights={highlghts}/>
-            }) : posts.map(post => <BlogCard key={post.name} {...post}/>)}
+            })) : posts.map(post => <BlogCard key={post.name} {...post}/>)}
             <div className='text-2xl font-bold mt-7 md:mt-14'>
               Random Posts
             </div>
