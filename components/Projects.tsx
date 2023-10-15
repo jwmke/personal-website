@@ -252,7 +252,7 @@ const projectsList = [
 
 const Projects = () => {
     return (
-        <div className='flex bg-gradient-to-br from-white to-light-mint w-full'>
+        <div className='flex pb-24 bg-gradient-to-br from-white to-light-mint w-full relative'>
             <div className='mx-auto w-3/4'>
                 <div className='mt-32 mb-12'>
                     <PortfolioHeader text={"// Previous contributions"} color={"text-navy"}/>
@@ -262,6 +262,11 @@ const Projects = () => {
                         <Project key={projectDetails.name} details={projectDetails}/>
                     )}
                 </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1697388540">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
             </div>
         </div>
     )

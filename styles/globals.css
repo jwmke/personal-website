@@ -144,3 +144,69 @@ body {
 b {
   color: #05396b;
 }
+
+/* landing spline */
+.custom-shape-divider-bottom-1697386315 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697386315 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 98px;
+}
+
+.custom-shape-divider-bottom-1697386315 .shape-fill {
+  fill: #379683;
+}
+
+/* portfolio spline */
+.custom-shape-divider-bottom-1697386803 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697386803 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 98px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1697386803 .shape-fill {
+    fill: #edf5e1;
+}
+
+/* projects spline */
+.custom-shape-divider-bottom-1697388540 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1697388540 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 98px;
+}
+
+.custom-shape-divider-bottom-1697388540 .shape-fill {
+  fill: #379683;
+}
