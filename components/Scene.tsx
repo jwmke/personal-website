@@ -25,7 +25,7 @@ const CameraController = () => {
           controls.enabled = width&&width>700 ? true : false;
           controls.enableZoom = false;
           controls.maxDistance = 32;
-          controls.target.set(-14,1,0);
+          controls.target.set(-14,0,0);
           controls.update();
           return () => {
             controls.dispose();
