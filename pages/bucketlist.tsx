@@ -45,7 +45,7 @@ const BucketList: NextPage = () => {
             <p>Celebrate the Chinese New Year in China</p>
             <p>Achieve zero debt</p>
             <p className='line-through'>Stay in a European hostel (September, 2023)</p>
-            <p>Climb Mount Kilimanjaro</p>
+            <p>Summit Mount Kilimanjaro</p>
             <p>Complete every <a href='https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Blind 75</a> question</p>
           </div>
         </div>

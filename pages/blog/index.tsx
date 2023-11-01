@@ -76,6 +76,9 @@ const Blog: NextPage = () => {
               Other Blogs I Enjoy
             </div>
             <div className='text-xl mt-7'>
+              <a href='https://waitbutwhy.com/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Tim Urban</span></a>
+            </div>
+            <div className='text-xl mt-4'>
               <a href='http://www.paulgraham.com/articles.html' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Paul Graham</span></a>
             </div>
             <div className='text-xl mt-4'>
@@ -83,6 +86,9 @@ const Blog: NextPage = () => {
             </div>
             <div className='text-xl mt-4'>
               <a href='https://geohot.github.io/blog/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>George Hotz</span></a>
+            </div>
+            <div className='text-xl mt-4'>
+              <a href='https://ludic.mataroa.blog/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Ludic Mataroa</span></a>
             </div>
             <div className='text-xl mt-4'>
               <a href='https://paulstamatiou.com/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Paul Stamatiou</span></a>

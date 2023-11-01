@@ -24,10 +24,10 @@ const BlogPost: NextPage = () => {
               My experimental journey to make the ultimate NYC slice.<br/>
             </div>
             <div className='text-xl mt-5'>
-              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 10/14/23: <span className='text-navy font-bold'>115/1000</span>
+              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 10/31/23: <span className='text-navy font-bold'>119/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((115/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((119/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
@@ -73,8 +73,8 @@ const BlogPost: NextPage = () => {
               <p>When making the dough, measure the ingredients by weight for best results</p>
               <p>Put your pizza steel(recommended)/stone on the second highest oven rack before preheating</p>
               <p>Preheat oven to its highest temperature for at least 25 minutes</p>
-              <p>Optionally add 5-10 fresh basil leaves on top of the pizza before putting it in the oven</p>
-              <p>Cook until crust is browned to your liking, this should take around 5-7 minutes</p>
+              <p>Optionally add 3-5 fresh basil leaves on top of the pizza before putting it in the oven</p>
+              <p>Cook until crust is browned to your liking, this should take around 6-8 minutes</p>
               <p>Drizzle a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
               <p>Set the pizza on to a cooling rack when it&apos;s done baking for a crispier crust</p>
             </div>
