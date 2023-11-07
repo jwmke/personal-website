@@ -77,6 +77,10 @@ const Navbar = (props: {bg?:boolean}) => {
                 href='https://github.com/jwmke' target="_blank" rel="noreferrer">
                     .github()
                 </a>
+                <a className={(props.bg ? "text-navy hover:text-teal" : 'text-navy hover:text-white') + " text-xl hover:cursor-nesw-resize lg:inline-flex lg:w-auto w-half px-4 py-2 rounded font-bold items-center justify-center"}
+                href='https://x.com/jwmke' target="_blank" rel="noreferrer">
+                    .x()
+                </a>
               </div>
               </animated.div>
             </div>
