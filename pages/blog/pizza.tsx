@@ -24,10 +24,10 @@ const BlogPost: NextPage = () => {
               My experimental journey to make the ultimate NYC slice.<br/>
             </div>
             <div className='text-xl mt-5'>
-              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 10/31/23: <span className='text-navy font-bold'>119/1000</span>
+              <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 11/9/23: <span className='text-navy font-bold'>121/1000</span>
             </div>
             <div className="w-full bg-mint rounded-full h-2 mt-2">
-              <div className="bg-navy h-2 rounded-full" style={{"width": ((119/1000.0)*100) + "%"}}></div>
+              <div className="bg-navy h-2 rounded-full" style={{"width": ((121/1000.0)*100) + "%"}}></div>
             </div>
             <div className='text-xl child:mt-5 mt-8'>
               <div className='align-text-bottom'>
@@ -77,6 +77,7 @@ const BlogPost: NextPage = () => {
               <p>Cook until crust is browned to your liking, this should take around 6-8 minutes</p>
               <p>Drizzle a light layer of olive oil over the pizza before baking for extra flavor/aroma</p>
               <p>Set the pizza on to a cooling rack when it&apos;s done baking for a crispier crust</p>
+              <p>For a little bit extra sweetness and a slight kick, drizzle with <a href='https://mikeshothoney.com/' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Mike&apos;s Hot Honey</a></p>
             </div>
           </div>
         </div>
