@@ -52,9 +52,7 @@ body {
   max-width: 50rem;
 }
 
-/* TODO: Fix issue with last cards disappearing on modal open */
-
-/* .grid-span-2:last-child:nth-child(3n - 1) {
+.grid-span-2:last-child:nth-child(3n - 1) {
   grid-column-end: -2;
 }
 
@@ -62,9 +60,19 @@ body {
   grid-column-end: 4;
 }
 
+@media (max-width: 1022px) {
+  .grid-span-2:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 3 !important;
+  }
+
+  .grid-span-2:last-child:nth-child(3n - 1) {
+    grid-column-end: auto !important;
+  }
+}
+
 .grid-span-2:last-child:nth-child(3n - 2) {
   grid-column-end: 5;
-} */
+}
 
 @media only screen and (max-width: 325px)  {
   .small-text {

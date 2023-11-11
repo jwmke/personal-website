@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <div className="relative w-full h-full bg-gradient-to-br from-white to-light-mint">
         <Navbar bg/>
         <Landing/>
-        <div className={width&&width<700 ? 'fixed h-full w-full opacity-0 z-40' : ''}/>
+        <div className={width&&width<700 ? 'absolute h-screen w-full opacity-0 z-40' : ''}/>
         <Scene/>
       </div>
       <Portfolio/>

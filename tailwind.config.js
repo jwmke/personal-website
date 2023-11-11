@@ -5,7 +5,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+        'max-height': 'max-height'
+      },
+      height: {
+        '128': '32rem',
+      },
+      maxHeight: {
+        '128': '32rem',
+        '160': '40rem',
+        '360': '90rem'
+      }
+    },
     fontFamily: {
       lato: ['Lato', 'sans-serif']
     },

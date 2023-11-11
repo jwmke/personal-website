@@ -1,15 +1,28 @@
 import Project from './Project';
 import PortfolioHeader from './PortfolioHeader';
+import { useState } from 'react';
 
 const projectsList = [
     {
+        name: "Political Bias Bot",
+        tags: ["LangChain", "Telegram"],
+        description: "A Telegram chat bot that uses OpenAI's GPT-3.5 to detect political bias, narratives, misinformation, or opinion-based journalism practices in news articles.",
+        media: "bias",
+        mediaBlur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAHPAzYDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAEDAgb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A84IrSAAAACoogAAACgKAAKAIAAoCgAAqKAAIAAAKAACKgAACKiAACAAIqAIqAIqAgCKiKgCKgIioggCCIqCoioyIioKIqAAKoAAAAAAAIoCCgAqoogqKooCigCKqAKAooAAAKAAAAADsAaUAAABUBFAAABQFAAFAEAAURVAAAAFEUQAAAAAUQBAAAQAAAQAEAAQAEBBABURUARUBEVEEBEBFQVEVGREVBRFQABVAQBUAUAAARQEFABVRRBUVRQFFAEUAFAUUAAAFEUAAAAHYA0KgCgAACKIoAAKIqgAAqKIAAKgooAAAAACoCAAAAAAAIAAAioACAAAgAIAgiKgoioCAiAioCIqIICCiCMgioKIqAAKqAAAAKigAAKiogqKCgCKqKooigoCooAKAoKigAAAAoigAA7AGgABUAUAQVAFAAAUURQAAURRAABUFFEAUAAAQAAAAQAAAAQAABFQAEARUQEVBRAAQARFRBAARFRBEVEVEVEEAFQBQRUFAAAAAAUABUVEFRQFRQVUBFVFUFRVQVFAVFUAAURQAAAAAAaADQAAAAqAKAIKgCgAAKKIoAAiiKAAAAoAAAAAAACAAAICoAAIAACAAICKgAICAIqAICCIqAgIiiAgiKiKgIAAqoAAAAAAAAqKAAIoCCqgCqiiKAoqoKKAIoCigAAAoigAAAA0EBpQAAAAAFQBQBBUAUBQABRAFAEFQBRAFEFFEAUQBRAFQAAABAAABAAQEBFQBAAQAQEQEVAEEFEBBEVEERURRAARUVQAAAAAAAAAFAAVFRFEUFVAFVFVFEVRRFBRFAVBUUAAAAAFEAaAI0AKKIAoAAACoCKAAACiCigAKgCiAigAAAAAAACCiiAAAAgAAgIAAgACAIqAIACAgiKgogiAioCIqIqAiACKoAAAAAAAAAAAAqKAqCIqoAqooKIqoqoAqoKKACiKAqCiiAKAAADQQRVEAUBQAAVAFEUAARRAFAAVBRRAFEAUAAAQAAAABAUQBUAAQAAAQAAQAEARUARURRABAQBFRBEVEVEVEBAVRAAAAAAAAAAAAAAABRFBRFRFEUFVAFVBUVUFFVAFEUBUAURQAFAAGgCKAAAAKgCiKoAAKgCiKIAAogCiCiiKAAAAAAAAAAAICKgAAgKgACAoCAAiACAIACACAiAggogIICIoiooAAAAAAAAAAAAAAAAKgCqgCqgiKqAKqKoKgIqoKKACiKAAAAAADUQFUQBRFAAAAAVBRRAFAAAEUQBRFAAAAAAUAABAFEAUQAAAEAARBUABAAEAEABAAQRFEVAEEQEERQEUAAAAAAAAAAAAAAAAAAAAFRQFQQVUBHQigoiqCoAqoKiiKAACiAKIA1EUaAAAAABBUAUQBRAFAUAAUQBRAFAEAAAAAAAABAAAAEBUAAEBUABAAQAEBFEEBUEAQRAQBRABAAAAAAAAAAAAAAAAAAAAAAAAURQURUBUUBUFRVQBVQBRAFAUAAUQBqAKAAAAKgCiAiiKAAAAAACiCiiAKIAogCiAKIAogIogAAAIAqAKCAAIACIKggAIAIAIIgAgogICAoAAAAAAAAAAAAAAAAAAAAAAAAAAoigoioKIAqoKiiKCiAKAAAAADUBVAAAAUQBRAFEUAAQAAVAFEAUQBRAFEAUQBRAFQAAQFEAVAAEAAQFQABAAQAQAEERQEAQEAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAFEVAVAFEUBUFFEAUAAAGoAAAKIAogoogCiKAAAAAqAKIAogIogCiAKIAAAAAAgKIAAgKIAAgAIKqCIKggAIAgAICKAKiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgCgAKggoigAAogCiKAADYQUUQBRAFEAUQBRAFEVQAAAAVAFEAUQBRAAAAAAEBRAAAAQBUEQVAAEABABAAQEUQAAFBAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQBQAAAFQQUQBRAFEAbiCiiAKIAoAAAAAAAAAAAAAAAAAACgAgAgKIAqAACAqAAIAAAIICoAogICAAAoIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqAKIoAAAAAAAANhAFEAUQBRAFAAAAAAAAAAAAAAAAAAAAAAEAVAABAVAABAAQAAUQEBAAAUAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRAFAAAAABqIAogCiAKIAoAAAAAAAKIAogCiAKIAogCoAAAAACAAAAgAAgAACAKICAAoAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUQFUQBRAFEUQAAAAABRAFEAUQUUBAAABAUQBRBQAQAAAQAABAARUAABABQARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaCAqiAKAAAAAAAIKgoogCgAAAAAAAAAAAAAAAIqAAAAAgACKgACCAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOxAVRBRQAAAAAABFAAAAABRFAAAAAAAAAAAAEQVAAAEUBABRFQAAEAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHQCqAAAAKgCiKIAAAAKgCgAAAoCgAIAAAAAAAAAAgqAAAgqAAAgAIKgCKIqCoAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoCqAAKgCiKIAAKigAKAAKIoAAAKIAAAAAAAAAAAAAAgAAAIAAigIACAAAIqCoAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoCqAAACAAKIoACgqKAAAqKIAAAoAAACgAIAAAAAAAAAAgqAIoCAAgoKiKIIAAAioAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAoCCgAAAAAAAAACigAAAoACoogAoKigACAAAKAAAAAigIKgAAAAIAAigIACCoKIqAAIoiiCAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAooAAAAAAAAAAAAAKAAKIoAAKAqCoAoAKAIAAAoAAAAAAgAAACCgIAAigIAAigqAAgAqCogACoKiAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKiqAAAAACgAAIIKAAAAAoAAKgCgKigAKigACKAAACgAACAAACgAAAAAAioAAAioAAggqCiKgCKgoAiiKIIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKAAAAAoAAAAgCCgAAAAKAACooACooACooAAigAAoAAACoAAKACKAgoCAAAAgqAAAgACKiKIoCACoAgAIqAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoqgAAAoAAAAAAgCCgAAAAKAACoqgAIoACooCoogAAqKAAAAqAKAAAAAACAAAAgAAAIAAioigAIAKgAACKgDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKiqAAACgAAAAAD/9k=",
+        buttonNames: ["Project Repository"],
+        buttonLinks: ["https://github.com/jwmke/BiasCompass"],
+        modalDescription: [""],
+        modalMediaDetails: []
+    },
+    {
         name: "Competitive Robotics AI Platform",
         tags: ["PyTorch", "ROS", "OpenCV"],
-        description: "Created a robotics platform that incorporated multiple ML models and integrated them into a ROS service, enabling competitive VEXU robots to compete fully autonomously in real-time.",
+        description: "Created a robotics platform that integrated multiple ML models into a ROS service, enabling VEXU robots to compete fully autonomously in real-time.",
         media: "yolov5",
         mediaBlur: "data:image/jpeg;base64,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",
         buttonNames: ["CV Repository", "RL Repository"],
-        buttonLinks: ["https://github.com/msoe-vex/senior-design-cv", "https://github.com/msoe-vex/senior-design-adversarial-strategy"],
+        // buttonLinks: ["https://github.com/msoe-vex/senior-design-cv", "https://github.com/msoe-vex/senior-design-adversarial-strategy"],
+        buttonLinks: ["https://github.com/msoe-vex/senior-design-cv"],
         modalDescription: ["In collaboration with Raider Robotics and the Milwaukee School of Engineering's EECS department, my senior capstone team and I created a robotics platform that incorporated multiple AI models and integrated it into a ROS service. This service in turn enabled competitive VEXU robots to compete fully autonomously in real time against robots from other universities.",
         "My primary contributions to the project were on the computer vision pipeline. For this pipeline, we used a YOLOv5 object identification model that was trained on 500+ hand-labeled images using the Milwaukee School of Engineering's super computer. Inference for this model was run on-robot on an NVIDIA Jetson Nano. Once bounding boxes of objects were identified, ROS2 TF2 was used with the depth information to transform the object vectors to the coordinate frame of the field.",
         "In addition to this project being chosen to be presented on to the the Wisconsin Society of Professional Engineers (NSPE-WI), it also won first place at the Rosie Super Computer Challenge and contributed to the Raider Robotics organization winning the second most prestegious award in their division at the 2022 VEXU world championship."],
@@ -123,7 +136,8 @@ const projectsList = [
         media: "splines",
         mediaBlur: "data:image/jpeg;base64,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",
         buttonNames: ["Path Panning Dashboard", "Public Website"],
-        buttonLinks: ["https://dashboard.msoevex.com/", "https://msoevex.com"],
+        // buttonLinks: ["https://dashboard.msoevex.com/", "https://msoevex.com"],
+        buttonLinks: ["https://dashboard.msoevex.com/"],
         modalDescription: ["As a founding member of both MSOE Robotics and Raider Robotics, I had the opportunity to both lead the development of their public website, as well as work on maintaining and adding new features to their autonomous path planning dashboard.",
         "MSOE Robotics' public website was created with presenting more information to potential sponsors in mind. Because of this, the website was created with fluid website design in mind so it could be as accessible to as many people as possible. The website was created using React and Bootstrap, with an Express backend so our potential sponsors could contact us.",
         "The path planning dashboard website was originally created by Raider Robotics to assist in the creation of their autonomous robotics skills routines. The foundation of the website was built by one of the team members for their previous competitive robotics teams, however, porting the dashboard to a different competitive robotics environment created many issues with its underlying logic. I and other members of the Raider Robotics organization have fixed many of these issues and contributed other new features to the dashboard's functionality such as customization of robot profiles and undo-redo stacks."],
@@ -146,34 +160,40 @@ const projectsList = [
             },
         ]
     },
-    // {
-    //     name: "RSA & AES Parallelization",
-    //     tags: ["CUDA", "C", "C++"],
-    //     description: "Reverse-engineered the RSA and AES encryption algorithms and used CUDA to enable them to take advantage of parallel processing on GPUs.",
-    //     media: "cuda",
-    //     mediaBlur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMADQkKCwoIDQsKCw4ODQ8TIBUTEhITJxweFyAuKTEwLiktLDM6Sj4zNkY3LC1AV0FGTE5SU1IyPlphWlBgSlFST//bAEMBDg4OExETJhUVJk81LTVPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT//AABEIAJoBmwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAgEDBAYF/8QAHBABAQEBAQEBAQEAAAAAAAAAAAECERIDIRMx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP0RgDWDAGNYDKylZQZWVtTQZU1tTQZUVVTQTUVVTQRU1VRQTUVVRQTUVVRQRUVdRQRUVdRQRUVdRQTUVVTQTU1tZQZWDAAAaMaDWsbAU1MbAU1kbAU1LQa1jQaMaDRgD7fp1PToK6zrOs6Des6dZ0C1lrOstAtZaWptAtTaWptAtTaWptBlqbS1NoMqK21NoJqKq1FoJqKq1FoJqKq1ztBlRW2otBlRW2otBlTW2otBlrKWptAtZ1lrOgrp1PToK63qOt6C2xHWyguNlTK2UFxsRK3oLanregpqenQU1PToKGdOg+16dR06CunU9Z0FdZ1PWdBXWWptZaDbWWstTaDbU2stTaDbU2stTaBam0tRaBam0tRaBai0tRaBai0tRaBa52ttRaDLUWttRaDLUWttRaBai0tRaDbU2stTaDbWdTazoK6dR09A6db1z6dB162VzlbKDpKqVylVKDp1srnKqUHTreufW9B06dR1vQX06jregvp1HToPtOnXPp6BfTrn06C+s6jrOgu1lqOstBVrLU2ptBVqbWWptBtqbWWptBtqLWWptBtqLWWptAtRaWotBtrnaWotAtRaWotAtRaWudoNtRay1F0DbUWpukXQKuk3SLpF2DpdJ9OV2m7B29Hpw9nsHo9Nmnnm2zYPRNKmnnm1TYPRNNmnCaVNA7ytlcZpU0DtK3rjNK9A69b1y9N9A6db1y9N9A6dOufo9A+z9Hpy9HoHT0enP0z0Dp6Z6R6Z6Bfpl0j0z0C7pN0i6ZdAu6Tai6ZdAq1NqbpN0CrUWsukXQKtRay6RdA21NrLpF0DbUWsukXQFqLWXSLoG3TndMuka0Dbpz1pmtOWtgrWnPW3PX0c7q0F6+iLq1IB0AAAAAG9rZupAdJ9Fz6OAD0za5t5Jqtm6D2TbZp5Z9FT6A9M0r080+jZsHo9N9PP7b7B39Hpx9nsH2no9Ofo9A6ej05ej0Dp6Z6c/R6Bfpl0j0z0C7pl053TLoF3SbpF0y6BV0m6TdJugVdJuk3SboFXSLpN0m6Bt0i6ZdIugbdIumXSNaBt0560zWnPWgbrTnrSdbcd/QFb24631N1awAAAAAAAAAAAAAAAAAADtb6rAFeqe6kBXut/pUAPuPR6cvR6B19M9Ofo9A6emenP0z0Dp6ZdOfpnoHS6TdIumXQLuk3SLpl0CrpN0m6TdAq6TdJuk3QKukXSbpF0CrpF0m6RdAq6c9aTrTnrYK1py3tG9uOtWgre+uYAAAAAAAAAAAAAAAAAAAAAAAAAAA+v9Hpz6dB09M9I6zoOnpnpHWdBfpnpHWdBd0y6Ray0FXSbpNqbQXdJuk2ptBV0i6Tam6BV0i6TdIugbdI1pOtOetA3W3He072539BtvWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6jp1HToK6dT1nQV06nrOgrrOp6zoKtTay1loNtTay1NoNtTay1NoNtRaWotAtc9abquWqBrTjvRvTmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6RgAAwBjWAMGAysramgysramgyoqqmgmoqqigjVctV105bBx1f1jdf6wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k=",
-    //     buttonNames: ["Project Repository"],
-    //     buttonLinks: ["https://github.com/jwmke/cs4981-cuda-encryption"],
-    //     modalDescription: ["This project was done to learn and apply knowledge of Nvidia's CUDA toolkit by applying parallelization to two widely used encryption algorithms, RSA and AES. The group I worked with on this project started by initially writing the encryption algorithms serially in C, using existing C++ implementations of the algorithms as reference. From there, CUDA was used to parallelize them. Both serial and parallel implementations of the algorithms were then profiled, using an Intel i5 6600K and an Nvidia RTX 2080, to calculate the parallelization speedup which can be seen in the figures above."],
-    //     modalMediaDetails: [
-    //         { 
-    //             media: 'rsa_aes/rsa.png',
-    //             description: "RSA encryption time on CPU vs GPU"
-    //         },
-    //         { 
-    //             media: 'rsa_aes/rsa_t.png',
-    //             description: "Speedups obtained between RSA CPU and GPU implementations"
-    //         },
-    //         { 
-    //             media: 'rsa_aes/aes.png',
-    //             description: "AES encryption time on CPU vs GPU"
-    //         },
-    //         { 
-    //             media: 'rsa_aes/aes_t.png',
-    //             description: "Speedups obtained between AES CPU and GPU implementations"
-    //         },
-    //     ]
-    // },
+    {
+        name: "Milwaukee School of Engineering Blockchain Curriculum Design",
+        tags: ["Solidity", "Flask", "LaTeX"],
+        description: "Constructed an upper-level technical elective course on blockchain and smart contract development for my university.",
+        media: "mics",
+        mediaBlur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMADQkKCwoIDQsKCw4ODQ8TIBUTEhITJxweFyAuKTEwLiktLDM6Sj4zNkY3LC1AV0FGTE5SU1IyPlphWlBgSlFST//bAEMBDg4OExETJhUVJk81LTVPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT//AABEIAKUBEgMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIEBQMG/8QAFhABAQEAAAAAAAAAAAAAAAAAABEB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwD8mIOqAIAioAggIi6moJrOrqaDOpq6zqCamrrOgmpq6zqCai6gIioKIAAAKIAqoCKACiAKIA9USlbFQqUFRKUBCpUBNKzugbqabrO6BqaamoJqaamgmppqagmoamiiFSoAlKCiUoKrNKo0JSiNDNWgolKCiUB6lKzStDVSs0oNVKzSgtTdSpQXdZpUqBupupupugu6zum6zuoLus7pus7oq7rO6brO6C7rO6m6m6gu6lSpQWlZpQapWalBulZpQbpWKtUaq1ilBulYpRG6M0B6dKxSqNUrFKDVKzUoNVKzSgtSpUqC1N1KzuitbrO6m6m6C7rO6m6zuoLupupus7qC7qbqbqUFqVKgLSoAtSgBVqALSoAtWsi0apWQo1RkKPSpWKVUapWKUG6lZqUVqlYpQaqVms1BvdZ3Wam6DW6m6zupupRd1N1ndSoLupupUBagKAAAAAAAAAAAAAAAAOylYpVGqVilBqlYpQaqVmlBaVmpUGqzUqVBalSlAqUFAAAAAAAAAAAAAAAAAAAAH3qUFClQApRAKCICAgIIAAoAAAAAAAAAAAAAAAAAAAAAA+wo0IKgIjQDKNJEGRUQRGkBAAAAAAAAAAAAAAAAAAAAAAAAdEGoNoyRQGYRpAZGkQZSNIKyjSagyjSIIAAAAAAAAAAAAAAAAAAAAADrAbRBQERQERQGUaRBlNaQVjUa1EGRUQAAAAAAAAAAAAAAAAAAAAdgDoggICAAgAiACJoIJrIIqICAAAAAAAAAAAAAAAAAAAAD/9k=",
+        buttonNames: ["Curriculum Repository", "MICS Proceedings"],
+        buttonLinks: ["https://github.com/jwmke/blockchain-development-curriculum", "https://micsymposium.org/mics2022/mics-2022-proceedings.pdf#page=232"],
+        modalDescription: ["This project was done in collaboration with the Milwaukee School of Engineering's EECS department to develop a technical elective course on blockchain and smart contract development that would be taught to upperclassmen majoring in Computer Science and Software Engineering. Over the span of 3 months I created lecture material guides for professors and developed hands-on exercises for students. These materials were made using both my prior industry experience with blockchain as well as from independent research on the technology.",
+        "The lecture material included everything from the fundamentals of blockchain as a data structure, to advanced topics pertaining to public blockchain networks and smart contracts. The exercises I created included Jupyter Notebooks to demonstrate atomic blockchain topics such as hashing, creating a cryptocurrency and associated public blockchain network from scratch using python and flask, and creating and deploying smart contracts on the Ethereum network that follow the ERC20 and ERC721 standards.",
+        "After developing the course I also was accepted to give a presentation at the Midwest Instruction and Computing Symposium (MICS) regional conference on the insights I made while creating it."],
+        modalMediaDetails: [
+            { 
+                media: 'blockchain/teaching.png',
+                description: "Example page from one of the created lecture material guide documents"
+            },
+            { 
+                media: 'blockchain/scratch.png',
+                description: "Hands-on student exercise for creating a cryptocurrency from scratch in a Jupyter Notebook"
+            },
+            { 
+                media: 'blockchain/example.png',
+                description: "Example ERC20 smart contract that was thoroughly commented to be used as an example for an exercise"
+            },
+            { 
+                media: 'blockchain/instructions.png',
+                description: "Associated instruction document for one of the designed hands-on student exercises"
+            },
+            { 
+                media: 'blockchain/blackjack.png',
+                description: "Stubbed out template smart contract, used by students as a starting point for an exercise"
+            },
+        ]
+    },
     {
         name: "Glomerular Injury Assessment",
         tags: ["Pytorch", "NumPy", "Pandas"],
@@ -215,52 +235,61 @@ const projectsList = [
         ]
     },
     {
-        name: "Milwaukee School of Engineering Blockchain Curriculum Design",
-        tags: ["Solidity", "Flask", "LaTeX"],
-        description: "Constructed an upper-level technical elective course on blockchain and smart contract development for my university.",
-        media: "mics",
-        mediaBlur: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMADQkKCwoIDQsKCw4ODQ8TIBUTEhITJxweFyAuKTEwLiktLDM6Sj4zNkY3LC1AV0FGTE5SU1IyPlphWlBgSlFST//bAEMBDg4OExETJhUVJk81LTVPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT//AABEIAKUBEgMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIEBQMG/8QAFhABAQEAAAAAAAAAAAAAAAAAABEB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwD8mIOqAIAioAggIi6moJrOrqaDOpq6zqCamrrOgmpq6zqCai6gIioKIAAAKIAqoCKACiAKIA9USlbFQqUFRKUBCpUBNKzugbqabrO6BqaamoJqaamgmppqagmoamiiFSoAlKCiUoKrNKo0JSiNDNWgolKCiUB6lKzStDVSs0oNVKzSgtTdSpQXdZpUqBupupupugu6zum6zuoLus7pus7oq7rO6brO6C7rO6m6m6gu6lSpQWlZpQapWalBulZpQbpWKtUaq1ilBulYpRG6M0B6dKxSqNUrFKDVKzUoNVKzSgtSpUqC1N1KzuitbrO6m6m6C7rO6m6zuoLupupus7qC7qbqbqUFqVKgLSoAtSgBVqALSoAtWsi0apWQo1RkKPSpWKVUapWKUG6lZqUVqlYpQaqVms1BvdZ3Wam6DW6m6zupupRd1N1ndSoLupupUBagKAAAAAAAAAAAAAAAAOylYpVGqVilBqlYpQaqVmlBaVmpUGqzUqVBalSlAqUFAAAAAAAAAAAAAAAAAAAAH3qUFClQApRAKCICAgIIAAoAAAAAAAAAAAAAAAAAAAAAA+wo0IKgIjQDKNJEGRUQRGkBAAAAAAAAAAAAAAAAAAAAAAAAdEGoNoyRQGYRpAZGkQZSNIKyjSagyjSIIAAAAAAAAAAAAAAAAAAAAADrAbRBQERQERQGUaRBlNaQVjUa1EGRUQAAAAAAAAAAAAAAAAAAAAdgDoggICAAgAiACJoIJrIIqICAAAAAAAAAAAAAAAAAAAAD/9k=",
-        buttonNames: ["Curriculum Repository", "MICS Proceedings"],
-        buttonLinks: ["https://github.com/jwmke/blockchain-development-curriculum", "https://micsymposium.org/mics2022/mics-2022-proceedings.pdf#page=232"],
-        modalDescription: ["This project was done in collaboration with the Milwaukee School of Engineering's EECS department to develop a technical elective course on blockchain and smart contract development that would be taught to upperclassmen majoring in Computer Science and Software Engineering. Over the span of 3 months I created lecture material guides for professors and developed hands-on exercises for students. These materials were made using both my prior industry experience with blockchain as well as from independent research on the technology.",
-        "The lecture material included everything from the fundamentals of blockchain as a data structure, to advanced topics pertaining to public blockchain networks and smart contracts. The exercises I created included Jupyter Notebooks to demonstrate atomic blockchain topics such as hashing, creating a cryptocurrency and associated public blockchain network from scratch using python and flask, and creating and deploying smart contracts on the Ethereum network that follow the ERC20 and ERC721 standards.",
-        "After developing the course I also was accepted to give a presentation at the Midwest Instruction and Computing Symposium (MICS) regional conference on the insights I made while creating it."],
+        name: "RSA & AES Parallelization",
+        tags: ["CUDA", "C", "C++"],
+        description: "Reverse-engineered the RSA and AES encryption algorithms and used CUDA to enable them to take advantage of parallel processing on GPUs.",
+        media: "cuda",
+        mediaBlur: "data:image/jpeg;base64,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",
+        buttonNames: ["Project Repository"],
+        buttonLinks: ["https://github.com/jwmke/cs4981-cuda-encryption"],
+        modalDescription: ["This project was done to learn and apply knowledge of Nvidia's CUDA toolkit by applying parallelization to two widely used encryption algorithms, RSA and AES. The group I worked with on this project started by initially writing the encryption algorithms serially in C, using existing C++ implementations of the algorithms as reference. From there, CUDA was used to parallelize them. Both serial and parallel implementations of the algorithms were then profiled, using an Intel i5 6600K and an Nvidia RTX 2080, to calculate the parallelization speedup which can be seen in the figures above."],
         modalMediaDetails: [
             { 
-                media: 'blockchain/teaching.png',
-                description: "Example page from one of the created lecture material guide documents"
+                media: 'rsa_aes/rsa.png',
+                description: "RSA encryption time on CPU vs GPU"
             },
             { 
-                media: 'blockchain/scratch.png',
-                description: "Hands-on student exercise for creating a cryptocurrency from scratch in a Jupyter Notebook"
+                media: 'rsa_aes/rsa_t.png',
+                description: "Speedups obtained between RSA CPU and GPU implementations"
             },
             { 
-                media: 'blockchain/example.png',
-                description: "Example ERC20 smart contract that was thoroughly commented to be used as an example for an exercise"
+                media: 'rsa_aes/aes.png',
+                description: "AES encryption time on CPU vs GPU"
             },
             { 
-                media: 'blockchain/instructions.png',
-                description: "Associated instruction document for one of the designed hands-on student exercises"
-            },
-            { 
-                media: 'blockchain/blackjack.png',
-                description: "Stubbed out template smart contract, used by students as a starting point for an exercise"
+                media: 'rsa_aes/aes_t.png',
+                description: "Speedups obtained between AES CPU and GPU implementations"
             },
         ]
-    },
+    } // TODO: project box for AAAS
 ];
 
 const Projects = () => {
+    let projectCount:Number = 0;
+    const [showMore, setShowMore] = useState(false);
+
     return (
         <div className='flex pb-24 bg-gradient-to-br from-white to-light-mint w-full relative'>
             <div className='mx-auto w-3/4'>
                 <div className='mt-32 mb-12'>
                     <PortfolioHeader text={"// Previous contributions"} color={"text-navy"}/>
                 </div>
-                <div className='grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mb-32'>
-                    {projectsList.map((projectDetails) => 
-                        <Project key={projectDetails.name} details={projectDetails}/>
+                <div className='grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mb-10'>
+                    {projectsList.slice(0, 6).map((projectDetails) => {
+                            return <Project key={projectDetails.name} details={projectDetails}/>
+                        }
                     )}
+                </div>
+                <div className='mb-32'>
+                    <div className={(showMore ? 'max-h-360 sm:max-h-160 pb-16 -mb-16 -mt-4 pt-4' : 'max-h-0' ) + " grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 overflow-hidden transition-max-height duration-250 ease-in-out px-16 -mx-16"}>
+                    {projectsList.slice(6, projectsList.length).map((projectDetails) => {
+                            return <Project key={projectDetails.name} details={projectDetails}/>
+                        }
+                    )}
+                    </div>
+                    {!showMore && <div onClick={() => setShowMore(true)} className='text-center text-3xl text-navy pl-1 transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:text-teal '>
+                        See more...
+                    </div>}
                 </div>
             </div>
             <div className="custom-shape-divider-bottom-1697388540">

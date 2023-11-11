@@ -24,13 +24,24 @@ const Landing = () => {
 
     useEffect(()=> {
         if (typeof window !== "undefined") {
-            window.addEventListener("scroll", () =>
-                setShowArrow(window.pageYOffset < 20)
+            window.addEventListener("scroll", () => {
+                    setShowArrow(window.pageYOffset < 20)
+                }
             );
         }
         setTimeout(()=>{setShowText(true)}, 1400);
         setTimeout(()=>{setShowArrow(true)}, 2800);
     }, []);
+
+    useEffect(()=> {
+
+        if (!showArrow) {
+            window.removeEventListener("scroll", () => {
+                setShowArrow(window.pageYOffset < 20)
+            });
+        }
+
+    }, [showArrow]);
 
     return (
         <div>

@@ -23,7 +23,8 @@ const Project = (props: {
 
     return (
         <>
-            <div onClick={() => setShowModal(!showModal)} className="max-w-sm mb-12 rounded-xl overflow-hidden shadow-dark-navy shadow-2xl bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-teal grid-span-2">
+            <div className="mx-auto max-w-sm mb-12 rounded-xl overflow-hidden shadow-dark-navy shadow-2xl bg-white transition ease-linear duration-150 hover:scale-105 hover:cursor-pointer hover:bg-teal grid-span-2">
+            <a href={props.details.buttonLinks[0]} target="_blank" rel="noreferrer">
                 <div className='z-20'>
                     <Image placeholder="blur" blurDataURL={props.details.mediaBlur} className="w-full" width={550} height={285} src={"/img/" + props.details.media + ".jpg"} alt="project_img" />
                 </div>
@@ -36,6 +37,7 @@ const Project = (props: {
                         <span key={tag} className="inline-block bg-pine rounded-full shadow-sm shadow-dark-navy px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{tag}</span>
                     ))}
                 </div>
+                </a>
             </div>
             {showModal ? (
                 <>

@@ -51,7 +51,7 @@ const BlogSearch = (props: {setResults: Function}) => {
                     { isLoading ? <div id='loading'/> : "🔎︎"}
                 </span>
                 <span style={{flex: "32"}}>
-                    <input onChange={(e:any) => setSearchTerm(e.target.value)} autoFocus className='caret-white w-full placeholder-white placeholder-opacity-70' style={{backgroundColor: "transparent", "outline": "none"}} placeholder='Search contents of the blogs'/>
+                    <input onChange={(e:any) => setSearchTerm(e.target.value)} className='caret-white w-full placeholder-white placeholder-opacity-70' style={{backgroundColor: "transparent", "outline": "none"}} placeholder='Search contents of the blogs'/>
                 </span>
             </div>
         </>
