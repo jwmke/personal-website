@@ -218,3 +218,7 @@ b {
 .custom-shape-divider-bottom-1697388540 .shape-fill {
   fill: #379683;
 }
+
+/* body * {
+  @apply transition-colors duration-200;
+} */

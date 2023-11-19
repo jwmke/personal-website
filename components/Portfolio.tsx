@@ -13,13 +13,13 @@ const Portfolio = () => {
                             &lt;present&gt;
                         </p>
                         <p className='text-white text-xl mt-5 ml-6'>
-                            👕 Software Engineer at Kohl&apos;s
+                            {"👕 Software Engineer @ Kohl's"}
                         </p>
                         <p className='text-white text-xl mt-8 ml-6'>
-                            🌏 Learning Korean, 안녕하세요!
+                        {"🌏 Learning Korean, 안녕하세요!"}
                         </p>
                         <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            🦜 Messing around with <a href='https://github.com/hwchase17/langchain' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>LangChain</a>
+                            {"🧠 Exploring BCI Research"}
                         </p>
                         <p className='text-mint text-xl pb-5'>
                             &lt;/present&gt;
@@ -30,13 +30,13 @@ const Portfolio = () => {
                             &lt;past&gt;
                         </p>
                         <p className='text-white text-xl mt-5 ml-6'>
-                            🎓 Graduated from the Milwaukee School of Engineering
+                            {"🎓 CS @ Milwaukee School of Engineering"}
                         </p>
                         <p className='text-white text-xl mt-8 ml-6'>
-                            🏭 Interned at Rockwell Automation and MSI Data
+                            {"🏭 Interned at Rockwell Automation and MSI Data"}
                         </p>
                         <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            🧀 Wisconsin native, born and raised
+                            {"🧀 Wisconsin native, born and raised"}
                         </p>
                         <p className='text-mint text-xl'>
                             &lt;/past&gt;

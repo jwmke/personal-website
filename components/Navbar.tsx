@@ -9,6 +9,7 @@ import useWindowDimensions from '../hooks/useWindowDimensions';
 
 const Navbar = (props: {bg?:boolean}) => {
   const [active, setActive] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   const { height, width } = useWindowDimensions();
   const triggerRef = useRef(null);
   const dataRef = useIntersectionObserver(triggerRef, { freezeOnceVisible: false });
@@ -32,6 +33,15 @@ const Navbar = (props: {bg?:boolean}) => {
     to: { opacity: active || (width&&width>=1024) ? 1 : 0, marginTop: active || (width&&width>=1024) ? 0 : -300 },
     config: { mass: 1, tension: 150, friction: 10 }
   });
+
+  const toggleDarkMode = () => {
+      const html = document.firstElementChild;
+      if (darkMode) {
+        html.classList.remove("dark");
+      } else {
+        html.classList.add("dark");
+      }
+  }
 
   const navbar = (position:string) => (
     <>
@@ -81,6 +91,7 @@ const Navbar = (props: {bg?:boolean}) => {
                 href='https://x.com/jwmke' target="_blank" rel="noreferrer">
                     .x()
                 </a>
+                {/* <button onClick={toggleDarkMode}>DM</button> */}
               </div>
               </animated.div>
             </div>
