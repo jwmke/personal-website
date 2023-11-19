@@ -35,10 +35,10 @@ const Navbar = (props: {bg?:boolean}) => {
   });
 
   const toggleDarkMode = () => {
-      const html = document.firstElementChild;
-      if (darkMode) {
+      const html:any = document.firstElementChild;
+      if (darkMode && html) {
         html.classList.remove("dark");
-      } else {
+      } else if (html) {
         html.classList.add("dark");
       }
   }
