@@ -97,6 +97,9 @@ const Blog: NextPage = () => {
               <a href='https://substack.com/@christianhennig' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Chip Hennig</span></a>
             </div>
             <div className='text-xl mt-4'>
+              <a href='https://nickbostrom.com/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Nick Bostrom</span></a>
+            </div>
+            <div className='text-xl mt-4'>
               <a href='https://mango.pdf.zone/' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-nesw-resize'>Alex Mango</span></a>
             </div>
           </div>
