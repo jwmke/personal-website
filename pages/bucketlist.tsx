@@ -26,13 +26,13 @@ const BucketList: NextPage = () => {
             <p>Walk 4,000,000 steps in a year</p>
             <p>Earn a purple belt in BJJ or Muay Thai</p>
             <p>Ski a black diamond in Colorado</p>
-            <p>Create an app that impacts 10,000+ people</p>
+            <p>Build something that impacts 10,000+ people</p>
             <p>Live in NYC for a year</p>
             <p>Make 1000 <Link href='/blog/pizza' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>homemade NYC pizzas</span></Link></p>
             <p>Bench press my body weight</p>
             <p className='line-through'>Speak in front of a large crowd (April, 2022)</p>
             <p>Attend <a href='https://www.ces.tech/about-ces.aspx' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>CES</a> in Las Vegas</p>
-            <p>Make every dish in a cookbook</p>
+            <p>{"Make >95% of dishes in a cookbook"}</p>
             <p>Explore Eastern Asia for 3 months</p>
             <p className='line-through'>Meditate for 30 days in a row (December, 2022)</p>
             <p>Do a kickflip</p>
@@ -47,7 +47,7 @@ const BucketList: NextPage = () => {
             <p className='line-through'>Stay in a European hostel (September, 2023)</p>
             <p>Summit Mount Kilimanjaro</p>
             <p>Complete every <a href='https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Blind 75</a> question</p>
-            <p>Collect 50 stars in <a href='https://adventofcode.com/' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Advent of Code</a></p>
+            <p className='line-through'>Collect 50 stars in <a href='https://github.com/jwmke/AdventOfCode' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Advent of Code</a> (December, 2023)</p>
           </div>
         </div>
       </div>
