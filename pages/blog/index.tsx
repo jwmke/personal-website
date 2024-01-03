@@ -58,6 +58,9 @@ const Blog: NextPage = () => {
               My Recipes
             </div>
             <div className='text-xl mt-7'>
+              <Link href='/blog/matcha' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>Vanilla Matcha Latte 🍵</span></Link>
+            </div>
+            <div className='text-xl mt-4'>
               <Link href='/blog/orange' target="_blank" rel="noreferrer"><span className='hover:text-teal underline hover:cursor-pointer'>PX Orange Chicken 🍊</span></Link>
             </div>
             <div className='text-xl mt-4'>

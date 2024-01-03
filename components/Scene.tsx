@@ -38,6 +38,8 @@ const CameraController = () => {
 
 const Torus = () => {
     const ref = useRef<any>(null);
+    
+    const { height, width } = useWindowDimensions();
 
     useFrame((state, delta) => {
         const time = Date.now() * 0.001;
@@ -56,7 +58,7 @@ const Torus = () => {
         ref={ref}>
             {geometries[getRandomInt(geometries.length)]}
             {/* {geometries[0]} */}
-            <meshBasicMaterial color={'#05396b'} wireframe={true}/>
+            <meshBasicMaterial color={width&&width>700 ? '#05396b' : '#8ee4af'} wireframe={true}/>
         </mesh>
     )
 }
