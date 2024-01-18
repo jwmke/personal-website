@@ -48,6 +48,7 @@ const BucketList: NextPage = () => {
             <p>Summit Mount Kilimanjaro</p>
             <p>Complete every <a href='https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Blind 75</a> question</p>
             <p className='line-through'>Collect 50 stars in <a href='https://github.com/jwmke/AdventOfCode' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Advent of Code</a> (December, 2023)</p>
+            <p>Unlock every <a href='https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game)' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Binding of Isaac</a> achievement</p>
           </div>
         </div>
       </div>
