@@ -41,7 +41,7 @@ const BucketList: NextPage = () => {
             <p>Reach 1600 elo in blitz chess</p>
             <p>Attend the Olympics</p>
             <p>Write and publish a book</p>
-            <p className='line-through'>Have my name on a patent (US20230342435)</p>
+            <p className='line-through'>Have my name on a patent (<a href='https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20230342435' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>US20230342435</a>)</p>
             <p>Celebrate the Chinese New Year in China</p>
             <p>Achieve zero debt</p>
             <p className='line-through'>Stay in a European hostel (September, 2023)</p>
