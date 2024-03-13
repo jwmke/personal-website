@@ -61,7 +61,7 @@ const Landing = () => {
                 <animated.div style={fadeStyles} className="top-28 left-10 relative z-30 w-3/4 text">
                     <h1 className='text-xl text-pine tall-lines'>
                         Hi! I&apos;m Joe, an engineer based
-                        out of Tampa, FL who&apos;s interested
+                        out of Los Angeles who&apos;s interested
                         in robotics, full stack development, machine learning
                         and more.
                     </h1>
@@ -73,7 +73,7 @@ const Landing = () => {
                     onInit={(typewriter)=> {
                     typewriter
                     .changeDelay(45)
-                    .typeString("Weller@TPA")
+                    .typeString("Weller@LAX")
                     .start();
                     }}
                     />
