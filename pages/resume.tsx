@@ -10,9 +10,6 @@ export default function Resume() {
                     <Page pageNumber={1} renderTextLayer={false} scale={1.75} canvasBackground='#edf5e1'/>
                 </Document>
             </div>
-            <div className='flex justify-center'>
-                {":)"}
-            </div>
         </>
     )
 }
