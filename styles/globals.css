@@ -229,3 +229,7 @@ b {
   justify-content: center;
   align-items: center;
 }
+
+.react-pdf__Page__annotations {
+  display: none;
+}
