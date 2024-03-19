@@ -5,7 +5,7 @@ import useWindowDimensions from '../hooks/useWindowDimensions';
 
 export default function Resume() {
     const { width } = useWindowDimensions();
-    const scale = width < 768 ? .7 : 1.75;
+    const scale = width && width < 768 ? .7 : 1.75;
     return (
         <>
             <div className='bg-white'>
