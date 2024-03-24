@@ -52,7 +52,7 @@ const Landing = () => {
                         onInit={(typewriter)=> {
                         typewriter
                         .changeDelay(45)
-                        .typeString("Weller@TPA")
+                        .typeString("Weller@LAX")
                         .start();
                         }}
                         />
