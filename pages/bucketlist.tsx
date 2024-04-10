@@ -50,6 +50,7 @@ const BucketList: NextPage = () => {
             <p className='line-through'>Collect 50 stars in <a href='https://github.com/jwmke/AdventOfCode' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Advent of Code</a> (December, 2023)</p>
             <p>Unlock every <a href='https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game)' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>Binding of Isaac</a> achievement</p>
             <p>Climb a V8 boulder</p>
+            <p>Complete a sub-3hr Olympic triathlon</p>
           </div>
         </div>
       </div>
