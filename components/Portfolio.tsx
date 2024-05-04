@@ -3,7 +3,7 @@ import PortfolioHeader from './PortfolioHeader';
 const Portfolio = () => {
     return (
         <div className="relative flex w-full bg-gradient-to-b from-pine to-navy">
-            <div className='mx-auto w-3/4 pt-32 pb-48'>
+            <div className='mx-auto w-3/4 pt-32 pb-[14rem]'>
                 <div className='mb-8'>
                     <PortfolioHeader text={"// Just your average Joe"} />
                 </div>
@@ -18,8 +18,12 @@ const Portfolio = () => {
                         <p className='text-white text-xl mt-8 ml-6'>
                         {"🌏 Learning Korean, 안녕하세요!"}
                         </p>
+                        <p className='text-white text-xl mt-8 ml-6'>
+                            {"🧠 Building "}
+                            <a href="https://bcibin.com" target="_blank" rel="noreferrer" className="underline">{" BCI Bin"}</a>
+                        </p>
                         <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            {"🧠 Exploring BCI Research"}
+                            {"🏊 Training for an Olympic Triathlon"}
                         </p>
                         <p className='text-mint text-xl pb-5'>
                             &lt;/present&gt;
@@ -30,13 +34,16 @@ const Portfolio = () => {
                             &lt;past&gt;
                         </p>
                         <p className='text-white text-xl mt-5 ml-6'>
-                            {"🎓 CS @ Milwaukee School of Engineering"}
+                            {"🧀 Wisconsin native, born and raised"}
                         </p>
                         <p className='text-white text-xl mt-8 ml-6'>
-                            {"🏭 Interned at Rockwell Automation and MSI Data"}
+                            {"🐊 Migrated to Florida for a year"}
+                        </p>
+                        <p className='text-white text-xl mt-8 ml-6'>
+                            {"🎓 CS @ Milwaukee School of Engineering"}
                         </p>
                         <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            {"🧀 Wisconsin native, born and raised"}
+                            {"🏭 Interned at Rockwell Automation & MSI Data"}
                         </p>
                         <p className='text-mint text-xl'>
                             &lt;/past&gt;
