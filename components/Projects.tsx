@@ -130,7 +130,7 @@ const projectsList = [
         ]
     },
     {
-        name: "Raider Robotics Websites",
+        name: "Odometry Path Pathing Dashboard",
         tags: ["React", "Typescript", "SCSS", "Express"],
         description: "Developed and contributed to the Raider Robotics organization's public-facing website and their internal odometry path planning dashboard.",
         media: "splines",
