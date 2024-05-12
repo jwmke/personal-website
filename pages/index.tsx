@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta name="google-site-verification" content="agRJm9VBzesdZT70vlgmKho0_6W-JC1TdrkD6LSjnw4" />
       </Head>
-      <div className="relative w-full h-full bg-gradient-to-br dark:from-navy dark:to-dark-navy from-white to-light-mint">
+      <div className="relative w-full h-full bg-gradient-to-br dark:from-navy dark:to-dark-navy from-white to-light-mint pattern">
         <Navbar bg/>
         <Landing/>
         <div className={width&&width<700 ? 'absolute h-screen w-full opacity-0 z-40' : ''}/>

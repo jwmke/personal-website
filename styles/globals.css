@@ -233,3 +233,17 @@ b {
 .react-pdf__Page__annotations {
   display: none;
 }
+
+/* .pattern {
+  background-color: #edf5e1;
+  opacity: 0.95;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #edf5e1 10px ), repeating-linear-gradient( #ddf7e7, #8ee4af );
+} */
+
+/* .pattern {
+  background-color: #edf5e1;
+  opacity: .95;
+  background-image:  linear-gradient(30deg, #edf5e1 12%, transparent 12.5%, transparent 87%, #edf5e1 87.5%, #edf5e1), linear-gradient(150deg, #edf5e1 12%, transparent 12.5%, transparent 87%, #edf5e1 87.5%, #edf5e1), linear-gradient(30deg, #edf5e1 12%, transparent 12.5%, transparent 87%, #edf5e1 87.5%, #edf5e1), linear-gradient(150deg, #edf5e1 12%, transparent 12.5%, transparent 87%, #edf5e1 87.5%, #edf5e1), linear-gradient(60deg, #ddf7e7 25%, transparent 25.5%, transparent 75%, #ddf7e7 75%, #ddf7e7), linear-gradient(60deg, #ddf7e7 25%, transparent 25.5%, transparent 75%, #ddf7e7 75%, #ddf7e7);
+  background-size: 16px 28px;
+  background-position: 0 0, 0 0, 8px 14px, 8px 14px, 0 0, 8px 14px;
+} */

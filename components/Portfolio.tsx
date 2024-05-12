@@ -13,18 +13,18 @@ const Portfolio = () => {
                             &lt;present&gt;
                         </p>
                         <p className='text-white text-xl mt-5 ml-6'>
-                            {"👕 Software Engineer @ Kohl's"}
+                            {"👕 SWE @ Kohl's"}
                         </p>
                         <p className='text-white text-xl mt-8 ml-6'>
                         {"🌏 Learning Korean, 안녕하세요!"}
                         </p>
-                        <p className='text-white text-xl mt-8 ml-6'>
+                        <p className='text-white text-xl mt-8 ml-6 mb-5'>
                             {"🧠 Building "}
-                            <a href="https://bcibin.com" target="_blank" rel="noreferrer" className="underline">{" BCI Bin"}</a>
+                            <a href="https://bcibin.com" target="_blank" rel="noreferrer" className="underline">{" BCI Bin"}</a> {" in public"}
                         </p>
-                        <p className='text-white text-xl mt-8 mb-5 ml-6'>
-                            {"🏊 Training for an Olympic Triathlon"}
-                        </p>
+                        {/* <p className='text-white text-xl mt-8 ml-6'>
+                            {"🏊 Training for a triathlon"}
+                        </p> */}
                         <p className='text-mint text-xl pb-5'>
                             &lt;/present&gt;
                         </p>
@@ -36,9 +36,9 @@ const Portfolio = () => {
                         <p className='text-white text-xl mt-5 ml-6'>
                             {"🧀 Wisconsin native, born and raised"}
                         </p>
-                        <p className='text-white text-xl mt-8 ml-6'>
+                        {/* <p className='text-white text-xl mt-8 ml-6'>
                             {"🐊 Migrated to Florida for a year"}
-                        </p>
+                        </p> */}
                         <p className='text-white text-xl mt-8 ml-6'>
                             {"🎓 CS @ Milwaukee School of Engineering"}
                         </p>
