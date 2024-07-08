@@ -16,12 +16,6 @@
 - React-Spring
 - Elasticsearch
 
-### To run locally:  
-1. clone project
-2. cd into project directory
-3. ```npm install```
-4. ```npm run dev```
-
 ### ES Blog Insert:
 - POST
 - https://**User:Pword**@pw-search-4151560379.us-east-1.bonsaisearch.net:443/blog/post/**Blog# (i.e. 4)**
