@@ -6,7 +6,6 @@
 
 
 ### Technologies:  
-- React
 - TypeScript
 - NextJS
 - Tailwind CSS
