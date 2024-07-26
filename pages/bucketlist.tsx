@@ -21,7 +21,7 @@ const BucketList: NextPage = () => {
             Bucket List
           </div>
           <div className='text-xl child:mt-5'>
-            <p className='pt-5'>Read <a href='https://bookshelved.com/@j' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>500 books</a></p>
+            <p className='pt-5'>Read <a href='https://www.goodreads.com/jwmke' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>500 books</a></p>
             <p>Pass the TOPIK-I (Test of Proficiency in Korean)</p>
             <p>Walk 4,000,000 steps in a year</p>
             <p>Earn a purple belt in BJJ or Muay Thai</p>
