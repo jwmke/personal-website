@@ -13,14 +13,15 @@ const Portfolio = () => {
                             &lt;present&gt;
                         </p>
                         <p className='text-white text-xl mt-5 ml-6'>
-                            {"👕 SWE @ Kohl's"}
+                            {"👕 Supply chain engineer @"}  <a href="https://kohls.com" target="_blank" rel="noreferrer" className="underline">{" Kohl's"}</a>
                         </p>
                         <p className='text-white text-xl mt-8 ml-6'>
-                        {"🌏 Learning Korean, 안녕하세요!"}
+                        {/* {"🌏 Learning Korean, 안녕하세요!"} */}
+                        {"⛏️ Advancing the future of mineral exploration @ "} <a href="https://durin.com" target="_blank" rel="noreferrer" className="underline">{" Durin"}</a>
                         </p>
                         <p className='text-white text-xl mt-8 ml-6 mb-5'>
-                            {"🧠 Building "}
-                            <a href="https://bcibin.com" target="_blank" rel="noreferrer" className="underline">{" BCI Bin"}</a> {" in public"}
+                            {"🧠 Building & learning about "}
+                            <a href="https://bcibin.com" target="_blank" rel="noreferrer" className="underline">{"BCI's"}</a> {" in public"}
                         </p>
                         {/* <p className='text-white text-xl mt-8 ml-6'>
                             {"🏊 Training for a triathlon"}
